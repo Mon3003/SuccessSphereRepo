@@ -1,1 +1,32 @@
-{}
+{
+  "ba7f3adc-37b1-44d2-84e5-95a05802b2fb": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1664/1.0.1664.3477/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://stretch365.sharepoint.com/sites/SuccessSphereApp": {
+        "dataSources": {
+          "Manager Group": {
+            "tableName": "7c19a804-28a8-41ad-bf64-f8f9d2381243"
+          },
+          "One2One Survey": {
+            "tableName": "7d39ae37-f3bc-4682-b889-14a1e284a5a5"
+          },
+          "UserSecurity": {
+            "tableName": "6911677a-d05c-43de-9b8b-8fde9368dd6d"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Manager Group",
+      "One2One Survey",
+      "UserSecurity"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "ba7f3adc-37b1-44d2-84e5-95a05802b2fb"
+  }
+}

@@ -3,6 +3,47 @@ App As appinfo:
     OnStart: |-
         =Set(gblAppFont, Font.Lato);
         Set(gblAppFontSize,10);
+        Set(
+            gblCurrentUserEmail,
+            User().Email
+        );
+        Clear(ColUserSecurity);
+        ForAll(
+            Filter(
+                'Manager Group', ManagerEmail = gblCurrentUserEmail
+            ),
+            (Collect(
+                ColUserSecurity,
+                {
+                    Role: "Manager",
+                    Email: ManagerEmail
+                }    
+            ))
+        );
+        
+        If(IsEmpty(ColUserSecurity)=true,
+        (ForAll(
+            Filter(
+                UserSecurity,
+                EmployeeEmail = gblCurrentUserEmail
+            ),
+            (Collect(
+                ColUserSecurity,
+                {
+                    Role: "Staff",
+                    Email: EmployeeEmail
+                }
+            ))
+        )));
+        If(
+            IsEmpty(ColUserSecurity),
+            Clear(ColUserSecurity)
+        );
+        
+        Set(
+            gblCurrentUserRole,
+            First(ColUserSecurity.Role)
+        );
         ClearCollect(
             colHomeScrNavigation,
             {
@@ -10,7 +51,6 @@ App As appinfo:
                 NavLink:  'One2One Complete Survey',
                 NavIco: Icon.Message,
                 NavColor: ColorValue("#281E20"),
-                NavHover: ColorFade(RGBA(0, 47, 108, 1), -30%),
                 NavVisible: 1,
                 NavSecuirty:true
                 },
@@ -19,7 +59,6 @@ App As appinfo:
                 NavLink:  'Request Review',
                 NavIco: Icon.People,
                 NavColor: ColorValue("#281E20"),
-                NavHover: ColorFade(RGBA(0, 47, 108, 1), -30%),
                 NavVisible: 2,
                 NavSecuirty:true},      
         	{
@@ -27,7 +66,6 @@ App As appinfo:
                 NavLink:  HomeScreen,
                 NavIco: Icon.Trending,
                 NavColor: ColorValue("#281E20"),
-                NavHover: ColorFade(RGBA(0, 47, 108, 1), -30%),
                 NavVisible: 3,
                 NavSecuirty:true},
         	{
@@ -35,7 +73,6 @@ App As appinfo:
                 NavLink:  'View My Goals',
                 NavIco: Icon.ColorPicker,
                 NavColor: ColorValue("#281E20"),
-                NavHover: ColorFade(RGBA(0, 47, 108, 1), -30%),
                 NavVisible: 4,
                 NavSecuirty:true},
         	{
@@ -43,11 +80,9 @@ App As appinfo:
                 NavLink:  'Add / Remove Employee - Manager',
                 NavIco: Icon.Support,
                 NavColor: ColorValue("#281E20"),
-                NavHover: ColorFade(RGBA(0, 47, 108, 1), -30%),
                 NavVisible: 5,
-                NavSecuirty: true
-                //If(User().FullName = "Mounika Thati",true,false)
-                }
+                NavSecuirty: If(gblCurrentUserRole.Role="Manager", true,false)
+        }
         );
     StartScreen: =
     Theme: =PowerAppsTheme

@@ -93,7 +93,7 @@
       "useguiddatatypes": true,
       "usenonblockingonstartrule": true,
       "webbarcodescanner": false,
-      "zeroalltabindexes": true
+      "zeroalltabindexes": false
     },
     "Author": "",
     "BindingErrorCount": 0,
@@ -112,7 +112,7 @@
     "Id": "f62aca00-52e2-4f07-826a-1cd495d64989",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "ManualOfflineProfileId": null,
+    "ManualOfflineProfileId": "",
     "Name": "Success Sphere",
     "OriginatingVersion": "1.335",
     "ParserErrorCount": 0,
