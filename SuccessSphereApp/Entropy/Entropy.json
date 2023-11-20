@@ -3,15 +3,21 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
+    "Button2_9": 11,
+    "Circle1_6": 12,
+    "Gallery1_15": 9,
+    "galleryTemplate5_9": 10,
+    "HomeScreen": 4,
     "Host": 3,
-    "Image2": 7,
-    "Screen1": 4,
+    "Icon15_1": 13,
+    "Icon2": 16,
+    "User Image": 7,
     "User name": 8,
     "Welcome": 6
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/20/2023 00:23:00",
+  "HeaderLastSavedDateTimeUTC": "11/20/2023 01:14:52",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -26,19 +32,32 @@
   "OldLogoFileName": "z52i5ol4.jpg",
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {},
+  "OrderDataSource": {
+    "colHomeScrNavigation": 1,
+    "CustomGallerySample": 0
+  },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "image": 0,
-    "label": 1
+    "button": 4,
+    "circle": 5,
+    "gallery": 3,
+    "icon": 2,
+    "image": 1,
+    "label": 0
   },
   "OverridablePropertiesEntry": {
     "App": {},
+    "Button2_9": {},
+    "Circle1_6": {},
+    "Gallery1_15": {},
+    "galleryTemplate5_9": {},
+    "HomeScreen": {},
     "Host": {},
-    "Image2": {},
-    "Screen1": {},
+    "Icon15_1": {},
+    "Icon2": {},
+    "User Image": {},
     "User name": {},
     "Welcome": {}
   },
@@ -46,11 +65,17 @@
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
+    "Button2_9": 6,
+    "Circle1_6": 7,
+    "Gallery1_15": 4,
+    "galleryTemplate5_9": 5,
+    "HomeScreen": 0,
     "Host": 0,
-    "Image2": 0,
-    "Screen1": 0,
-    "User name": 2,
-    "Welcome": 1
+    "Icon15_1": 8,
+    "Icon2": 2,
+    "User Image": 1,
+    "User name": 3,
+    "Welcome": 0
   },
   "ResourcesJsonIndices": {
     "Image-Presentation1": 2,
@@ -61,7 +86,13 @@
   "TemplateVersions": {},
   "VolatileProperties": {
     "AnalysisLoadTime": 0.0177995,
-    "ControlCount": {}
+    "ControlCount": {
+      "button": 1,
+      "circle": 1,
+      "gallery": 1,
+      "galleryTemplate": 1,
+      "icon": 2
+    }
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
