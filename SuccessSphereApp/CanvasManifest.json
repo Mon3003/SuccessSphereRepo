@@ -133,11 +133,15 @@
     "HomeScreen",
     "One2One Complete Survey",
     "One2One View My Survey",
-    "One2One Schedule One2One",
-    "One2One Complete Manager Feedback",
-    "Add / Remove Employee",
-    "Delegate Manager",
-    "Add Employee Goals",
-    "View My Goals"
+    "One2One Schedule One2One - Manager",
+    "One2One Complete Manager Feedback - Manager",
+    "Add / Remove Employee - Manager",
+    "Delegate Manager - Manager",
+    "Add Employee Goals - Manager",
+    "View My Goals",
+    "Request Review",
+    "Complete Review",
+    "View My Reviews",
+    "View My Employee Reviews - Manager"
   ]
 }

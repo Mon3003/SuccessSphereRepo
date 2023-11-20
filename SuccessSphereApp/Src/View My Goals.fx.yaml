@@ -12,7 +12,7 @@
                 },
                 {
                     Title: "Add Employee Goals",
-                    NavLink: 'Add Employee Goals',
+                    NavLink: 'Add Employee Goals - Manager',
                     NavIco: Icon.ListWatchlistRemind,
                     NavVisible: 1
                 },

@@ -1,6 +1,6 @@
 {
   "ControlStates": {
-    "Add Employee Goals": {
+    "Add / Remove Employee - Manager": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -27,18 +27,13 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Add Employee Goals",
+      "Name": "Add / Remove Employee - Manager",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
           "Category": "Design",
-          "PropertyName": "Fill",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "ImagePosition",
+          "PropertyName": "Width",
           "RuleProviderType": "Unknown"
         },
         {
@@ -48,17 +43,12 @@
         },
         {
           "Category": "Design",
-          "PropertyName": "Width",
+          "PropertyName": "ImagePosition",
           "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
-          "PropertyName": "Size",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "Orientation",
+          "PropertyName": "Fill",
           "RuleProviderType": "Unknown"
         },
         {
@@ -70,12 +60,22 @@
           "Category": "Design",
           "PropertyName": "LoadingSpinnerColor",
           "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Size",
+          "RuleProviderType": "Unknown"
+        },
+        {
+          "Category": "Design",
+          "PropertyName": "Orientation",
+          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultScreenStyle",
       "Type": "ControlInfo"
     },
-    "comp_LeftNavMyUploads_6": {
+    "comp_LeftNavMyUploads_3": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Fill",
@@ -136,7 +136,7 @@
         "Description": ""
       },
       "MetaDataIDKey": "",
-      "Name": "comp_LeftNavMyUploads_6",
+      "Name": "comp_LeftNavMyUploads_3",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -184,7 +184,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Image3_6": {
+    "Image3_4": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Image",
@@ -226,7 +226,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Image3_6",
+      "Name": "Image3_4",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -379,7 +379,7 @@
       "StyleName": "defaultImageStyle",
       "Type": "ControlInfo"
     },
-    "Label3_12": {
+    "Label3_8": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -487,7 +487,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Label3_12",
+      "Name": "Label3_8",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -690,7 +690,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "Label3_13": {
+    "Label3_9": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -791,7 +791,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Label3_13",
+      "Name": "Label3_9",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -994,7 +994,7 @@
       "StyleName": "defaultLabelStyle",
       "Type": "ControlInfo"
     },
-    "User Image_7": {
+    "User Image_5": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1100,7 +1100,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "User Image_7",
+      "Name": "User Image_5",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1258,7 +1258,7 @@
       "StyleName": "defaultImageStyle",
       "Type": "ControlInfo"
     },
-    "User name_7": {
+    "User name_5": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -1353,7 +1353,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "User name_7",
+      "Name": "User name_5",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1562,5 +1562,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "Add Employee Goals"
+  "TopParentName": "Add / Remove Employee - Manager"
 }

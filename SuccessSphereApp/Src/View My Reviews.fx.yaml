@@ -1,7 +1,7 @@
-"'Delegate Manager' As screen":
+"'View My Reviews' As screen":
     Fill: =RGBA(0, 0, 0, 0)
 
-    comp_LeftNavMyUploads_5 As comp_LeftNav:
+    comp_LeftNavMyUploads_11 As comp_LeftNav:
         Height: =668
         LeftNavCollection: |-
             =SortByColumns(Table(   {
@@ -11,44 +11,58 @@
                     NavVisible: 0
                 },
                 {
-                    Title: "Add / Remove Employee",
-                    NavLink: 'Add / Remove Employee',
-                    NavIco: Icon.AddUser,
-                    NavVisible: 5
+                    Title: "Request Review",
+                    NavLink: 'Request Review',
+                    NavIco: Icon.Leave,
+                    NavVisible: 1
                 },
                 {
-                    Title: "Delegate Manager",
-                    NavLink: 'Delegate Manager',
-                    NavIco: Icon.People
+                    Title: "Complete Review",
+                    NavLink: 'Complete Review',
+                    NavIco: Icon.DockCheckProperties
                     ,
-                    NavVisible: 6
+                    NavVisible: 2
+                },
+                {
+                    Title: "View My Reviews",
+                    NavLink: 'View My Reviews',
+                    NavIco: Icon.View
+                    ,
+                    NavVisible: 3
+                },
+                {
+                    Title: "View My Employee Reviews",
+                    NavLink:'View My Employee Reviews - Manager',
+                    NavIco: Icon.LogJournal
+                    ,
+                    NavVisible: 4
                 }),"NavVisible",SortOrder.Ascending)
         Width: =98
         Y: =100
 
-    Label3_10 As label:
+    Label3_22 As label:
         Align: =Align.Center
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
         Height: =50
         Size: =18
-        Text: ="Admin"
+        Text: ="Peer Reviews"
         Width: =1366
         ZIndex: =2
 
-    Label3_11 As label:
+    Label3_23 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(57, 55, 104, 1)
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
         Height: =50
-        Text: ="Delegate Manager"
+        Text: ="View My Reviews"
         Width: =1366
         Y: =50
         ZIndex: =3
 
-    "'User Image_6' As image":
+    "'User Image_12' As image":
         Height: =50
         Image: =User().Image
         RadiusBottomLeft: =50
@@ -59,7 +73,7 @@
         X: =1301
         ZIndex: =5
 
-    "'User name_6' As label":
+    "'User name_12' As label":
         Align: =Align.Right
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
@@ -72,7 +86,7 @@
         Y: =10
         ZIndex: =6
 
-    Image3_5 As image:
+    Image3_11 As image:
         Height: =50
         Image: ='Stretch-365-IA-Logo-Light-Transparent (1)'
         Width: =146

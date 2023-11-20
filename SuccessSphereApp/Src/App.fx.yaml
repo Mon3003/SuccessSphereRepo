@@ -16,7 +16,7 @@ App As appinfo:
                 },
         	{
                 Title: "Peer Reviews",
-                NavLink:  HomeScreen,
+                NavLink:  'Request Review',
                 NavIco: Icon.People,
                 NavColor: ColorValue("#281E20"),
                 NavHover: ColorFade(RGBA(0, 47, 108, 1), -30%),
@@ -40,7 +40,7 @@ App As appinfo:
                 NavSecuirty:true},
         	{
                 Title: "Admin",
-                NavLink:  'Add / Remove Employee',
+                NavLink:  'Add / Remove Employee - Manager',
                 NavIco: Icon.Support,
                 NavColor: ColorValue("#281E20"),
                 NavHover: ColorFade(RGBA(0, 47, 108, 1), -30%),

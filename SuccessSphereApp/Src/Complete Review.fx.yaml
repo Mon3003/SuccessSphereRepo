@@ -1,7 +1,7 @@
-"'Add / Remove Employee' As screen":
+"'Complete Review' As screen":
     Fill: =RGBA(0, 0, 0, 0)
 
-    comp_LeftNavMyUploads_3 As comp_LeftNav:
+    comp_LeftNavMyUploads_10 As comp_LeftNav:
         Height: =668
         LeftNavCollection: |-
             =SortByColumns(Table(   {
@@ -11,44 +11,58 @@
                     NavVisible: 0
                 },
                 {
-                    Title: "Add / Remove Employee",
-                    NavLink: 'Add / Remove Employee',
-                    NavIco: Icon.AddUser,
-                    NavVisible: 5
+                    Title: "Request Review",
+                    NavLink: 'Request Review',
+                    NavIco: Icon.Leave,
+                    NavVisible: 1
                 },
                 {
-                    Title: "Delegate Manager",
-                    NavLink: 'Delegate Manager',
-                    NavIco: Icon.People
+                    Title: "Complete Review",
+                    NavLink: 'Complete Review',
+                    NavIco: Icon.DockCheckProperties
                     ,
-                    NavVisible: 6
+                    NavVisible: 2
+                },
+                {
+                    Title: "View My Reviews",
+                    NavLink: 'View My Reviews',
+                    NavIco: Icon.View
+                    ,
+                    NavVisible: 3
+                },
+                {
+                    Title: "View My Employee Reviews",
+                    NavLink:'View My Employee Reviews - Manager',
+                    NavIco: Icon.LogJournal
+                    ,
+                    NavVisible: 4
                 }),"NavVisible",SortOrder.Ascending)
         Width: =98
         Y: =100
 
-    Label3_8 As label:
+    Label3_20 As label:
         Align: =Align.Center
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
         Height: =50
         Size: =18
-        Text: ="Admin"
+        Text: ="Peer Reviews"
         Width: =1366
         ZIndex: =2
 
-    Label3_9 As label:
+    Label3_21 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(57, 55, 104, 1)
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
         Height: =50
-        Text: ="Add / Remove Employee"
+        Text: ="Complete Review"
         Width: =1366
         Y: =50
         ZIndex: =3
 
-    "'User Image_5' As image":
+    "'User Image_11' As image":
         Height: =50
         Image: =User().Image
         RadiusBottomLeft: =50
@@ -59,7 +73,7 @@
         X: =1301
         ZIndex: =5
 
-    "'User name_5' As label":
+    "'User name_11' As label":
         Align: =Align.Right
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
@@ -72,7 +86,7 @@
         Y: =10
         ZIndex: =6
 
-    Image3_4 As image:
+    Image3_10 As image:
         Height: =50
         Image: ='Stretch-365-IA-Logo-Light-Transparent (1)'
         Width: =146
