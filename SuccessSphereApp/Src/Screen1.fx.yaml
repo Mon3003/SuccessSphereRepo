@@ -1,0 +1,40 @@
+Screen1 As screen:
+    BackgroundImage: =Presentation1
+
+    Welcome As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =gblFont
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Size: =30
+        Text: |
+            ="Welcome to Success Sphere"
+        Width: =1366
+        Y: =10
+        ZIndex: =2
+
+    Image2 As image:
+        Height: =75
+        Image: =User().Image
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Width: =76
+        X: =1285
+        Y: =5
+        ZIndex: =3
+
+    "'User name' As label":
+        Align: =Align.Right
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =gblFont
+        FontWeight: =FontWeight.Semibold
+        Size: =11
+        Text: |
+            =(User().FullName)
+        X: =1216
+        Y: =85
+        ZIndex: =4
+

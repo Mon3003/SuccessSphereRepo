@@ -1,0 +1,67 @@
+{
+  "ComponentIndexes": {},
+  "ControlUniqueGuids": {},
+  "ControlUniqueIds": {
+    "App": 1,
+    "Host": 3,
+    "Image2": 7,
+    "Screen1": 4,
+    "User name": 8,
+    "Welcome": 6
+  },
+  "FunctionParamsInvariantScripts": {},
+  "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "11/20/2023 00:22:47",
+  "IsLegacyComponentAllowGlobalScopeCase": false,
+  "LocalConnectionIDReferences": {},
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {
+    "Presentation1": "c9b0424c-042a-404b-8e97-95592ba9a402.png",
+    "SS (2)": "707e2133-8775-4363-9bc7-e8df0778ca47.png"
+  },
+  "LocalResourceRootPaths": {
+    "Presentation1": "https://docserverpwaprodeau.blob.core.windows.net/5cfc1417-cdf3-433e-a93d-1c647d67c514-1/resource/8e42e7ae-1e53-4eab-81f4-103aa6dccf3c.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-11-20T00%3A07%3A56Z&ske=2023-11-21T00%3A22%3A56Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-11-21T00%3A22%3A56Z&sr=b&sp=r&sig=gTI1pin%2FTO55aDazhNWj7P%2BB5OuXPnJYIsqS2GZ9NfY%3D",
+    "SS (2)": "https://docserverpwaprodeau.blob.core.windows.net/5cfc1417-cdf3-433e-a93d-1c647d67c514-1/resource/903d2466-d974-408c-944f-6a0bf790dc7e.png?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2023-11-19T23%3A27%3A22Z&ske=2023-11-20T23%3A42%3A22Z&sks=b&skv=2021-12-02&sv=2021-12-02&spr=https&se=2023-11-20T23%3A42%3A22Z&sr=b&sp=r&sig=IT4tYY34zEcTyYs5OEX5cJ7Kde7iE3RIkxuyabFGoSo%3D"
+  },
+  "OldLogoFileName": "z52i5ol4.jpg",
+  "OrderComponentMetadata": {},
+  "OrderComponentTemplate": {},
+  "OrderDataSource": {},
+  "OrderGroupControls": {},
+  "OrderPcfTemplate": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "image": 0,
+    "label": 1
+  },
+  "OverridablePropertiesEntry": {
+    "App": {},
+    "Host": {},
+    "Image2": {},
+    "Screen1": {},
+    "User name": {},
+    "Welcome": {}
+  },
+  "PCFDynamicSchemaForIRRetrievalEntry": {},
+  "PCFTemplateEntry": {},
+  "PublishOrderIndices": {
+    "App": 0,
+    "Host": 0,
+    "Image2": 0,
+    "Screen1": 0,
+    "User name": 2,
+    "Welcome": 1
+  },
+  "ResourcesJsonIndices": {
+    "Image-Presentation1": 2,
+    "Image-SampleImage": 1,
+    "Image-SS (2)": 0
+  },
+  "RuleScreenIdWithoutScreen": {},
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.0177995,
+    "ControlCount": {}
+  },
+  "WasLocalDatabaseReferencesEmpty": true
+}
