@@ -10,14 +10,13 @@
     "HomeScreen": 4,
     "Host": 3,
     "Icon15_1": 13,
-    "Icon2": 16,
     "User Image": 7,
     "User name": 8,
     "Welcome": 6
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "11/20/2023 01:14:52",
+  "HeaderLastSavedDateTimeUTC": "11/20/2023 01:15:00",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -40,10 +39,10 @@
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "button": 4,
-    "circle": 5,
-    "gallery": 3,
-    "icon": 2,
+    "button": 3,
+    "circle": 4,
+    "gallery": 2,
+    "icon": 5,
     "image": 1,
     "label": 0
   },
@@ -56,7 +55,6 @@
     "HomeScreen": {},
     "Host": {},
     "Icon15_1": {},
-    "Icon2": {},
     "User Image": {},
     "User name": {},
     "Welcome": {}
@@ -72,7 +70,6 @@
     "HomeScreen": 0,
     "Host": 0,
     "Icon15_1": 8,
-    "Icon2": 2,
     "User Image": 1,
     "User name": 3,
     "Welcome": 0

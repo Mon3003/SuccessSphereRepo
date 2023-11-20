@@ -118,9 +118,3 @@ HomeScreen As screen:
             Y: =8
             ZIndex: =6
 
-    "Icon2 As icon.'3DPrinting'":
-        Icon: =Icon.Printing3D
-        X: =40
-        Y: =40
-        ZIndex: =6
-
