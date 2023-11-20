@@ -1,5 +1,6 @@
 HomeScreen As screen:
     BackgroundImage: =Presentation1
+    ImagePosition: =ImagePosition.Fill
 
     Welcome As label:
         Align: =Align.Center
