@@ -45,7 +45,9 @@ App As appinfo:
                 NavColor: ColorValue("#281E20"),
                 NavHover: ColorFade(RGBA(0, 47, 108, 1), -30%),
                 NavVisible: 5,
-                NavSecuirty: If(User().FullName = "Mounika Thati",true,false)}
+                NavSecuirty: true
+                //If(User().FullName = "Mounika Thati",true,false)
+                }
         );
     StartScreen: =
     Theme: =PowerAppsTheme

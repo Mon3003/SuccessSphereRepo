@@ -48,12 +48,6 @@
         Y: =50
         ZIndex: =3
 
-    Image3_4 As image:
-        Height: =50
-        Image: ='Stretch-365-IA-Logo-Light-Transparent (1)'
-        Width: =165
-        ZIndex: =4
-
     "'User Image_5' As image":
         Height: =50
         Image: =User().Image
@@ -77,4 +71,10 @@
         X: =1175
         Y: =10
         ZIndex: =6
+
+    Image3_4 As image:
+        Height: =50
+        Image: ='Stretch-365-IA-Logo-Light-Transparent (1)'
+        Width: =146
+        ZIndex: =7
 

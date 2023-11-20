@@ -1,65 +1,54 @@
-"'One2One Complete Manager Feedback' As screen":
+"'View My Goals' As screen":
     Fill: =RGBA(0, 0, 0, 0)
 
-    comp_LeftNavMyUploads_2 As comp_LeftNav:
+    comp_LeftNavMyUploads_7 As comp_LeftNav:
         Height: =664
         LeftNavCollection: |-
-            =SortByColumns(Table({
+            =SortByColumns(Table(   {
                     Title: "Home",
                     NavLink: HomeScreen,
                     NavIco: Icon.Home,
                     NavVisible: 0
                 },
                 {
-                    Title: "Complete My Survey",
-                    NavLink: 'One2One Complete Survey',
-                    NavIco: Icon.AddDocument,
+                    Title: "Add Employee Goals",
+                    NavLink: 'Add Employee Goals',
+                    NavIco: Icon.ListWatchlistRemind,
                     NavVisible: 1
                 },
                 {
-                    Title: "View My Surveys",
-                    NavLink: 'One2One View My Survey',
-                    NavIco: Icon.DocumentWithContent,
+                    Title: "View My Goals",
+                    NavLink: 'View My Goals',
+                    NavIco: Icon.ListScrollWatchlist
+                    ,
                     NavVisible: 2
-                },
-                {
-                    Title: "Schedule One2One",
-                    NavLink: 'One2One Schedule One2One',
-                    NavIco: Icon.AddToCalendar,
-                    NavVisible: 3
-                },
-                {
-                    Title: "Complete Manager Feedback",
-                    NavLink: 'One2One Complete Manager Feedback',
-                    NavIco: Icon.DockCheckProperties,
-                    NavVisible: 4
                 }),"NavVisible",SortOrder.Ascending)
         Width: =98
         Y: =103
 
-    Label3_6 As label:
+    Label3_14 As label:
         Align: =Align.Center
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
         Height: =50
         Size: =18
-        Text: ="One 2 One"
+        Text: ="Goals"
         Width: =1366
         ZIndex: =2
 
-    Label3_7 As label:
+    Label3_15 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(57, 55, 104, 1)
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
         Height: =50
-        Text: ="Complete Manager Feedback"
+        Text: ="View My Goals"
         Width: =1366
         Y: =50
         ZIndex: =3
 
-    "'User Image_4' As image":
+    "'User Image_8' As image":
         Height: =50
         Image: =User().Image
         RadiusBottomLeft: =50
@@ -70,7 +59,7 @@
         X: =1301
         ZIndex: =5
 
-    "'User name_4' As label":
+    "'User name_8' As label":
         Align: =Align.Right
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
@@ -83,7 +72,7 @@
         Y: =10
         ZIndex: =6
 
-    Image3_3 As image:
+    Image3_7 As image:
         Height: =50
         Image: ='Stretch-365-IA-Logo-Light-Transparent (1)'
         Width: =146
