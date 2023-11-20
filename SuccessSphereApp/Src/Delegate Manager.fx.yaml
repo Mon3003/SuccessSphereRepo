@@ -4,16 +4,21 @@
     comp_LeftNavMyUploads_5 As comp_LeftNav:
         Height: =664
         LeftNavCollection: |-
-            =SortByColumns(Table(    
+            =SortByColumns(Table(   {
+                    Title: "Home",
+                    NavLink: HomeScreen,
+                    NavIco: Icon.Home,
+                    NavVisible: 0
+                },
                 {
                     Title: "Add / Remove Employee",
-                    NavLink: HomeScreen,
+                    NavLink: 'Add / Remove Employee',
                     NavIco: Icon.AddUser,
                     NavVisible: 5
                 },
                 {
                     Title: "Delegate Manager",
-                    NavLink: HomeScreen,
+                    NavLink: 'Delegate Manager',
                     NavIco: Icon.People
                     ,
                     NavVisible: 6

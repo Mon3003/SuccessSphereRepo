@@ -5,26 +5,32 @@
         Height: =664
         LeftNavCollection: |-
             =SortByColumns(Table({
-                    Title: "Complete My Survey",
+                    Title: "Home",
                     NavLink: HomeScreen,
+                    NavIco: Icon.Home,
+                    NavVisible: 0
+                },
+                {
+                    Title: "Complete My Survey",
+                    NavLink: 'One2One Complete Survey',
                     NavIco: Icon.AddDocument,
                     NavVisible: 1
                 },
                 {
                     Title: "View My Surveys",
-                    NavLink: HomeScreen,
+                    NavLink: 'One2One View My Survey',
                     NavIco: Icon.DocumentWithContent,
                     NavVisible: 2
                 },
                 {
                     Title: "Schedule One2One",
-                    NavLink: HomeScreen,
+                    NavLink: 'One2One Schedule One2One',
                     NavIco: Icon.AddToCalendar,
                     NavVisible: 3
                 },
                 {
                     Title: "Complete Manager Feedback",
-                    NavLink: HomeScreen,
+                    NavLink: 'One2One Complete Manager Feedback',
                     NavIco: Icon.DockCheckProperties,
                     NavVisible: 4
                 }),"NavVisible",SortOrder.Ascending)
@@ -48,7 +54,7 @@
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
         Height: =50
-        Text: ="Complete Survey"
+        Text: ="Complete My Survey"
         Width: =1366
         Y: =50
         ZIndex: =3

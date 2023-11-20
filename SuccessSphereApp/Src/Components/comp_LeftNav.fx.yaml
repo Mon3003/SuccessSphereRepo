@@ -143,7 +143,7 @@ comp_LeftNav As CanvasComponent:
             Fill: =RGBA(237, 237, 237, 0.26)
             Height: =82
             HoverFill: =ColorFade(Self.Fill,-20%)
-            OnSelect: =
+            OnSelect: =Navigate(ThisItem.NavLink)
             PressedFill: =ColorFade(Self.Fill,-20%)
             TabIndex: =0
             Width: =95

@@ -64,12 +64,12 @@ HomeScreen As screen:
             FontWeight: =FontWeight.Bold
             Height: =58
             HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(99, 70, 66, 1)
-            OnSelect: =
+            HoverFill: =RGBA(219, 219, 219, 1)
+            OnSelect: =Navigate(ThisItem.NavLink,ScreenTransition.CoverRight)
             PaddingRight: =15
             PressedBorderColor: =
             PressedColor: =RGBA(255, 255, 255, 1)
-            PressedFill: =RGBA(99, 70, 66, 1)
+            PressedFill: =RGBA(202, 202, 202, 1)
             Size: =gblAppFontSize+2
             Text: =ThisItem.Title
             Tooltip: =
