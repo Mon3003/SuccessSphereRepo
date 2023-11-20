@@ -1,0 +1,75 @@
+"'Delegate Manager' As screen":
+    Fill: =RGBA(0, 0, 0, 0)
+
+    comp_LeftNavMyUploads_5 As comp_LeftNav:
+        Height: =664
+        LeftNavCollection: |-
+            =SortByColumns(Table(    
+                {
+                    Title: "Add / Remove Employee",
+                    NavLink: HomeScreen,
+                    NavIco: Icon.AddUser,
+                    NavVisible: 5
+                },
+                {
+                    Title: "Delegate Manager",
+                    NavLink: HomeScreen,
+                    NavIco: Icon.People
+                    ,
+                    NavVisible: 6
+                }),"NavVisible",SortOrder.Ascending)
+        Width: =98
+        Y: =103
+
+    Label3_10 As label:
+        Align: =Align.Center
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =50
+        Size: =18
+        Text: ="Admin"
+        Width: =1366
+        ZIndex: =2
+
+    Label3_11 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(57, 55, 104, 1)
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =50
+        Text: ="Delegate Manager"
+        Width: =1366
+        Y: =50
+        ZIndex: =3
+
+    Image3_5 As image:
+        Height: =50
+        Image: ='Stretch-365-IA-Logo-Light-Transparent (1)'
+        Width: =165
+        ZIndex: =4
+
+    "'User Image_6' As image":
+        Height: =50
+        Image: =User().Image
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Width: =50
+        X: =1301
+        ZIndex: =5
+
+    "'User name_6' As label":
+        Align: =Align.Right
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =30
+        Size: =11
+        Text: |
+            =User().FullName
+        Width: =126
+        X: =1175
+        Y: =10
+        ZIndex: =6
+

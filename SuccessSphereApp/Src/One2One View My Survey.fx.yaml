@@ -1,0 +1,85 @@
+"'One2One View My Survey' As screen":
+    Fill: =RGBA(0, 0, 0, 0)
+
+    comp_LeftNavMyUploads_4 As comp_LeftNav:
+        Height: =664
+        LeftNavCollection: |-
+            =SortByColumns(Table({
+                    Title: "Complete My Survey",
+                    NavLink: HomeScreen,
+                    NavIco: Icon.AddDocument,
+                    NavVisible: 1
+                },
+                {
+                    Title: "View My Surveys",
+                    NavLink: HomeScreen,
+                    NavIco: Icon.DocumentWithContent,
+                    NavVisible: 2
+                },
+                {
+                    Title: "Schedule One2One",
+                    NavLink: HomeScreen,
+                    NavIco: Icon.AddToCalendar,
+                    NavVisible: 3
+                },
+                {
+                    Title: "Complete Manager Feedback",
+                    NavLink: HomeScreen,
+                    NavIco: Icon.DockCheckProperties,
+                    NavVisible: 4
+                }),"NavVisible",SortOrder.Ascending)
+        Width: =98
+        Y: =103
+
+    Label3_2 As label:
+        Align: =Align.Center
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =50
+        Size: =18
+        Text: ="One 2 One"
+        Width: =1366
+        ZIndex: =2
+
+    Label3_3 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(57, 55, 104, 1)
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =50
+        Text: ="View My Survey"
+        Width: =1366
+        Y: =50
+        ZIndex: =3
+
+    Image3_1 As image:
+        Height: =50
+        Image: ='Stretch-365-IA-Logo-Light-Transparent (1)'
+        Width: =165
+        ZIndex: =4
+
+    "'User Image_2' As image":
+        Height: =50
+        Image: =User().Image
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Width: =50
+        X: =1301
+        ZIndex: =5
+
+    "'User name_2' As label":
+        Align: =Align.Right
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =30
+        Size: =11
+        Text: |
+            =User().FullName
+        Width: =126
+        X: =1175
+        Y: =10
+        ZIndex: =6
+

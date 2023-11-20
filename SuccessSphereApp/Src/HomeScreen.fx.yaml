@@ -34,9 +34,9 @@ HomeScreen As screen:
         FontWeight: =FontWeight.Semibold
         Size: =11
         Text: |
-            =(User().FullName)
-        X: =1216
-        Y: =85
+            =User().FullName
+        X: =1211
+        Y: =81
         ZIndex: =4
 
     "Gallery1_15 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
@@ -73,6 +73,7 @@ HomeScreen As screen:
             Size: =gblAppFontSize+2
             Text: =ThisItem.Title
             Tooltip: =
+            Visible: =ThisItem.NavSecuirty
             Width: =319
             ZIndex: =4
 
@@ -90,6 +91,7 @@ HomeScreen As screen:
             OnSelect: =Navigate(ThisItem.NavLink,ScreenTransition.CoverRight)
             PressedFill: =RGBA(255, 255, 255, 1)
             TabIndex: =0
+            Visible: =ThisItem.NavSecuirty
             Width: =61
             ZIndex: =5
 
@@ -113,6 +115,7 @@ HomeScreen As screen:
             PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
             TabIndex: =0
+            Visible: =ThisItem.NavSecuirty
             Width: =31
             X: =15
             Y: =8

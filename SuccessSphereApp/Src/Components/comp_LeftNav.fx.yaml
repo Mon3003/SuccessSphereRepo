@@ -1,0 +1,151 @@
+comp_LeftNav As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =688
+    LeftNavCollection: |-
+        =SortByColumns(Table({
+                Title: "Complete My Survey",
+                NavLink: HomeScreen,
+                NavIco: Icon.AddDocument,
+                NavVisible: 1
+            },
+            {
+                Title: "View My Surveys",
+                NavLink: HomeScreen,
+                NavIco: Icon.DocumentWithContent,
+                NavVisible: 2
+            },
+            {
+                Title: "Schedule One2One",
+                NavLink: HomeScreen,
+                NavIco: Icon.AddToCalendar,
+                NavVisible: 3
+            },
+            {
+                Title: "Complete Manager Feedback",
+                NavLink: HomeScreen,
+                NavIco: Icon.DockCheckProperties,
+                NavVisible: 4
+            },    
+            {
+                Title: "Add / Remove Employee",
+                NavLink: HomeScreen,
+                NavIco: Icon.AddUser,
+                NavVisible: 5
+            },
+            {
+                Title: "Delegate Manager",
+                NavLink: HomeScreen,
+                NavIco: Icon.People
+                ,
+                NavVisible: 6
+            }),"NavVisible",SortOrder.Ascending)
+    OnReset: =
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    gal_CMTLeftNavReq_1 As gallery.galleryVertical:
+        AccessibleLabel: =" "
+        BorderColor: =RGBA(241, 244, 249, 1)
+        BorderThickness: =1
+        DisabledBorderColor: =gal_CMTLeftNavReq_1.BorderColor
+        DisabledFill: =gal_CMTLeftNavReq_1.Fill
+        Fill: =RGBA(241, 244, 249, 1)
+        FocusedBorderThickness: =0.1
+        Height: =689
+        HoverBorderColor: =gal_CMTLeftNavReq_1.BorderColor
+        HoverFill: =gal_CMTLeftNavReq_1.Fill
+        Items: =comp_LeftNav.LeftNavCollection
+        Layout: =Layout.Vertical
+        OnSelect: =If(ThisItem.Title="Back",Back(),Navigate(ThisItem.NavLink,ScreenTransition.CoverRight))
+        PressedBorderColor: =gal_CMTLeftNavReq_1.BorderColor
+        PressedFill: =gal_CMTLeftNavReq_1.Fill
+        ShowScrollbar: =false
+        TabIndex: =0
+        TemplatePadding: =0
+        TemplateSize: =87
+        Transition: =BorderStyle.None
+        Visible: =CountRows(gal_CMTLeftNavReq_1.AllItems) > 0
+        Width: =99
+        ZIndex: =1
+
+        ico_CMTRequestLeftNav_1 As icon.Add:
+            AccessibleLabel: =" "
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(57, 55, 104, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =24
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =ThisItem.NavIco
+            OnSelect: =
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            TabIndex: =0
+            Width: =40
+            X: =27
+            Y: =6
+            ZIndex: =1
+
+        shp_CMTRequestLeftNavseperator_1 As rectangle:
+            AccessibleLabel: =" "
+            BorderColor: =RGBA(218, 23, 16, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisplayMode: =DisplayMode.Disabled
+            Fill: =RGBA(230, 230, 230, 1)
+            FocusedBorderThickness: =4
+            Height: =1
+            HoverFill: =RGBA(0, 120, 212, 1)
+            PressedFill: =RGBA(0, 120, 212, 1)
+            TabIndex: =0
+            Width: =95
+            Y: =82
+            ZIndex: =2
+
+        lbl_CMTRequestLeftNavText_1 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(47, 41, 43, 0.8)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(47, 41, 43, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.Lato
+            Height: =52
+            HoverBorderColor: =lbl_CMTRequestLeftNavText_1.BorderColor
+            HoverColor: =RGBA(47, 41, 43, 1)
+            HoverFill: =ColorFade(Self.Fill,-20%)
+            LineHeight: =1
+            OnSelect: =
+            PaddingBottom: =1
+            PressedBorderColor: =lbl_CMTRequestLeftNavText_1.BorderColor
+            PressedColor: =lbl_CMTRequestLeftNavText_1.Color
+            PressedFill: =lbl_CMTRequestLeftNavText_1.Fill
+            Size: =10
+            TabIndex: =0
+            Text: =ThisItem.Title
+            Width: =95
+            Y: =30
+            ZIndex: =3
+
+        shp_CMTRequestLeftNav_1 As rectangle:
+            AccessibleLabel: =" "
+            BorderColor: =RGBA(0, 60, 106, 1)
+            DisabledFill: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(237, 237, 237, 0.26)
+            Height: =82
+            HoverFill: =ColorFade(Self.Fill,-20%)
+            OnSelect: =
+            PressedFill: =ColorFade(Self.Fill,-20%)
+            TabIndex: =0
+            Width: =95
+            ZIndex: =4
+

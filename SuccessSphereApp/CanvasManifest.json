@@ -130,6 +130,12 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "HomeScreen"
+    "HomeScreen",
+    "One2One Complete Survey",
+    "One2One View My Survey",
+    "One2One Schedule One2One",
+    "One2One Complete Manager Feedback",
+    "Add / Remove Employee",
+    "Delegate Manager"
   ]
 }
