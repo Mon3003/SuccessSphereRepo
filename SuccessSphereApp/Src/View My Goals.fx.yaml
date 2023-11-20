@@ -2,7 +2,7 @@
     Fill: =RGBA(0, 0, 0, 0)
 
     comp_LeftNavMyUploads_7 As comp_LeftNav:
-        Height: =664
+        Height: =668
         LeftNavCollection: |-
             =SortByColumns(Table(   {
                     Title: "Home",
@@ -24,7 +24,7 @@
                     NavVisible: 2
                 }),"NavVisible",SortOrder.Ascending)
         Width: =98
-        Y: =103
+        Y: =100
 
     Label3_14 As label:
         Align: =Align.Center

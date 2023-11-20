@@ -32,7 +32,7 @@ App As appinfo:
                 NavSecuirty:true},
         	{
                 Title: "Goals",
-                NavLink:  HomeScreen,
+                NavLink:  'View My Goals',
                 NavIco: Icon.ColorPicker,
                 NavColor: ColorValue("#281E20"),
                 NavHover: ColorFade(RGBA(0, 47, 108, 1), -30%),
