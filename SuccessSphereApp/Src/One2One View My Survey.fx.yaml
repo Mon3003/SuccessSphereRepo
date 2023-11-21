@@ -299,6 +299,7 @@
             Font: =gblAppFont
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =41
+            LineHeight: =1.5
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -369,6 +370,7 @@
         Subtitle2_14 As label:
             Font: =gblAppFont
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            LineHeight: =1.5
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -386,6 +388,7 @@
             Font: =gblAppFont
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =50
+            LineHeight: =1.5
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
