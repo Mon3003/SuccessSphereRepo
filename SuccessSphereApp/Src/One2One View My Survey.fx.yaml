@@ -201,7 +201,7 @@
             Text: =If(ThisItem.Wellbeing.Value = "0" , "Awful",If(ThisItem.Wellbeing.Value = "1" , "Bad",If(ThisItem.Wellbeing.Value = "2" , "Neutral",If(ThisItem.Wellbeing.Value = "3" , "Good",If(ThisItem.Wellbeing.Value = "4" , "Fantastic")))))
             VerticalAlign: =VerticalAlign.Top
             Width: =174
-            X: =400
+            X: =383
             Y: =59
             ZIndex: =8
 
@@ -220,7 +220,7 @@
             Text: =If(ThisItem.Growth.Value = "0" , "Awful",If(ThisItem.Growth.Value = "1" , "Bad",If(ThisItem.Growth.Value = "2" , "Neutral",If(ThisItem.Growth.Value = "3" , "Good",If(ThisItem.Growth.Value = "4" , "Fantastic")))))
             VerticalAlign: =VerticalAlign.Top
             Width: =174
-            X: =683
+            X: =670
             Y: =59
             ZIndex: =9
 
@@ -255,7 +255,7 @@
                 ="Wellbeing:"
             VerticalAlign: =VerticalAlign.Top
             Width: =80
-            X: =320
+            X: =303
             Y: =59
             ZIndex: =11
 
@@ -273,7 +273,7 @@
                 ="Growth:"
             VerticalAlign: =VerticalAlign.Top
             Width: =75
-            X: =608
+            X: =595
             Y: =59
             ZIndex: =12
 
@@ -290,7 +290,7 @@
             Size: =10
             Text: =ThisItem.LowlightQuestion
             VerticalAlign: =VerticalAlign.Top
-            Width: =558
+            Width: =545
             X: =299
             Y: =120
             ZIndex: =13
@@ -326,7 +326,7 @@
             Size: =10
             Text: =ThisItem.'Highlight Question'
             VerticalAlign: =VerticalAlign.Top
-            Width: =558
+            Width: =545
             X: =299
             Y: =240
             ZIndex: =16
@@ -344,7 +344,7 @@
             Size: =10
             Text: =ThisItem.'Roadblocks Question'
             VerticalAlign: =VerticalAlign.Top
-            Width: =558
+            Width: =545
             X: =299
             Y: =360
             ZIndex: =17
@@ -362,7 +362,7 @@
             Size: =10
             Text: =ThisItem.ManagerFeedback
             VerticalAlign: =VerticalAlign.Top
-            Width: =558
+            Width: =545
             X: =299
             Y: =480
             ZIndex: =18
