@@ -7,6 +7,10 @@ App As appinfo:
             gblCurrentUserEmail,
             User().Email
         );
+        Set(
+            gblCurrentUserFullName,
+            User().FullName
+        );
         Clear(ColUserSecurity);
         ForAll(
             Filter(
