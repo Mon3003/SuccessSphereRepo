@@ -739,7 +739,10 @@
         Font: =gblAppFont
         Height: =25
         HoverFill: =RGBA(99, 139, 44, 1)
-        OnSelect: =SubmitForm(Form2);Navigate('One2One View My Survey')
+        OnSelect: |-
+            =
+            SubmitForm(Form2);
+            Navigate('One2One View My Survey')
         Size: =11
         Text: ="Save"
         Width: =70
