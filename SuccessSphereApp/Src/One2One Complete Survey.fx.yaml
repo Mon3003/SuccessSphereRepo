@@ -103,6 +103,18 @@
         Fill: =RGBA(204, 231, 246, 0.28)
         Height: =668
         NumberOfColumns: =1
+        OnSuccess: |-
+            =Patch('One2One Survey',
+                   LookUp('One2One Survey', ID = Form2.LastSubmit.ID),
+                   {   
+                       ManagerID:
+                       {
+                        '@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                        Id: LookUp(UserSecurity,User().Email=EmployeeEmail,Value(ManagerID.Value)),
+                        Value:""
+                        }
+                   }
+            )
         Width: =1268
         X: =98
         Y: =100
@@ -742,18 +754,6 @@
         OnSelect: |-
             =
             SubmitForm(Form2); 
-            
-            Patch('One2One Survey',
-                   Defaults('One2One Survey'),
-                   {   
-                       ManagerID:
-                       {
-                        '@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
-                        Id: LookUp(UserSecurity,User().Email=EmployeeEmail,Value(ManagerID.Value)),
-                        Value:""
-                        }
-                   }
-            );
             Navigate('One2One View My Survey')
         Size: =11
         Text: ="Save"
