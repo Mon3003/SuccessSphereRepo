@@ -14,7 +14,7 @@ comp_LeftNav As CanvasComponent:
         BorderThickness: =1
         DisabledBorderColor: =gal_CMTLeftNavReq_1.BorderColor
         DisabledFill: =gal_CMTLeftNavReq_1.Fill
-        Fill: =RGBA(241, 244, 249, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         FocusedBorderThickness: =0.1
         Height: =690
         HoverBorderColor: =gal_CMTLeftNavReq_1.BorderColor
@@ -36,7 +36,7 @@ comp_LeftNav As CanvasComponent:
         ico_CMTRequestLeftNav_1 As icon.Add:
             AccessibleLabel: =" "
             BorderColor: =RGBA(166, 166, 166, 1)
-            Color: =RGBA(57, 55, 104, 1)
+            Color: =RGBA(48, 47, 99, 1)
             DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(220, 220, 220, 1)
             DisabledFill: =RGBA(0, 0, 0, 0)
