@@ -59,7 +59,7 @@
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
         Height: =50
-        Text: ="Complete Pending Manager Feedback"
+        Text: ="Complete Manager Feedback"
         Width: =1366
         Y: =50
         ZIndex: =3
@@ -96,51 +96,20 @@
 
     "Gallery3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
-        Height: =585
+        Height: =627
         Items: |
             =Filter('One2One Survey', If(ManagerName.Value = gblCurrentUserFullName && IsBlank(ManagerFeedback), true, false))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =104
-        Width: =403
+        TemplateSize: =50
+        Width: =519
         X: =98
-        Y: =182
+        Y: =141
         ZIndex: =8
-
-        Title3 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.Title
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 173
-            X: =103
-            Y: =(Parent.TemplateHeight - (Self.Size * 1.8 + Subtitle3.Size * 1.8)) / 2
-            ZIndex: =2
-
-        Subtitle3 As label:
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Text: =ThisItem.ID
-            VerticalAlign: =VerticalAlign.Top
-            Width: =Title3.Width
-            X: =Title3.X
-            Y: =Title3.Y + Title3.Height
-            ZIndex: =3
 
         NextArrow3 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
-            Color: =RGBA(166, 166, 166, 1)
             Height: =50
             Icon: =Icon.ChevronRight
             OnSelect: =Select(Parent)
@@ -150,30 +119,698 @@
             PaddingTop: =16
             Tooltip: ="View item details"
             Width: =50
-            X: =Parent.TemplateWidth - Self.Width - 12
+            X: =404
             Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
             ZIndex: =4
 
         Separator6 As rectangle:
+            Fill: =RGBA(204, 231, 246, 0.28)
             Height: =8
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - Self.Height
             ZIndex: =5
 
-    Form2_3 As form:
+        Subtitle2_23 As label:
+            Font: =gblAppFont
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =10
+            Text: =ThisItem.'Created By'.DisplayName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =lbl2.Width
+            X: |
+                =lbl2.X+2
+            Y: =10
+            ZIndex: =6
+
+        Subtitle2_24 As label:
+            Font: =gblAppFont
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =10
+            Text: =ThisItem.SurveyDate
+            VerticalAlign: =VerticalAlign.Top
+            Width: =lbl1.Width
+            X: |
+                =lbl1.X+2
+            Y: =10
+            ZIndex: =7
+
+    Headers As groupContainer.manualLayoutContainer:
+        Height: =29
+        Width: =519
+        X: =98
+        Y: =112
+        ZIndex: =10
+
+        lbl2 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(204, 231, 246, 0.28)
+            FocusedBorderThickness: =4
+            Font: =gblAppFont
+            FontWeight: =FontWeight.Semibold
+            Height: =32
+            HoverBorderColor: =lbl2.BorderColor
+            HoverColor: =lbl2.Color
+            HoverFill: =lbl2.Fill
+            PressedBorderColor: =lbl2.BorderColor
+            PressedColor: =lbl2.Color
+            PressedFill: =lbl2.Fill
+            Size: =gblAppFontSize
+            Text: ="Employee Name"
+            Width: =170
+            ZIndex: =1
+
+        lbl1 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(204, 231, 246, 0.28)
+            FocusedBorderThickness: =4
+            Font: =gblAppFont
+            FontWeight: =FontWeight.Semibold
+            Height: =32
+            HoverBorderColor: =lbl1.BorderColor
+            HoverColor: =lbl1.Color
+            HoverFill: =lbl1.Fill
+            PressedBorderColor: =lbl1.BorderColor
+            PressedColor: =lbl1.Color
+            PressedFill: =lbl1.Fill
+            Size: =gblAppFontSize
+            Text: ="Survey Filled Date"
+            X: =lbl2.X+lbl2.Width + 2
+            ZIndex: =2
+
+        lbl As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(204, 231, 246, 0.28)
+            FocusedBorderThickness: =4
+            Font: =gblAppFont
+            FontWeight: =FontWeight.Semibold
+            Height: =29
+            HoverBorderColor: =lbl.BorderColor
+            HoverColor: =lbl.Color
+            HoverFill: =lbl.Fill
+            PressedBorderColor: =lbl.BorderColor
+            PressedColor: =lbl.Color
+            PressedFill: =lbl.Fill
+            Size: =gblAppFontSize
+            Text: ="Complete Manager Feedback"
+            Width: =190
+            X: =325
+            ZIndex: =3
+
+    Form4 As form:
         DataSource: ='One2One Survey'
-        DefaultMode: =FormMode.New
         Fill: =RGBA(204, 231, 246, 0.28)
         Height: =668
+        Item: =Gallery3.Selected
         NumberOfColumns: =1
-        Width: =746
+        Width: =748
         X: =617
         Y: =100
-        ZIndex: =9
+        ZIndex: =11
 
-        ManagerFeedback_DataCard4_2 As typedDataCard.textualEditCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
+        SurveyDate_DataCard6 As typedDataCard.dateEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="SurveyDate"
+            Default: =ThisItem.SurveyDate
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'One2One Survey'],DataSourceInfo.DisplayName,"SurveyDate")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =true
+            Update: =DataCardValue46.SelectedDate
+            Width: =748
+            X: =0
+            Y: =0
+            ZIndex: =12
+
+            DataCardKey49 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =gblAppFont
+                Height: =34
+                Size: =12
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 600
+                Wrap: =false
+                X: =13
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue46 As datepicker:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultDate: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                Font: =gblAppFont
+                Height: =35
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                Size: =10
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 600
+                X: =122
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage49 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue46.Y + DataCardValue46.Height
+                ZIndex: =3
+
+            StarVisible49 As label:
+                Align: =Align.Center
+                Height: =DataCardKey49.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey49.Y
+                ZIndex: =4
+
+        WorkOverall_DataCard4 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="WorkOverall"
+            Default: =ThisItem.WorkOverall
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'One2One Survey'],DataSourceInfo.DisplayName,"WorkOverall")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Update: =DataCardValue48.Selected
+            Width: =240
+            X: =0
+            Y: =1
+            ZIndex: =12
+
+            DataCardKey51 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =gblAppFont
+                Height: =30
+                Size: =12
+                Text: =Parent.DisplayName
+                Width: |+
+                    =Parent.Width - 135
+                    
+                    
+                    
+                Wrap: =false
+                X: =10
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue48 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Font: =gblAppFont
+                Height: =35
+                Items: =Choices([@'One2One Survey'].WorkOverall)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('One2One Survey'.WorkOverall,DataCardValue48.SearchText)
+                SelectMultiple: =false
+                Size: =10
+                Tooltip: =Parent.DisplayName
+                Width: =115
+                X: =DataCardKey51.X + DataCardKey51.Width + 5
+                Y: =DataCardKey51.Y 
+                ZIndex: =2
+
+            ErrorMessage51 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue48.Y + DataCardValue48.Height
+                ZIndex: =3
+
+            StarVisible51 As label:
+                Align: =Align.Center
+                Height: =DataCardKey51.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey51.Y
+                ZIndex: =4
+
+        Wellbeing_DataCard4 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Wellbeing"
+            Default: =ThisItem.Wellbeing
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'One2One Survey'],DataSourceInfo.DisplayName,"Wellbeing")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Update: =DataCardValue49.Selected
+            Width: =240
+            X: =0
+            Y: =1
+            ZIndex: =12
+
+            DataCardKey52 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =gblAppFont
+                Height: =34
+                Size: =12
+                Text: =Parent.DisplayName
+                Width: =90
+                Wrap: =false
+                X: =10
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue49 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =35
+                Items: =Choices([@'One2One Survey'].Wellbeing)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('One2One Survey'.Wellbeing,DataCardValue49.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =125
+                X: =DataCardKey52.X + DataCardKey52.Width + 5
+                Y: =DataCardKey52.Y 
+                ZIndex: =2
+
+            ErrorMessage52 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue49.Y + DataCardValue49.Height
+                ZIndex: =3
+
+            StarVisible52 As label:
+                Align: =Align.Center
+                Height: =DataCardKey52.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey52.Y
+                ZIndex: =4
+
+        Growth_DataCard4 As typedDataCard.comboBoxEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Growth"
+            Default: =ThisItem.Growth
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'One2One Survey'],DataSourceInfo.DisplayName,"Growth")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Required: =false
+            Update: =DataCardValue50.Selected
+            Width: =250
+            X: =0
+            Y: =1
+            ZIndex: =12
+
+            DataCardKey53 As label:
+                AutoHeight: =true
+                Color: =RGBA(0, 0, 0, 1)
+                Font: =gblAppFont
+                Height: =29
+                Size: =12
+                Text: =Parent.DisplayName
+                Width: =90
+                Wrap: =false
+                X: =10
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue50 As combobox:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultSelectedItems: =Parent.Default
+                DisplayFields: =["Value"]
+                DisplayMode: =Parent.DisplayMode
+                Height: =35
+                Items: =Choices([@'One2One Survey'].Growth)
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SearchFields: =["Value"]
+                SearchItems: =Choices('One2One Survey'.Growth,DataCardValue50.SearchText)
+                SelectMultiple: =false
+                Tooltip: =Parent.DisplayName
+                Width: =125
+                X: =75
+                Y: =10
+                ZIndex: =2
+
+            ErrorMessage53 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue50.Y + DataCardValue50.Height
+                ZIndex: =3
+
+            StarVisible53 As label:
+                Align: =Align.Center
+                Height: =DataCardKey53.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey53.Y
+                ZIndex: =4
+
+        UseofTimeQuestion_DataCard4 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="UseofTime"
+            Default: =ThisItem.UseofTimeQuestion
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'One2One Survey'],DataSourceInfo.DisplayName,"UseofTime")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'One2One Survey'], DataSourceInfo.MaxLength, "UseofTime")
+            Required: =false
+            Update: =DataCardValue47.Text
+            Width: =748
+            X: =0
+            Y: =2
+            ZIndex: =12
+
+            DataCardKey50 As label:
+                AutoHeight: =true
+                Font: =gblAppFont
+                Height: =34
+                Text: =
+                Width: =200
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue47 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey50.Y + DataCardKey50.Height + 5
+                ZIndex: =2
+
+            ErrorMessage50 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue47.Y + DataCardValue47.Height
+                ZIndex: =3
+
+            StarVisible50 As label:
+                Align: =Align.Center
+                Height: =DataCardKey50.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey50.Y
+                ZIndex: =4
+
+        LowlightQuestion_DataCard4 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Lowlight"
+            Default: =ThisItem.LowlightQuestion
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'One2One Survey'],DataSourceInfo.DisplayName,"Lowlight")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'One2One Survey'], DataSourceInfo.MaxLength, "Lowlight")
+            Required: =false
+            Update: =DataCardValue51.Text
+            Width: =748
+            X: =0
+            Y: =3
+            ZIndex: =12
+
+            DataCardKey54 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue51 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey54.Y + DataCardKey54.Height + 5
+                ZIndex: =2
+
+            ErrorMessage54 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue51.Y + DataCardValue51.Height
+                ZIndex: =3
+
+            StarVisible54 As label:
+                Align: =Align.Center
+                Height: =DataCardKey54.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey54.Y
+                ZIndex: =4
+
+        "'Highlight Question_DataCard4' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="HighlightQuestion"
+            Default: =ThisItem.'Highlight Question'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'One2One Survey'],DataSourceInfo.DisplayName,"HighlightQuestion")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'One2One Survey'], DataSourceInfo.MaxLength, "HighlightQuestion")
+            Required: =false
+            Update: =DataCardValue52.Text
+            Width: =748
+            X: =0
+            Y: =4
+            ZIndex: =12
+
+            DataCardKey55 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue52 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey55.Y + DataCardKey55.Height + 5
+                ZIndex: =2
+
+            ErrorMessage55 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue52.Y + DataCardValue52.Height
+                ZIndex: =3
+
+            StarVisible55 As label:
+                Align: =Align.Center
+                Height: =DataCardKey55.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey55.Y
+                ZIndex: =4
+
+        "'Roadblocks Question_DataCard4' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="RoadblocksQuestion"
+            Default: =ThisItem.'Roadblocks Question'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'One2One Survey'],DataSourceInfo.DisplayName,"RoadblocksQuestion")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'One2One Survey'], DataSourceInfo.MaxLength, "RoadblocksQuestion")
+            Required: =false
+            Update: =DataCardValue53.Text
+            Width: =748
+            X: =0
+            Y: =5
+            ZIndex: =12
+
+            DataCardKey56 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue53 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey56.Y + DataCardKey56.Height + 5
+                ZIndex: =2
+
+            ErrorMessage56 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue53.Y + DataCardValue53.Height
+                ZIndex: =3
+
+            StarVisible56 As label:
+                Align: =Align.Center
+                Height: =DataCardKey56.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey56.Y
+                ZIndex: =4
+
+        ManagerFeedback_DataCard5 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="ManagerFeedback"
             Default: =ThisItem.ManagerFeedback
@@ -183,48 +820,40 @@
             Height: =50
             MaxLength: =DataSourceInfo([@'One2One Survey'], DataSourceInfo.MaxLength, "ManagerFeedback")
             Required: =false
-            Update: =DataCardValue44_2.Text
-            Width: =746
+            Update: =DataCardValue54.Text
+            Width: =748
             X: =0
-            Y: =7
-            ZIndex: =1
+            Y: =6
+            ZIndex: =12
 
-            DataCardKey47_2 As label:
+            DataCardKey57 As label:
                 AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
-                Font: =gblAppFont
                 Height: =34
-                Size: =12
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 1100
+                Width: =Parent.Width - 60
                 Wrap: =false
                 X: =30
-                Y: =20
+                Y: =10
                 ZIndex: =1
 
-            DataCardValue44_2 As text:
+            DataCardValue54 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Font: =gblAppFont
-                Height: =100
-                HoverBorderColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(255, 255, 255, 1)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
-                Size: =10
                 Tooltip: =Parent.DisplayName
-                Width: =673
-                X: =559
-                Y: =DataCardKey47_2.Y 
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey57.Y + DataCardKey57.Height + 5
                 ZIndex: =2
 
-            ErrorMessage47_2 As label:
+            ErrorMessage57 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -236,764 +865,30 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue44_2.Y + DataCardValue44_2.Height
+                Y: =DataCardValue54.Y + DataCardValue54.Height
                 ZIndex: =3
 
-            StarVisible47_2 As label:
+            StarVisible57 As label:
                 Align: =Align.Center
-                Height: =DataCardKey47_2.Height
+                Height: =DataCardKey57.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey47_2.Y
+                Y: =DataCardKey57.Y
                 ZIndex: =4
 
-        UseofTimeQuestion_DataCard3_3 As typedDataCard.textualEditCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="UseofTime"
-            Default: =ThisItem.UseofTimeQuestion
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'One2One Survey'],DataSourceInfo.DisplayName,"UseofTime")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'One2One Survey'], DataSourceInfo.MaxLength, "UseofTime")
-            Required: =true
-            Update: =DataCardValue30_3.Text
-            Width: =746
-            X: =0
-            Y: =0
-            ZIndex: =8
-
-            DataCardKey33_3 As label:
-                Color: =RGBA(0, 0, 0, 1)
-                Font: =gblAppFont
-                Height: =59
-                Size: =12
-                Text: ="What's the best use of our time? "
-                Width: =529
-                Wrap: =false
-                X: =30
-                Y: =20
-                ZIndex: =1
-
-            DataCardValue30_3 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Font: =gblAppFont
-                Height: =100
-                HoverBorderColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(255, 255, 255, 1)
-                MaxLength: =Parent.MaxLength
-                Mode: =TextMode.MultiLine
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =gblAppFontSize
-                Tooltip: =Parent.DisplayName
-                Width: =673
-                X: =559
-                Y: =DataCardKey33_3.Y
-                ZIndex: =2
-
-            ErrorMessage33_3 As label:
-                AutoHeight: =true
-                Font: =gblAppFont
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =10
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue30_3.Y + DataCardValue30_3.Height+5
-                ZIndex: =3
-
-            Label4_6 As label:
-                Font: =gblAppFont
-                Height: =37
-                Size: =12
-                Text: ="Please add anything you'd like to focus on."
-                Width: =308
-                X: =30
-                Y: =53
-                ZIndex: =4
-
-        WorkOverall_DataCard3_3 As typedDataCard.comboBoxEditCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="WorkOverall"
-            Default: =ThisItem.WorkOverall
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'One2One Survey'],DataSourceInfo.DisplayName,"WorkOverall")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =95
-            Required: =true
-            Update: |
-                =LookUp(Choices('One2One Survey'.WorkOverall),Value=Text(Slider1_9.Value))
-            Width: =746
-            X: =0
-            Y: =1
-            ZIndex: =8
-
-            DataCardKey34_3 As label:
-                AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
-                Font: =gblAppFont
-                Height: =34
-                Size: =12
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 1100
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            ErrorMessage34_3 As label:
-                AutoHeight: =true
-                Font: =gblAppFont
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =10
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =89
-                ZIndex: =3
-
-            Slider1_9 As slider:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =2
-                HandleSize: |
-                    =20
-                Max: =4
-                ShowValue: =false
-                ValueFill: =RGBA(0, 0, 0, 1)
-                Width: =668
-                X: =560
-                Y: =10
-                ZIndex: =5
-
-            Label2_45 As label:
-                Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
-                Size: =10
-                Text: ="Awful"
-                Width: =50
-                X: =538
-                Y: =39
-                ZIndex: =6
-
-            Label2_47 As label:
-                Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
-                Size: =10
-                Text: ="Fantastic"
-                Width: =70
-                X: =1168
-                Y: =39
-                ZIndex: =7
-
-            Label2_46 As label:
-                Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
-                Size: =10
-                Text: ="Good"
-                Width: =50
-                X: =1034
-                Y: =39
-                ZIndex: =8
-
-            Label2_49 As label:
-                Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
-                Size: =10
-                Text: ="Neutral"
-                Width: =60
-                X: =866
-                Y: =40
-                ZIndex: =9
-
-            Label2_48 As label:
-                Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
-                Size: =10
-                Text: ="Bad"
-                Width: =50
-                X: =699
-                Y: =40
-                ZIndex: =10
-
-        Wellbeing_DataCard3_3 As typedDataCard.comboBoxEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Wellbeing"
-            Default: =ThisItem.Wellbeing
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'One2One Survey'],DataSourceInfo.DisplayName,"Wellbeing")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =88
-            Required: =true
-            Update: |
-                =LookUp(Choices('One2One Survey'.WorkOverall),Value=Text(Slider1_10.Value))
-            Width: =746
-            X: =0
-            Y: =2
-            ZIndex: =8
-
-            DataCardKey35_3 As label:
-                AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
-                Font: =gblAppFont
-                Height: =35
-                Size: =12
-                Text: |-
-                    =Parent.DisplayName & " (work-life balance, stress, general health,personal life) :"
-                Width: =Parent.Width - 800
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            ErrorMessage35_3 As label:
-                AutoHeight: =true
-                Font: =gblAppFont
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =10
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =76
-                ZIndex: =3
-
-            Slider1_10 As slider:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =2
-                HandleSize: |
-                    =20
-                Max: =4
-                ShowValue: =false
-                ValueFill: =RGBA(0, 0, 0, 1)
-                Width: =668
-                X: =557
-                Y: =10
-                ZIndex: =5
-
-            Label2_50 As label:
-                Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
-                Size: =10
-                Text: ="Awful"
-                Width: =50
-                X: =541
-                Y: =39
-                ZIndex: =6
-
-            Label2_52 As label:
-                Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
-                Size: =10
-                Text: ="Fantastic"
-                Width: =70
-                X: =1171
-                Y: =39
-                ZIndex: =7
-
-            Label2_51 As label:
-                Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
-                Size: =10
-                Text: ="Good"
-                Width: =50
-                X: =1037
-                Y: =39
-                ZIndex: =8
-
-            Label2_54 As label:
-                Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
-                Size: =10
-                Text: ="Neutral"
-                Width: =60
-                X: =869
-                Y: =40
-                ZIndex: =9
-
-            Label2_53 As label:
-                Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
-                Size: =10
-                Text: ="Bad"
-                Width: =50
-                X: =702
-                Y: =40
-                ZIndex: =10
-
-        Growth_DataCard3_3 As typedDataCard.comboBoxEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Growth"
-            Default: =ThisItem.Growth
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'One2One Survey'],DataSourceInfo.DisplayName,"Growth")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =96
-            Required: =true
-            Update: =LookUp(Choices('One2One Survey'.WorkOverall),Value=Text(Slider1_11.Value))
-            Width: =746
-            X: =0
-            Y: =3
-            ZIndex: =8
-
-            DataCardKey36_3 As label:
-                AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
-                Font: =gblAppFont
-                Height: =34
-                Size: =12
-                Text: |-
-                    =Parent.DisplayName & " (learning, development, feedback) :"
-                Width: |
-                    =Parent.Width - 800
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            ErrorMessage36_3 As label:
-                AutoHeight: =true
-                Font: =gblAppFont
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =10
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =77
-                ZIndex: =3
-
-            Slider1_11 As slider:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =2
-                HandleSize: |
-                    =20
-                Max: =4
-                ShowValue: =false
-                ValueFill: =RGBA(0, 0, 0, 1)
-                Width: =668
-                X: =557
-                Y: =10
-                ZIndex: =5
-
-            Label2_55 As label:
-                Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
-                Size: =10
-                Text: ="Awful"
-                Width: =50
-                X: =538
-                Y: =46
-                ZIndex: =6
-
-            Label2_57 As label:
-                Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
-                Size: =10
-                Text: ="Fantastic"
-                Width: =70
-                X: =1168
-                Y: =46
-                ZIndex: =7
-
-            Label2_56 As label:
-                Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
-                Size: =10
-                Text: ="Good"
-                Width: =50
-                X: =1034
-                Y: =46
-                ZIndex: =8
-
-            Label2_59 As label:
-                Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
-                Size: =10
-                Text: ="Neutral"
-                Width: =60
-                X: =866
-                Y: =47
-                ZIndex: =9
-
-            Label2_58 As label:
-                Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
-                Size: =10
-                Text: ="Bad"
-                Width: =50
-                X: =699
-                Y: =47
-                ZIndex: =10
-
-        LowlightQuestion_DataCard3_3 As typedDataCard.textualEditCard:
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Lowlight"
-            Default: =ThisItem.LowlightQuestion
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'One2One Survey'],DataSourceInfo.DisplayName,"Lowlight")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'One2One Survey'], DataSourceInfo.MaxLength, "Lowlight")
-            Required: =true
-            Update: =DataCardValue34_3.Text
-            Width: =746
-            X: =0
-            Y: =4
-            ZIndex: =8
-
-            DataCardKey37_3 As label:
-                Color: =RGBA(0, 0, 0, 1)
-                Font: =gblAppFont
-                Height: =59
-                Size: =12
-                Text: ="What has been a lowlight since our last 121 ?"
-                Width: =Parent.Width - 800
-                Wrap: =false
-                X: =30
-                Y: =20
-                ZIndex: =1
-
-            ErrorMessage37_3 As label:
-                AutoHeight: =true
-                Font: =gblAppFont
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =10
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue34_3.Y + DataCardValue34_3.Height+5
-                ZIndex: =3
-
-            DataCardValue34_3 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Font: =gblAppFont
-                Height: =100
-                HoverBorderColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(255, 255, 255, 1)
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =10
-                Tooltip: =Parent.DisplayName
-                Width: =673
-                X: =559
-                Y: =20
-                ZIndex: =5
-
-        "'Highlight Question_DataCard3_3' As typedDataCard.textualEditCard":
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="HighlightQuestion"
-            Default: =ThisItem.'Highlight Question'
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'One2One Survey'],DataSourceInfo.DisplayName,"HighlightQuestion")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'One2One Survey'], DataSourceInfo.MaxLength, "HighlightQuestion")
-            Required: =true
-            Update: =DataCardValue35_3.Text
-            Width: =746
-            X: =0
-            Y: =5
-            ZIndex: =8
-
-            DataCardKey38_3 As label:
-                Color: =RGBA(0, 0, 0, 1)
-                Font: =gblAppFont
-                Height: =59
-                Size: =12
-                Text: ="What went well / has been a highlight since our last 121 ?"
-                Width: |
-                    =Parent.Width - 800
-                Wrap: =false
-                X: =30
-                Y: =20
-                ZIndex: =1
-
-            DataCardValue35_3 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Font: =gblAppFont
-                Height: =100
-                HoverBorderColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =RGBA(255, 255, 255, 1)
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =10
-                Tooltip: =Parent.DisplayName
-                Width: =673
-                X: =559
-                Y: =DataCardKey38_3.Y 
-                ZIndex: =2
-
-            ErrorMessage38_3 As label:
-                AutoHeight: =true
-                Font: =gblAppFont
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =10
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue35_3.Y + DataCardValue35_3.Height+5
-                ZIndex: =3
-
-        "'Roadblocks Question_DataCard3_3' As typedDataCard.textualEditCard":
-            BorderColor: =RGBA(0, 0, 0, 1)
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="RoadblocksQuestion"
-            Default: =ThisItem.'Roadblocks Question'
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'One2One Survey'],DataSourceInfo.DisplayName,"RoadblocksQuestion")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'One2One Survey'], DataSourceInfo.MaxLength, "RoadblocksQuestion")
-            Required: =true
-            Update: =DataCardValue36_3.Text
-            Width: =746
-            X: =0
-            Y: =6
-            ZIndex: =8
-
-            DataCardKey39_3 As label:
-                AutoHeight: =true
-                Color: =RGBA(0, 0, 0, 1)
-                Font: =gblAppFont
-                Height: =34
-                Size: =12
-                Text: ="Are you facing any challenges / roadblocks?"
-                Width: |
-                    =Parent.Width - 900
-                Wrap: =false
-                X: =30
-                Y: =20
-                ZIndex: =1
-
-            DataCardValue36_3 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Font: =gblAppFont
-                Height: =100
-                HoverBorderColor: =RGBA(255, 255, 255, 1)
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Size: =10
-                Tooltip: =Parent.DisplayName
-                Width: |
-                    =673
-                X: =559
-                Y: =DataCardKey39_3.Y 
-                ZIndex: =2
-
-            ErrorMessage39_3 As label:
-                AutoHeight: =true
-                Font: =gblAppFont
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Size: =10
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue36_3.Y + DataCardValue36_3.Height+5
-                ZIndex: =3
-
-            Label4_7 As label:
-                Font: =gblAppFont
-                Size: =12
-                Text: ="Where do you need my input?"
-                Width: =250
-                X: =30
-                Y: =40
-                ZIndex: =5
-
-    contTitleDPMODocLib As groupContainer.manualLayoutContainer:
-        Height: =29
-        Width: =519
-        X: =98
-        Y: =112
-        ZIndex: =10
-
-        lblDocName As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =RGBA(204, 231, 246, 0.28)
-            FocusedBorderThickness: =4
-            Font: =gblAppFont
-            FontWeight: =FontWeight.Semibold
-            Height: =32
-            HoverBorderColor: =lblDocName.BorderColor
-            HoverColor: =lblDocName.Color
-            HoverFill: =lblDocName.Fill
-            PressedBorderColor: =lblDocName.BorderColor
-            PressedColor: =lblDocName.Color
-            PressedFill: =lblDocName.Fill
-            Size: =gblAppFontSize
-            Text: ="Employee Name"
-            Width: =125
-            ZIndex: =1
-
-        lblDocType As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =
-            FocusedBorderThickness: =4
-            Font: =gblAppFont
-            FontWeight: =FontWeight.Semibold
-            Height: =32
-            HoverBorderColor: =lblDocType.BorderColor
-            HoverColor: =lblDocType.Color
-            HoverFill: =lblDocType.Fill
-            PressedBorderColor: =lblDocType.BorderColor
-            PressedColor: =lblDocType.Color
-            PressedFill: =lblDocType.Fill
-            Size: =gblAppFontSize
-            Text: ="Survey Filled Date"
-            X: =lblDocName.X+lblDocName.Width + 2
-            ZIndex: =2
-
-        lblApproval As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =First(Filter(ColFontSettings,Name="HText")).Value
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =First(Filter(ColFontSettings,Name="HBack")).Value
-            FocusedBorderThickness: =4
-            Font: =gblAppFont
-            FontWeight: =FontWeight.Semibold
-            Height: =32
-            HoverBorderColor: =lblApproval.BorderColor
-            HoverColor: =lblApproval.Color
-            HoverFill: =lblApproval.Fill
-            PressedBorderColor: =lblApproval.BorderColor
-            PressedColor: =lblApproval.Color
-            PressedFill: =lblApproval.Fill
-            Size: =gblAppFontSize
-            Text: ="Approval/ Committee Date"
-            Width: =127
-            X: =lblDocType.X+lblDocType.Width + 2
-            ZIndex: =4
-
-        lblModifiedOn As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =First(Filter(ColFontSettings,Name="HText")).Value
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =First(Filter(ColFontSettings,Name="HBack")).Value
-            FocusedBorderThickness: =4
-            Font: =gblAppFont
-            FontWeight: =FontWeight.Semibold
-            Height: =32
-            HoverBorderColor: =lblModifiedOn.BorderColor
-            HoverColor: =lblModifiedOn.Color
-            HoverFill: =lblModifiedOn.Fill
-            PressedBorderColor: =lblModifiedOn.BorderColor
-            PressedColor: =lblModifiedOn.Color
-            PressedFill: =lblModifiedOn.Fill
-            Size: =gblAppFontSize
-            Text: ="Modified On"
-            Width: =108
-            X: =lblApproval.X+lblApproval.Width+2
-            ZIndex: =5
-
-        lblInternalReferences As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =First(Filter(ColFontSettings,Name="HText")).Value
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =First(Filter(ColFontSettings,Name="HBack")).Value
-            FocusedBorderThickness: =4
-            Font: =gblAppFont
-            FontWeight: =FontWeight.Semibold
-            Height: =32
-            HoverBorderColor: =lblInternalReferences.BorderColor
-            HoverColor: =lblInternalReferences.Color
-            HoverFill: =lblInternalReferences.Fill
-            PressedBorderColor: =lblInternalReferences.BorderColor
-            PressedColor: =lblInternalReferences.Color
-            PressedFill: =lblInternalReferences.Fill
-            Size: =gblAppFontSize
-            Text: ="Internal References"
-            Width: =306
-            X: =lblModifiedOn.X+lblModifiedOn.Width + 2
-            ZIndex: =6
+    Button3_3 As button:
+        Color: =RGBA(99, 139, 44, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =gblAppFont
+        Height: =25
+        HoverFill: =RGBA(99, 139, 44, 1)
+        OnSelect: =SubmitForm(Form4); ResetForm(Form4)
+        Size: =11
+        Text: ="Save"
+        Width: =70
+        X: =1281
+        Y: =62
+        ZIndex: =12
 
