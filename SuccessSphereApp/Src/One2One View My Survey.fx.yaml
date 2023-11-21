@@ -1,6 +1,21 @@
 "'One2One View My Survey' As screen":
     Fill: =RGBA(0, 0, 0, 0)
 
+    Rectangle5 As rectangle:
+        Fill: =RGBA(57, 55, 104, 1)
+        Height: =50
+        Width: =1366
+        Y: =50
+        ZIndex: =1
+
+    Rectangle4 As rectangle:
+        Fill: =RGBA(204, 231, 246, 0.28)
+        Height: =668
+        Width: =391
+        X: =975
+        Y: =100
+        ZIndex: =2
+
     comp_LeftNavMyUploads_4 As comp_LeftNav:
         Height: =668
         LeftNavCollection: |-
@@ -41,6 +56,7 @@
                 }),"NavVisible",SortOrder.Ascending)
         Width: =98
         Y: =100
+        ZIndex: =3
 
     Label3_2 As label:
         Align: =Align.Center
@@ -50,19 +66,18 @@
         Size: =18
         Text: ="One 2 One"
         Width: =1366
-        ZIndex: =2
+        ZIndex: =4
 
     Label3_3 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(57, 55, 104, 1)
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
         Height: =50
-        Text: ="View My Survey"
-        Width: =1366
+        Text: ="View My Surveys"
+        Width: =972
         Y: =50
-        ZIndex: =3
+        ZIndex: =5
 
     "'User Image_2' As image":
         Height: =50
@@ -73,7 +88,7 @@
         RadiusTopRight: =50
         Width: =50
         X: =1301
-        ZIndex: =5
+        ZIndex: =6
 
     "'User name_2' As label":
         Align: =Align.Right
@@ -86,13 +101,13 @@
         Width: =126
         X: =1175
         Y: =10
-        ZIndex: =6
+        ZIndex: =7
 
     Image3_1 As image:
         Height: =50
         Image: ='Stretch-365-IA-Logo-Light-Transparent (1)'
         Width: =146
-        ZIndex: =7
+        ZIndex: =8
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
@@ -107,7 +122,7 @@
         Width: =874
         X: =98
         Y: =100
-        ZIndex: =8
+        ZIndex: =9
 
         Subtitle2 As label:
             Align: =Align.Center
@@ -400,4 +415,149 @@
             X: =10
             Y: =480
             ZIndex: =21
+
+    Label5 As label:
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Text: =CountRows(Gallery2.AllItems)
+        Width: =100
+        X: =1250
+        Y: =155
+        ZIndex: =10
+
+    Subtitle2_16 As label:
+        Font: =gblAppFont
+        FontWeight: =
+        OnSelect: =
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =13
+        Text: ="No. of Survey's Completed"
+        VerticalAlign: =VerticalAlign.Top
+        Width: =250
+        X: =983
+        Y: =163
+        ZIndex: =11
+
+    Subtitle2_17 As label:
+        Font: =gblAppFont
+        FontWeight: =
+        Height: =61
+        OnSelect: =
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =13
+        Text: ="Awaited Managers Feedback"
+        VerticalAlign: =VerticalAlign.Top
+        Width: =266
+        X: =983
+        Y: =226
+        ZIndex: =12
+
+    Label5_1 As label:
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Text: |+
+            =CountRows(
+                Filter(
+                    'One2One Survey', IsBlank(ManagerFeedback) && 'Created By'.DisplayName = gblCurrentUserFullName
+                )
+            )
+            
+        Width: =100
+        X: =1251
+        Y: =218
+        ZIndex: =13
+
+    Subtitle2_18 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(57, 55, 104, 1)
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =36
+        OnSelect: =
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =15
+        Text: ="One 2 One Schdule "
+        VerticalAlign: =VerticalAlign.Top
+        Width: =391
+        X: =975
+        Y: =330
+        ZIndex: =14
+
+    Subtitle2_19 As label:
+        Font: =gblAppFont
+        FontWeight: =
+        Height: =39
+        OnSelect: =
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =13
+        Text: ="Start Date"
+        VerticalAlign: =VerticalAlign.Top
+        Width: =190
+        X: =985
+        Y: =403
+        ZIndex: =15
+
+    Subtitle2_20 As label:
+        Font: =gblAppFont
+        FontWeight: =
+        Height: =39
+        OnSelect: =
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =13
+        Text: ="Frequency"
+        VerticalAlign: =VerticalAlign.Top
+        Width: =190
+        X: =985
+        Y: =464
+        ZIndex: =16
+
+    Subtitle2_21 As label:
+        Font: =gblAppFont
+        FontWeight: =
+        Height: =39
+        OnSelect: =
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =13
+        Text: ="Next One 2 One"
+        VerticalAlign: =VerticalAlign.Top
+        Width: =190
+        X: =983
+        Y: =527
+        ZIndex: =17
+
+    Subtitle2_22 As label:
+        Font: =gblAppFont
+        FontWeight: =
+        Height: =41
+        OnSelect: =
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        Size: =13
+        Text: ="Next Survey to be Filled by"
+        VerticalAlign: =VerticalAlign.Top
+        Width: =236
+        X: =983
+        Y: =588
+        ZIndex: =18
 
