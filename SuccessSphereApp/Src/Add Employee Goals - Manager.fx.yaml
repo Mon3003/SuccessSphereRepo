@@ -3,6 +3,29 @@
 
     comp_LeftNavMyUploads_6 As comp_LeftNav:
         Height: =668
+        LeftNavCollection: |-
+            =SortByColumns(Table({
+                    Title: "Home",
+                    NavLink: HomeScreen,
+                    NavIco: Icon.Home,
+                    NavVisible: 0,
+                    NavSecuirty : true
+                },  {
+                    Title: "View My Goals",
+                    NavLink: 'View My Goals',
+                    NavIco: Icon.People
+                    ,
+                    NavVisible: 1,
+                    NavSecuirty : true
+                },
+                {
+                    Title: "Add Employee Goals",
+                    NavLink: 'Add Employee Goals - Manager',
+                    NavIco: Icon.AddUser,
+                    NavVisible: 2,
+                    NavSecuirty : If(gblCurrentUserRole.Role = "Manager",true,false)
+                }
+                ),"NavVisible",SortOrder.Ascending)
         Width: =98
         Y: =100
 

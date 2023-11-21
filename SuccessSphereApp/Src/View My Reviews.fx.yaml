@@ -3,6 +3,44 @@
 
     comp_LeftNavMyUploads_11 As comp_LeftNav:
         Height: =668
+        LeftNavCollection: |-
+            =SortByColumns(Table({
+                    Title: "Home",
+                    NavLink: HomeScreen,
+                    NavIco: Icon.Home,
+                    NavVisible: 0,
+                    NavSecuirty : true
+                },  
+                {
+                    Title: "Request Review",
+                    NavLink: 'Request Review',
+                    NavIco: Icon.People,
+                    NavVisible: 1,
+                    NavSecuirty : true
+                },
+                {
+                    Title: "Complete Review",
+                    NavLink: 'Complete Review',
+                    NavIco: Icon.AddUser,
+                    NavVisible: 2,
+                    NavSecuirty : true
+                },
+                {
+                    Title: "View My Reviews",
+                    NavLink: 'View My Reviews',
+                    NavIco: Icon.AddUser,
+                    NavVisible: 3,
+                    NavSecuirty : true
+                },
+                {
+                    Title: "View Employee Reviews",
+                    NavLink: 'View My Employee Reviews - Manager',
+                    NavIco: Icon.AddUser,
+                    NavVisible: 4,
+                    NavSecuirty : If(gblCurrentUserRole.Role = "Manager",true,false)
+                }
+                ),"NavVisible",SortOrder.Ascending)
+                
         Width: =98
         Y: =100
 

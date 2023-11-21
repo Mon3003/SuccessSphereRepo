@@ -1820,12 +1820,12 @@
       },
       "OnReset"
     ],
-    "LastModifiedTimestamp": "638361215961194471",
+    "LastModifiedTimestamp": "638361224157371192",
     "Name": "comp_LeftNav",
     "Rules": [
       {
         "Category": "Data",
-        "InvariantScript": "SortByColumns(Table({\n        Title: \"Complete My Survey\",\n        NavLink: HomeScreen,\n        NavIco: Icon.AddDocument,\n        NavVisible: 1,\n        NavSecuirty : true\n    },\n    {\n        Title: \"View My Surveys\",\n        NavLink: HomeScreen,\n        NavIco: Icon.DocumentWithContent,\n        NavVisible: 2,\n        NavSecuirty : true\n    },\n    {\n        Title: \"Schedule One2One\",\n        NavLink: HomeScreen,\n        NavIco: Icon.AddToCalendar,\n        NavVisible: 3,\n        NavSecuirty : true\n    },\n    {\n        Title: \"Complete Manager Feedback\",\n        NavLink: HomeScreen,\n        NavIco: Icon.DockCheckProperties,\n        NavVisible: 4,\n        NavSecuirty : true\n    },    \n    {\n        Title: \"Add / Remove Employee\",\n        NavLink: HomeScreen,\n        NavIco: Icon.AddUser,\n        NavVisible: 5,\n        NavSecuirty : true\n    },\n    {\n        Title: \"Delegate Manager\",\n        NavLink: HomeScreen,\n        NavIco: Icon.People\n        ,\n        NavVisible: 6,\n        NavSecuirty : true\n    }),\"NavVisible\",SortOrder.Ascending)",
+        "InvariantScript": "",
         "Property": "LeftNavCollection",
         "RuleProviderType": "System"
       },
@@ -1901,7 +1901,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638361215961194471",
+  "LastModifiedTimestamp": "638361224157371192",
   "Name": "d357ac3d832e48849a027fb5b475fc43",
   "OverridableProperties": {},
   "TemplateOriginalName": "738736d59eb248cfbbeac8708f84b65f",

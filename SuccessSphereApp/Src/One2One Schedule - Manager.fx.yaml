@@ -1,7 +1,7 @@
-"'Add / Remove Employee - Manager' As screen":
+"'One2One Schedule - Manager' As screen":
     Fill: =RGBA(0, 0, 0, 0)
 
-    comp_LeftNavMyUploads_3 As comp_LeftNav:
+    comp_LeftNavMyUploads_1 As comp_LeftNav:
         Height: =668
         LeftNavCollection: |-
             =SortByColumns(Table({
@@ -10,48 +10,61 @@
                     NavIco: Icon.Home,
                     NavVisible: 0,
                     NavSecuirty : true
-                },  
+                },
                 {
-                    Title: "Add / Remove Employee",
-                    NavLink: 'Add / Remove Employee - Manager',
-                    NavIco: Icon.AddUser,
-                    NavVisible: 5,
+                    Title: "Complete My Survey",
+                    NavLink: 'One2One Complete Survey',
+                    NavIco: Icon.AddDocument,
+                    NavVisible: 1,
                     NavSecuirty : true
                 },
                 {
-                    Title: "Delegate Manager",
-                    NavLink: 'Delegate Manager - Manager',
-                    NavIco: Icon.People
-                    ,
-                    NavVisible: 6,
+                    Title: "View My Surveys",
+                    NavLink: 'One2One View My Survey',
+                    NavIco: Icon.DocumentWithContent,
+                    NavVisible: 2,
                     NavSecuirty : true
+                },
+                {
+                    Title: "Schedule One2One",
+                    NavLink: 'One2One Schedule - Manager',
+                    NavIco: Icon.AddToCalendar,
+                    NavVisible: 3,
+                    NavSecuirty : If(gblCurrentUserRole.Role = "Manager",true,false)
+                },
+                {
+                    Title: "Complete Manager Feedback",
+                    NavLink: 'One2One Complete Manager Feedback - Manager',
+                    NavIco: Icon.DockCheckProperties,
+                    NavVisible: 4,
+                    NavSecuirty : If(gblCurrentUserRole.Role = "Manager",true,false)
                 }),"NavVisible",SortOrder.Ascending)
         Width: =98
         Y: =100
 
-    Label3_8 As label:
+    Label3_4 As label:
         Align: =Align.Center
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
         Height: =50
         Size: =18
-        Text: ="Admin"
+        Text: ="One 2 One"
         Width: =1366
         ZIndex: =2
 
-    Label3_9 As label:
+    Label3_5 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(57, 55, 104, 1)
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
         Height: =50
-        Text: ="Add / Remove Employee"
+        Text: ="Schedule One2One"
         Width: =1366
         Y: =50
         ZIndex: =3
 
-    "'User Image_5' As image":
+    "'User Image_3' As image":
         Height: =50
         Image: =User().Image
         RadiusBottomLeft: =50
@@ -62,7 +75,7 @@
         X: =1301
         ZIndex: =5
 
-    "'User name_5' As label":
+    "'User name_3' As label":
         Align: =Align.Right
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
@@ -75,7 +88,7 @@
         Y: =10
         ZIndex: =6
 
-    Image3_4 As image:
+    Image3_2 As image:
         Height: =50
         Image: ='Stretch-365-IA-Logo-Light-Transparent (1)'
         Width: =146

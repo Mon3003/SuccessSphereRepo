@@ -3,6 +3,42 @@
 
     comp_LeftNavMyUploads_2 As comp_LeftNav:
         Height: =668
+        LeftNavCollection: |-
+            =SortByColumns(Table({
+                    Title: "Home",
+                    NavLink: HomeScreen,
+                    NavIco: Icon.Home,
+                    NavVisible: 0,
+                    NavSecuirty : true
+                },
+                {
+                    Title: "Complete My Survey",
+                    NavLink: 'One2One Complete Survey',
+                    NavIco: Icon.AddDocument,
+                    NavVisible: 1,
+                    NavSecuirty : true
+                },
+                {
+                    Title: "View My Surveys",
+                    NavLink: 'One2One View My Survey',
+                    NavIco: Icon.DocumentWithContent,
+                    NavVisible: 2,
+                    NavSecuirty : true
+                },
+                {
+                    Title: "Schedule One2One",
+                    NavLink: 'One2One Schedule - Manager',
+                    NavIco: Icon.AddToCalendar,
+                    NavVisible: 3,
+                    NavSecuirty : If(gblCurrentUserRole.Role = "Manager",true,false)
+                },
+                {
+                    Title: "Complete Manager Feedback",
+                    NavLink: 'One2One Complete Manager Feedback - Manager',
+                    NavIco: Icon.DockCheckProperties,
+                    NavVisible: 4,
+                    NavSecuirty : If(gblCurrentUserRole.Role = "Manager",true,false)
+                }),"NavVisible",SortOrder.Ascending)
         Width: =98
         Y: =100
 

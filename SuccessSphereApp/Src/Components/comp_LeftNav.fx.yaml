@@ -1,50 +1,7 @@
 comp_LeftNav As CanvasComponent:
     Fill: =RGBA(0, 0, 0, 0)
     Height: =688
-    LeftNavCollection: |-
-        =SortByColumns(Table({
-                Title: "Complete My Survey",
-                NavLink: HomeScreen,
-                NavIco: Icon.AddDocument,
-                NavVisible: 1,
-                NavSecuirty : true
-            },
-            {
-                Title: "View My Surveys",
-                NavLink: HomeScreen,
-                NavIco: Icon.DocumentWithContent,
-                NavVisible: 2,
-                NavSecuirty : true
-            },
-            {
-                Title: "Schedule One2One",
-                NavLink: HomeScreen,
-                NavIco: Icon.AddToCalendar,
-                NavVisible: 3,
-                NavSecuirty : true
-            },
-            {
-                Title: "Complete Manager Feedback",
-                NavLink: HomeScreen,
-                NavIco: Icon.DockCheckProperties,
-                NavVisible: 4,
-                NavSecuirty : true
-            },    
-            {
-                Title: "Add / Remove Employee",
-                NavLink: HomeScreen,
-                NavIco: Icon.AddUser,
-                NavVisible: 5,
-                NavSecuirty : true
-            },
-            {
-                Title: "Delegate Manager",
-                NavLink: HomeScreen,
-                NavIco: Icon.People
-                ,
-                NavVisible: 6,
-                NavSecuirty : true
-            }),"NavVisible",SortOrder.Ascending)
+    LeftNavCollection: =
     OnReset: =
     Width: =640
     X: =0
