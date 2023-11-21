@@ -6,38 +6,44 @@ comp_LeftNav As CanvasComponent:
                 Title: "Complete My Survey",
                 NavLink: HomeScreen,
                 NavIco: Icon.AddDocument,
-                NavVisible: 1
+                NavVisible: 1,
+                NavSecuirty : true
             },
             {
                 Title: "View My Surveys",
                 NavLink: HomeScreen,
                 NavIco: Icon.DocumentWithContent,
-                NavVisible: 2
+                NavVisible: 2,
+                NavSecuirty : true
             },
             {
                 Title: "Schedule One2One",
                 NavLink: HomeScreen,
                 NavIco: Icon.AddToCalendar,
-                NavVisible: 3
+                NavVisible: 3,
+                NavSecuirty : true
             },
             {
                 Title: "Complete Manager Feedback",
                 NavLink: HomeScreen,
                 NavIco: Icon.DockCheckProperties,
-                NavVisible: 4
+                NavVisible: 4,
+                NavSecuirty : true
             },    
             {
                 Title: "Add / Remove Employee",
                 NavLink: HomeScreen,
                 NavIco: Icon.AddUser,
-                NavVisible: 5
+                NavVisible: 5,
+                NavSecuirty : true
             },
             {
                 Title: "Delegate Manager",
                 NavLink: HomeScreen,
                 NavIco: Icon.People
                 ,
-                NavVisible: 6
+                NavVisible: 6,
+                NavSecuirty : true
             }),"NavVisible",SortOrder.Ascending)
     OnReset: =
     Width: =640
@@ -88,6 +94,7 @@ comp_LeftNav As CanvasComponent:
             PressedColor: =ColorFade(RGBA(0, 120, 212, 1), -30%)
             PressedFill: =RGBA(0, 0, 0, 0)
             TabIndex: =0
+            Visible: =ThisItem.NavSecuirty
             Width: =40
             X: =27
             Y: =6
@@ -105,6 +112,7 @@ comp_LeftNav As CanvasComponent:
             HoverFill: =RGBA(0, 120, 212, 1)
             PressedFill: =RGBA(0, 120, 212, 1)
             TabIndex: =0
+            Visible: =ThisItem.NavSecuirty
             Width: =95
             Y: =82
             ZIndex: =2
@@ -132,6 +140,7 @@ comp_LeftNav As CanvasComponent:
             Size: =10
             TabIndex: =0
             Text: =ThisItem.Title
+            Visible: =ThisItem.NavSecuirty
             Width: =95
             Y: =30
             ZIndex: =3
@@ -146,6 +155,7 @@ comp_LeftNav As CanvasComponent:
             OnSelect: =Navigate(ThisItem.NavLink)
             PressedFill: =ColorFade(Self.Fill,-20%)
             TabIndex: =0
+            Visible: =ThisItem.NavSecuirty
             Width: =95
             ZIndex: =4
 

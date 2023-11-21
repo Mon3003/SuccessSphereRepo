@@ -3,26 +3,6 @@
 
     comp_LeftNavMyUploads_7 As comp_LeftNav:
         Height: =668
-        LeftNavCollection: |-
-            =SortByColumns(Table(   {
-                    Title: "Home",
-                    NavLink: HomeScreen,
-                    NavIco: Icon.Home,
-                    NavVisible: 0
-                },
-                {
-                    Title: "Add Employee Goals",
-                    NavLink: 'Add Employee Goals - Manager',
-                    NavIco: Icon.ListWatchlistRemind,
-                    NavVisible: 1
-                },
-                {
-                    Title: "View My Goals",
-                    NavLink: 'View My Goals',
-                    NavIco: Icon.ListScrollWatchlist
-                    ,
-                    NavVisible: 2
-                }),"NavVisible",SortOrder.Ascending)
         Width: =98
         Y: =100
 

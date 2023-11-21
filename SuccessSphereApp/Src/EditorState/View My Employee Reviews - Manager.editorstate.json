@@ -68,7 +68,7 @@
         {
           "Category": "Data",
           "PropertyName": "LeftNavCollection",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "System"
         },
         {
           "Category": "Design",

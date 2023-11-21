@@ -3,40 +3,6 @@
 
     comp_LeftNavMyUploads_11 As comp_LeftNav:
         Height: =668
-        LeftNavCollection: |-
-            =SortByColumns(Table(   {
-                    Title: "Home",
-                    NavLink: HomeScreen,
-                    NavIco: Icon.Home,
-                    NavVisible: 0
-                },
-                {
-                    Title: "Request Review",
-                    NavLink: 'Request Review',
-                    NavIco: Icon.Leave,
-                    NavVisible: 1
-                },
-                {
-                    Title: "Complete Review",
-                    NavLink: 'Complete Review',
-                    NavIco: Icon.DockCheckProperties
-                    ,
-                    NavVisible: 2
-                },
-                {
-                    Title: "View My Reviews",
-                    NavLink: 'View My Reviews',
-                    NavIco: Icon.View
-                    ,
-                    NavVisible: 3
-                },
-                {
-                    Title: "View My Employee Reviews",
-                    NavLink:'View My Employee Reviews - Manager',
-                    NavIco: Icon.LogJournal
-                    ,
-                    NavVisible: 4
-                }),"NavVisible",SortOrder.Ascending)
         Width: =98
         Y: =100
 
