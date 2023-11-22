@@ -903,7 +903,7 @@
                 Height: =35
                 Size: =10
                 Text: |-
-                    ="Workoverall :"
+                    ="Work overall :"
                 Width: =90
                 Wrap: =false
                 ZIndex: =1
@@ -1432,7 +1432,7 @@
         Font: =gblAppFont
         Height: =668
         Size: =20
-        Text: ="No Action required                                                    (Feedback submitted for all the survey's.)"
+        Text: ="No Action required                                                    (Feedback submitted for all the surveys.)"
         Visible: =If(CountRows(Gallery3_2.AllItems) < 1, true, false)
         Width: =607
         X: =98
@@ -1445,7 +1445,7 @@
         Font: =gblAppFont
         Height: =624
         Size: =20
-        Text: ="No Previous Survey's."
+        Text: ="No Previous Surveys."
         Visible: =If(CountRows(Gallery2_1.AllItems) < 1, true, false)
         Width: =661
         X: =705
