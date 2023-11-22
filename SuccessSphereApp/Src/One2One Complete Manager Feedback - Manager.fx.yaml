@@ -1321,7 +1321,7 @@
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'One2One Survey'],DataSourceInfo.DisplayName,"ManagerFeedback")
             Fill: =RGBA(204, 231, 246, 0.28)
-            Height: =50
+            Height: =113
             MaxLength: =DataSourceInfo([@'One2One Survey'], DataSourceInfo.MaxLength, "ManagerFeedback")
             Required: =false
             Update: =DataCardValue54.Text
@@ -1342,10 +1342,13 @@
 
             DataCardValue54 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderThickness: =0
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =gblAppFont
+                Height: =100
+                HoverBorderColor: =RGBA(0, 0, 0, 0)
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
@@ -1354,9 +1357,11 @@
                 RadiusTopRight: =0
                 Size: =10
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: |
+                    =370
                 X: =221
-                Y: =DataCardKey57.Y + DataCardKey57.Height + 5
+                Y: |
+                    =15
                 ZIndex: =2
 
             ErrorMessage57 As label:
