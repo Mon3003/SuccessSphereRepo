@@ -477,7 +477,7 @@
                 SurveyDate
             )
         SelectionFill: =RGBA(57, 55, 104, 1)
-        Size: =12
+        Size: =10
         Width: =180
         X: =1175
         Y: =110
@@ -492,7 +492,7 @@
         HoverColor: =
         Items: =Distinct('One2One Survey', If(ManagerName.Value= gblCurrentUserFullName,'Created By'.DisplayName))
         SelectionFill: =RGBA(57, 55, 104, 1)
-        Size: =12
+        Size: =10
         Width: =180
         X: =842
         Y: =110
@@ -1408,7 +1408,7 @@
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
         Height: =25
-        Size: =12
+        Size: =10
         Text: |-
             ="Employee Name :"
         X: =705
@@ -1419,7 +1419,7 @@
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
         Height: =25
-        Size: =12
+        Size: =10
         Text: |-
             ="Survey Filled Date :"
         X: =1025

@@ -222,7 +222,8 @@
                 Font: =gblAppFont
                 Height: =34
                 Size: =12
-                Text: =Parent.DisplayName
+                Text: |-
+                    ="Work Overall :"
                 Width: =Parent.Width - 1100
                 Wrap: =false
                 X: =30
