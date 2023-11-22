@@ -436,7 +436,6 @@
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
-        Size: =13
         Text: ="No. of Survey's Completed"
         VerticalAlign: =VerticalAlign.Top
         Width: =250
@@ -453,7 +452,6 @@
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
-        Size: =13
         Text: ="Awaited Managers Feedback"
         VerticalAlign: =VerticalAlign.Top
         Width: =266
@@ -505,7 +503,6 @@
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
-        Size: =13
         Text: ="Start Date"
         VerticalAlign: =VerticalAlign.Top
         Width: =190
@@ -522,7 +519,6 @@
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
-        Size: =13
         Text: ="Frequency"
         VerticalAlign: =VerticalAlign.Top
         Width: =190
@@ -539,7 +535,6 @@
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
-        Size: =13
         Text: ="Next One 2 One"
         VerticalAlign: =VerticalAlign.Top
         Width: =190
@@ -556,7 +551,6 @@
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
-        Size: =13
         Text: ="Next Survey to be Filled by"
         VerticalAlign: =VerticalAlign.Top
         Width: =236
