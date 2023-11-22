@@ -518,27 +518,10 @@
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =50
-        Width: =519
+        Width: =607
         X: =98
         Y: =141
         ZIndex: =12
-
-        NextArrow3_2 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            Height: =50
-            Icon: =Icon.ChevronRight
-            OnSelect: |-
-                =Select(Parent);
-                Set(varManagerfeebackform,true)
-            PaddingBottom: =16
-            PaddingLeft: =16
-            PaddingRight: =16
-            PaddingTop: =16
-            Tooltip: ="View item details"
-            Width: =50
-            X: =404
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
-            ZIndex: =4
 
         Separator6_2 As rectangle:
             Fill: =RGBA(204, 231, 246, 0.28)
@@ -560,9 +543,9 @@
             Size: =10
             Text: =ThisItem.'Created By'.DisplayName
             VerticalAlign: =VerticalAlign.Top
-            Width: =lbl2_1.Width
+            Width: =lbl2_2.Width
             X: |
-                =lbl2_1.X+2
+                =lbl2_2.X+2
             Y: =10
             ZIndex: =6
 
@@ -578,15 +561,34 @@
             Size: =10
             Text: =ThisItem.SurveyDate
             VerticalAlign: =VerticalAlign.Top
-            Width: =lbl1_1.Width
+            Width: =lbl1_2.Width
             X: |
-                =lbl1_1.X+2
+                =lbl1_2.X+2
             Y: =10
             ZIndex: =7
 
+        Button3_4 As button:
+            Color: =RGBA(99, 139, 44, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =gblAppFont
+            Height: =25
+            HoverFill: =RGBA(99, 139, 44, 1)
+            Italic: =true
+            OnSelect: |-
+                =Select(Parent);
+                Set(varManagerfeebackform,true)
+            Size: =11
+            Text: ="Give feedback"
+            Visible: |
+                =true
+            Width: =150
+            X: =330
+            Y: =10
+            ZIndex: =8
+
     Headers_2 As groupContainer.manualLayoutContainer:
         Height: =29
-        Width: =519
+        Width: =607
         X: =98
         Y: =108
         ZIndex: =13
@@ -652,7 +654,7 @@
             PressedFill: =lbl_2.Fill
             Size: =gblAppFontSize
             Text: ="Complete Manager Feedback"
-            Width: =190
+            Width: =281
             X: =325
             ZIndex: =3
 
@@ -749,7 +751,7 @@
             Height: =70
             Required: =false
             Update: =DataCardValue50.Selected
-            Width: =205
+            Width: =207
             X: =0
             Y: =1
             ZIndex: =12
@@ -764,7 +766,6 @@
                 Text: =Parent.DisplayName
                 Width: =90
                 Wrap: =false
-                X: =14
                 ZIndex: =1
 
             DataCardValue50 As combobox:
@@ -782,7 +783,7 @@
                 Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =105
-                X: =104
+                X: =90
                 ZIndex: =2
 
             ErrorMessage53 As label:
@@ -960,7 +961,7 @@
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'One2One Survey'],DataSourceInfo.DisplayName,"UseofTime")
             Fill: =RGBA(204, 231, 246, 0.28)
-            Height: =118
+            Height: =103
             MaxLength: =DataSourceInfo([@'One2One Survey'], DataSourceInfo.MaxLength, "UseofTime")
             Required: =false
             Update: =DataCardValue47.Text
@@ -997,7 +998,6 @@
                 Tooltip: =Parent.DisplayName
                 Width: =370
                 X: =221
-                Y: =15
                 ZIndex: =2
 
             ErrorMessage50 As label:
@@ -1040,7 +1040,6 @@
                 VerticalAlign: =VerticalAlign.Top
                 Width: =219
                 X: =2
-                Y: =15
                 ZIndex: =5
 
         LowlightQuestion_DataCard4 As typedDataCard.textualEditCard:
@@ -1426,4 +1425,30 @@
         X: =1025
         Y: =110
         ZIndex: =16
+
+    Label8 As label:
+        Align: =Align.Center
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =gblAppFont
+        Height: =668
+        Size: =20
+        Text: ="No Action required                                                    (Feedback submitted for all the survey's.)"
+        Visible: =If(CountRows(Gallery3_2.AllItems) < 1, true, false)
+        Width: =607
+        X: =98
+        Y: =100
+        ZIndex: =17
+
+    Label8_1 As label:
+        Align: =Align.Center
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =gblAppFont
+        Height: =624
+        Size: =20
+        Text: ="No Previous Survey's."
+        Visible: =If(CountRows(Gallery2_1.AllItems) < 1, true, false)
+        Width: =661
+        X: =705
+        Y: =144
+        ZIndex: =18
 
