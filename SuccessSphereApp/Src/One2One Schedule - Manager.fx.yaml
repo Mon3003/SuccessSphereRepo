@@ -94,3 +94,29 @@
         Width: =146
         ZIndex: =7
 
+    Dropdown2_2 As dropdown:
+        ChevronBackground: =RGBA(57, 55, 104, 1)
+        ChevronHoverBackground: =
+        Font: =gblAppFont
+        Height: =25
+        HoverBorderColor: =
+        HoverColor: =
+        Items: =Distinct('One2One Survey', If(ManagerName.Value= gblCurrentUserFullName,'Created By'.DisplayName))
+        SelectionFill: =RGBA(57, 55, 104, 1)
+        Size: =10
+        Width: =180
+        X: =842
+        Y: =110
+        ZIndex: =8
+
+    Label7_2 As label:
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =10
+        Text: |-
+            ="Employee Name :"
+        X: =705
+        Y: =110
+        ZIndex: =9
+

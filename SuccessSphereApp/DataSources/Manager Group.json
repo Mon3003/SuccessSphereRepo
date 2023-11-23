@@ -31,6 +31,7 @@
       "Editor#Claims": "Modified By Claims",
       "ID": "ID",
       "ManagerEmail": "ManagerEmail",
+      "ManagerID": "ManagerID",
       "ManagerName": "ManagerName",
       "ManagerName#Claims": "ManagerName Claims",
       "Modified": "Modified",
