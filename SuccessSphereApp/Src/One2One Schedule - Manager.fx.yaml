@@ -124,17 +124,6 @@
         Y: =130
         ZIndex: =9
 
-    Label9 As label:
-        Fill: =RGBA(219, 219, 219, 1)
-        Height: =84
-        Text: |-
-            =CountRows(Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,Title)))
-            //LookUp(UserSecurity,ManagerEmail.Value= gblCurrentUserEmail).EmployeeEmail
-        Width: =166
-        X: =1105
-        Y: =589
-        ZIndex: =10
-
     Label7_3 As label:
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
