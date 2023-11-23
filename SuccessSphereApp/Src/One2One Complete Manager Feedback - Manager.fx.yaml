@@ -784,6 +784,7 @@
                 Tooltip: =Parent.DisplayName
                 Width: =105
                 X: =90
+                Y: =10
                 ZIndex: =2
 
             ErrorMessage53 As label:
