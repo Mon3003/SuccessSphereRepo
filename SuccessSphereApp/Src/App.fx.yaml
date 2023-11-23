@@ -5,7 +5,7 @@ App As appinfo:
         Set(gblAppFontSize,10);
         Set(
             gblCurrentUserEmail,
-            User().Email
+            Lower(User().Email)
         );
         Set(
             gblCurrentUserFullName,
