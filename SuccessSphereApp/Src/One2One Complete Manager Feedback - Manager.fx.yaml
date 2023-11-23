@@ -1433,13 +1433,13 @@
         Align: =Align.Center
         Fill: =RGBA(255, 255, 255, 1)
         Font: =gblAppFont
-        Height: =668
+        Height: =433
         Size: =20
         Text: ="No Action required                                                    (Feedback submitted for all the surveys.)"
         Visible: =If(CountRows(Gallery3_2.AllItems) < 1, true, false)
         Width: =607
         X: =98
-        Y: =100
+        Y: =335
         ZIndex: =17
 
     Label8_1 As label:
