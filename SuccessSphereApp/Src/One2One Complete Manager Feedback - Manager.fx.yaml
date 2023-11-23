@@ -490,7 +490,9 @@
         Height: =25
         HoverBorderColor: =
         HoverColor: =
-        Items: =Distinct('One2One Survey', If(ManagerName.Value= gblCurrentUserFullName,'Created By'.DisplayName))
+        Items: |-
+            =Distinct('One2One Survey', If(ManagerEmail.Value= gblCurrentUserEmail,'Created By'.DisplayName))
+            //Distinct('One2One Survey', If(ManagerName.Value= gblCurrentUserFullName,'Created By'.DisplayName))
         SelectionFill: =RGBA(57, 55, 104, 1)
         Size: =10
         Width: =180
