@@ -88,6 +88,7 @@ App As appinfo:
                 NavSecuirty: If(gblCurrentUserRole.Role="Manager", true,false)
         }
         );
+        Set(CurrentDate,Date(2023,11,29));
     StartScreen: =
     Theme: =PowerAppsTheme
 

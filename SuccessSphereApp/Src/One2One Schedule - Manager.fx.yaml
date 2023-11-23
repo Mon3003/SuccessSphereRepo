@@ -189,7 +189,7 @@
         Height: =344
         Items: |
             =Filter(
-                Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,Title)), 
+                Distinct('Schedule One2One', If(Lower('Created By'.Email) = gblCurrentUserEmail,EmployeeName.DisplayName)), 
                 Value <>Blank()
                 )
             
@@ -220,13 +220,21 @@
             Font: =gblAppFont
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =25
-            OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
             Size: =10
-            Text: =ThisItem.SurveyDate
+            Text: |
+                =CurrentDate
+                /*If (
+                    LookUp('Schedule One2One',EmployeeName.DisplayName = ThisItem.Value).StartDate >= CurrentDate,
+                        LookUp('Schedule One2One',EmployeeName.DisplayName = ThisItem.Value).StartDate, // true condition
+                        LookUp('Schedule One2One',EmployeeName.DisplayName = ThisItem.Value).StartDate + 7 //false condition
+                )*/
+                /*
+                LookUp('Schedule One2One',EmployeeName.DisplayName = ThisItem.Value).StartDate + 
+                    RoundUp((CurrentDate - LookUp('Schedule One2One',EmployeeName.DisplayName = ThisItem.Value).StartDate)/7,0) * 7 */
             VerticalAlign: =VerticalAlign.Top
             Width: =284
             X: =322
@@ -243,7 +251,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =10
-            Text: =ThisItem.SurveyDate
+            Text: =LookUp('Schedule One2One',EmployeeName.DisplayName = ThisItem.Value).Frequency.Value
             VerticalAlign: =VerticalAlign.Top
             Width: =lbl1_3.Width
             X: =172
@@ -361,293 +369,4 @@
         X: =316
         Y: =275
         ZIndex: =17
-
-    Form2_1 As form:
-        DataSource: ='Schedule One2One'
-        DefaultMode: =FormMode.New
-        Fill: =RGBA(204, 231, 246, 0.28)
-        Height: =189
-        NumberOfColumns: =1
-        OnSuccess: |-
-            =Patch('One2One Survey',
-                   LookUp('One2One Survey', ID = Form2_1.LastSubmit.ID),
-                   {   
-                       ManagerID:
-                       {
-                        '@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
-                        Id: LookUp(UserSecurity,User().Email=EmployeeEmail,Value(ManagerID.Value)),
-                        Value:""
-                        }
-                   }
-            )
-        Width: =518
-        X: =833
-        Y: =317
-        ZIndex: =18
-
-        Title_DataCard2 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Title"
-            Default: =ThisItem.Title
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Schedule One2One'],DataSourceInfo.DisplayName,"Title")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Schedule One2One'], DataSourceInfo.MaxLength, "Title")
-            Required: =false
-            Update: =DataCardValue6.Text
-            Width: =518
-            X: =0
-            Y: =0
-            ZIndex: =19
-
-            DataCardKey6 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue6 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
-                ZIndex: =2
-
-            ErrorMessage6 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue6.Y + DataCardValue6.Height
-                ZIndex: =3
-
-            StarVisible6 As label:
-                Align: =Align.Center
-                Height: =DataCardKey6.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey6.Y
-                ZIndex: =4
-
-        EmployeeName_DataCard2 As typedDataCard.comboBoxEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="EmployeeName"
-            Default: =ThisItem.EmployeeName
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Schedule One2One'],DataSourceInfo.DisplayName,"EmployeeName")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue7.Selected
-            Width: =518
-            X: =0
-            Y: =1
-            ZIndex: =19
-
-            DataCardKey7 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue7 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["DisplayName","Email","Picture"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Schedule One2One'].EmployeeName)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["DisplayName"]
-                SearchItems: =Choices('Schedule One2One'.EmployeeName,DataCardValue7.SearchText)
-                SelectMultiple: =false
-                Template: =ListItemTemplate.Person
-                Tooltip: =Parent.DisplayName
-                Width: =298
-                X: =287
-                Y: =10
-                ZIndex: =2
-
-            ErrorMessage7 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue7.Y + DataCardValue7.Height
-                ZIndex: =3
-
-            StarVisible7 As label:
-                Align: =Align.Center
-                Height: =DataCardKey7.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey7.Y
-                ZIndex: =4
-
-        StartDate_DataCard2 As typedDataCard.dateEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="StartDate"
-            Default: =ThisItem.StartDate
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Schedule One2One'],DataSourceInfo.DisplayName,"StartDate")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue8.SelectedDate
-            Width: =518
-            X: =0
-            Y: =2
-            ZIndex: =19
-
-            DataCardKey8 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue8 As datepicker:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
-                DisplayMode: =Parent.DisplayMode
-                EndYear: =Year(Today())+100
-                IsEditable: =true
-                PaddingBottom: =0
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                StartYear: =1899
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey8.Y + DataCardKey8.Height + 5
-                ZIndex: =2
-
-            ErrorMessage8 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue8.Y + DataCardValue8.Height
-                ZIndex: =3
-
-            StarVisible8 As label:
-                Align: =Align.Center
-                Height: =DataCardKey8.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey8.Y
-                ZIndex: =4
-
-        Frequency_DataCard2 As typedDataCard.comboBoxEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Frequency"
-            Default: =ThisItem.Frequency
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Schedule One2One'],DataSourceInfo.DisplayName,"Frequency")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue9.Selected
-            Width: =518
-            X: =0
-            Y: =3
-            ZIndex: =19
-
-            DataCardKey9 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue9 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Schedule One2One'].Frequency)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Schedule One2One'.Frequency,DataCardValue9.SearchText)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
-                ZIndex: =2
-
-            ErrorMessage9 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue9.Y + DataCardValue9.Height
-                ZIndex: =3
-
-            StarVisible9 As label:
-                Align: =Align.Center
-                Height: =DataCardKey9.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey9.Y
-                ZIndex: =4
 
