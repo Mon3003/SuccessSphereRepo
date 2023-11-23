@@ -101,12 +101,16 @@
         Height: =25
         HoverBorderColor: =
         HoverColor: =
-        Items: =Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,Title))
+        Items: |-
+            =Filter(
+                Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,Title)), 
+                Value <>Blank()
+                )
         SelectionFill: =RGBA(57, 55, 104, 1)
         Size: =10
         Width: =180
-        X: =842
-        Y: =110
+        X: =316
+        Y: =130
         ZIndex: =8
 
     Label7_2 As label:
@@ -116,17 +120,67 @@
         Size: =10
         Text: |-
             ="Employee Name :"
-        X: =705
-        Y: =110
+        X: =146
+        Y: =130
         ZIndex: =9
 
     Label9 As label:
-        Height: =60
+        Fill: =RGBA(219, 219, 219, 1)
+        Height: =84
         Text: |-
-            =gblCurrentUserEmail
+            =CountRows(Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,Title)))
             //LookUp(UserSecurity,ManagerEmail.Value= gblCurrentUserEmail).EmployeeEmail
-        Width: =383
-        X: =565
-        Y: =310
+        Width: =166
+        X: =1105
+        Y: =589
         ZIndex: =10
+
+    Label7_3 As label:
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =10
+        Text: |-
+            ="One2One Start Date :"
+        X: =146
+        Y: =179
+        ZIndex: =11
+
+    Label7_4 As label:
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =10
+        Text: |-
+            ="Frequency :"
+        X: =146
+        Y: =223
+        ZIndex: =12
+
+    DatePicker1 As datepicker:
+        Color: =RGBA(0, 18, 107, 1)
+        Font: =Font.Lato
+        Height: |
+            =25
+        IconBackground: =RGBA(57, 55, 104, 1)
+        Size: =10
+        Width: =180
+        X: =316
+        Y: =179
+        ZIndex: =13
+
+    Dropdown2_3 As dropdown:
+        ChevronBackground: =RGBA(57, 55, 104, 1)
+        ChevronHoverBackground: =
+        Font: =gblAppFont
+        Height: =25
+        HoverBorderColor: =
+        HoverColor: =
+        Items: =Choices('Schedule One2One'.Frequency)
+        SelectionFill: =RGBA(57, 55, 104, 1)
+        Size: =10
+        Width: =180
+        X: =316
+        Y: =223
+        ZIndex: =14
 

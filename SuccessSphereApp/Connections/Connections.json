@@ -14,6 +14,9 @@
           "One2One Survey": {
             "tableName": "7d39ae37-f3bc-4682-b889-14a1e284a5a5"
           },
+          "Schedule One2One": {
+            "tableName": "e752bbfc-dd4b-435c-b01f-206e4152c70a"
+          },
           "UserSecurity": {
             "tableName": "6911677a-d05c-43de-9b8b-8fde9368dd6d"
           }
@@ -23,7 +26,8 @@
     "dataSources": [
       "Manager Group",
       "One2One Survey",
-      "UserSecurity"
+      "UserSecurity",
+      "Schedule One2One"
     ],
     "dependencies": {},
     "dependents": [],
