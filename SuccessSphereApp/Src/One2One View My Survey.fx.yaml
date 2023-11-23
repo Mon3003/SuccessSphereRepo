@@ -114,7 +114,7 @@
         Fill: =RGBA(204, 231, 246, 0.28)
         Height: =668
         Items: |
-            =Filter('One2One Survey', If('Created By'.Email = gblCurrentUserEmail, true, false))
+            =Filter('One2One Survey', If(Lower('Created By'.Email) = gblCurrentUserEmail, true, false))
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -462,13 +462,13 @@
     Label5_1 As label:
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
-        Text: |+
+        Text: |
             =CountRows(
                 Filter(
-                    'One2One Survey', IsBlank(ManagerFeedback) && 'Created By'.DisplayName = gblCurrentUserFullName
+                    'One2One Survey', IsBlank(ManagerFeedback) && Lower('Created By'.Email) = gblCurrentUserEmail
                 )
             )
-            
+            //'Created By'.DisplayName = gblCurrentUserFullName
         Width: =100
         X: =1251
         Y: =218

@@ -23,10 +23,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 57,
+                  "charLength": 64,
                   "charOffset": 25,
                   "snippet": {
-                    "text": "If('Created By'.Email = gblCurrentUserEmail, true, false)"
+                    "text": "If(Lower('Created By'.Email) = gblCurrentUserEmail, true, false)"
                   }
                 }
               },
