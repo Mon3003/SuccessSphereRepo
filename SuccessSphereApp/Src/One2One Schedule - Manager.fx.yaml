@@ -176,18 +176,11 @@
     "Gallery3_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
         Height: =344
-        Items: |
+        Items: |-
             =Filter(
                 Distinct('Schedule One2One', If(Lower('Created By'.Email) = gblCurrentUserEmail,EmployeeName.DisplayName)), 
                 Value <>Blank()
                 )
-            
-            /*Filter(
-                'One2One Survey',
-                ManagerEmail.Value = gblCurrentUserEmail &&
-                IsBlank(ManagerFeedback) &&
-                'Created By'.DisplayName = Dropdown2_1.Selected.Value
-            )*/
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -215,11 +208,36 @@
             PaddingTop: =0
             Size: =10
             Text: |-
-                =If(LookUp('Schedule One2One',EmployeeName.DisplayName=ThisItem.Value).StartDate>=CurrentDate,
+                =
+                
+                With(
+                     { EmpSched: LookUp('Schedule One2One', EmployeeName.DisplayName = ThisItem.Value) , Tempdate : Date(2023,12,06)},
+                
+                Switch ( EmpSched.Frequency.Value,
+                        "Weekly",  
+                            If(
+                                EmpSched.StartDate >= Tempdate,
+                                EmpSched.StartDate, // True condition
+                                EmpSched.StartDate + RoundUp((Tempdate - EmpSched.StartDate) / 7, 0) * 7 // False condition
+                                ),
+                        "Fortnightly",
+                        If(
+                            EmpSched.StartDate >= Tempdate,
+                            EmpSched.StartDate, // True condition
+                            EmpSched.StartDate + RoundUp((Tempdate - EmpSched.StartDate) / 14, 0) * 14 // False condition
+                            )
+                        )
+                )
+                
+                
+                /*If(LookUp('Schedule One2One',EmployeeName.DisplayName=ThisItem.Value).StartDate >= CurrentDate,
+                    
                     LookUp('Schedule One2One',EmployeeName.DisplayName=ThisItem.Value).StartDate,// true condition
+                    
                     LookUp('Schedule One2One',EmployeeName.DisplayName=ThisItem.Value).StartDate +
                     RoundUp((CurrentDate-LookUp('Schedule One2One',EmployeeName.DisplayName=ThisItem.Value).StartDate)/7,0) *7 //false condition
-                )
+                
+                ) */
             VerticalAlign: =VerticalAlign.Top
             Width: =284
             X: =322
