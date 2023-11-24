@@ -215,11 +215,10 @@
             PaddingTop: =0
             Size: =10
             Text: |-
-                =If (
-                    LookUp('Schedule One2One',EmployeeName.DisplayName = ThisItem.Value).StartDate >= CurrentDate,
-                        LookUp('Schedule One2One',EmployeeName.DisplayName = ThisItem.Value).StartDate, // true condition
-                        LookUp('Schedule One2One',EmployeeName.DisplayName = ThisItem.Value).StartDate + 
-                          RoundUp((CurrentDate - LookUp('Schedule One2One',EmployeeName.DisplayName = ThisItem.Value).StartDate)/7,0) * 7  //false condition
+                =If(LookUp('Schedule One2One',EmployeeName.DisplayName=ThisItem.Value).StartDate>=CurrentDate,
+                    LookUp('Schedule One2One',EmployeeName.DisplayName=ThisItem.Value).StartDate,// true condition
+                    LookUp('Schedule One2One',EmployeeName.DisplayName=ThisItem.Value).StartDate +
+                    RoundUp((CurrentDate-LookUp('Schedule One2One',EmployeeName.DisplayName=ThisItem.Value).StartDate)/7,0) *7 //false condition
                 )
             VerticalAlign: =VerticalAlign.Top
             Width: =284
@@ -339,10 +338,12 @@
         Font: =gblAppFont
         Height: =26
         HoverFill: =RGBA(99, 139, 44, 1)
-        OnSelect: |
-            =Patch(
-                'Schedule One2One',  // SharePoint list name
-                Defaults('Schedule One2One'),  // If the record doesn't exist, create a new one
+        OnSelect: |-
+            =UpdateContext({currRecord : LookUp('Schedule One2One',EmployeeName.DisplayName = Dropdown2_2.Selected.Value)});
+            
+            Patch(
+                'Schedule One2One', 
+                 If(IsBlank(currRecord),Defaults('Schedule One2One'),currRecord),
                 {
                     EmployeeName: LookUp(UserSecurity,Title = Dropdown2_2.Selected.Value).EmployeeName,
                     StartDate: DatePicker1.SelectedDate,
