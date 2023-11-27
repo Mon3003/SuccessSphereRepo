@@ -104,8 +104,10 @@
         Height: =668
         NumberOfColumns: =1
         OnSuccess: |-
-            =Patch('One2One Survey',
-                   LookUp('One2One Survey', ID = Form2.LastSubmit.ID),
+            =Set(LatestSubmission , Form2.LastSubmit);
+            
+            Patch('One2One Survey',
+                   LookUp('One2One Survey', ID = LatestSubmission.ID),
                    {   
                        ManagerID:
                        {

@@ -381,11 +381,3 @@
         Y: =275
         ZIndex: =17
 
-    Label1 As label:
-        Height: =44
-        Text: =LookUp(UserSecurity,User().Email=EmployeeEmail,Value(ManagerID.Value))
-        Width: =85
-        X: =1064
-        Y: =400
-        ZIndex: =18
-
