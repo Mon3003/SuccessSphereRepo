@@ -348,7 +348,7 @@
         Height: =26
         HoverFill: =RGBA(99, 139, 44, 1)
         OnSelect: |-
-            =UpdateContext({currRecord : LookUp('Schedule One2One',EmployeeName.DisplayName = Dropdown2_2.Selected.Value) , Tempdate : Date(2023,12,06)});
+            =UpdateContext({currRecord : LookUp('Schedule One2One',EmployeeName.DisplayName = Dropdown2_2.Selected.Value) , Tempdate : Date(2023,12,13)});
             
             Patch(
                 'Schedule One2One', 
