@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 64,
-                  "charOffset": 25,
+                  "charOffset": 39,
                   "snippet": {
                     "text": "If(Lower('Created By'.Email) = gblCurrentUserEmail, true, false)"
                   }
