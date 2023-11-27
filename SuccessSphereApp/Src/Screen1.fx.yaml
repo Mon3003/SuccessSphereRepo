@@ -1,0 +1,28 @@
+Screen1 As screen:
+
+    "Gallery3_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =626
+        Items: |
+            =Filter(
+                'One2One Survey',
+                ManagerName.Value = gblCurrentUserFullName &&
+                IsBlank(ManagerFeedback) &&
+                'Created By'.DisplayName = Dropdown2_1.Selected.Value
+            )
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =50
+        Width: =607
+        X: =98
+        Y: =141
+        ZIndex: =1
+
+    Headers_2 As groupContainer.manualLayoutContainer:
+        Height: =29
+        Width: =607
+        X: =98
+        Y: =94
+        ZIndex: =2
+
