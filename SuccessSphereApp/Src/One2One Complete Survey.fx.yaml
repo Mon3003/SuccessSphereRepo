@@ -112,9 +112,8 @@
                        ManagerID:
                        {
                         '@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
-                        Id: LookUp(UserSecurity,User().Email = EmployeeEmail,ManagerID.Id),
-                        //LookUp(UserSecurity,User().Email = EmployeeEmail,Value(ManagerID.Value)),
-                        Value:LookUp(UserSecurity,User().Email = EmployeeEmail,ManagerID.Id)
+                        Id: LookUp(UserSecurity,gblCurrentUserEmail = EmployeeEmail,ManagerID.Id),
+                        Value:""
                         }
                    }
             )
