@@ -112,8 +112,9 @@
                        ManagerID:
                        {
                         '@odata.type':"#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
-                        Id: LookUp(UserSecurity,gblCurrentUserEmail = EmployeeEmail,Value(ManagerID.Value)),
-                        Value:""
+                        Id: LookUp(UserSecurity,User().Email = EmployeeEmail,ManagerID.Id),
+                        //LookUp(UserSecurity,User().Email = EmployeeEmail,Value(ManagerID.Value)),
+                        Value:LookUp(UserSecurity,User().Email = EmployeeEmail,ManagerID.Id)
                         }
                    }
             )
@@ -756,8 +757,7 @@
         Height: =25
         HoverFill: =RGBA(99, 139, 44, 1)
         OnSelect: |-
-            =
-            SubmitForm(Form2); 
+            =SubmitForm(Form2); 
             Navigate('One2One View My Survey')
         Size: =11
         Text: ="Save"
@@ -779,4 +779,10 @@
         X: =1203
         Y: =62
         ZIndex: =9
+
+    Label11 As label:
+        Text: = LookUp('One2One Survey', ID = LatestSubmission.ID).UseofTimeQuestion
+        Width: =316
+        X: =269
+        ZIndex: =10
 
