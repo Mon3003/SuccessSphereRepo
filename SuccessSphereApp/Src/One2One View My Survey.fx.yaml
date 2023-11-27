@@ -479,14 +479,14 @@
         Fill: =RGBA(57, 55, 104, 1)
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
-        Height: =36
+        Height: =28
         OnSelect: =
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
-        Size: =15
-        Text: ="One 2 One Schdule "
+        Size: =14
+        Text: ="One 2 One Schedule "
         VerticalAlign: =VerticalAlign.Top
         Width: =391
         X: =975
