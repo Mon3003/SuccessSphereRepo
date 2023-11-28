@@ -494,19 +494,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Employee Dropdown'.AccessibleLabel"
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Schedule Container'.'Frequency Dropdown'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Employee Dropdown'.AccessibleLabel",
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Schedule Container'.'Frequency Dropdown'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "One2One Schedule - Manager",
-                "type": "'One2One Schedule - Manager'.'Employee Dropdown'"
+                "type": "'One2One Schedule - Manager'.'Schedule Container'.'Frequency Dropdown'"
               }
             }
           ],
@@ -524,19 +524,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.StartDatePicker.AccessibleLabel"
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Schedule Container'.StartDatePicker.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.StartDatePicker.AccessibleLabel",
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Schedule Container'.StartDatePicker.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "One2One Schedule - Manager",
-                "type": "'One2One Schedule - Manager'.StartDatePicker"
+                "type": "'One2One Schedule - Manager'.'Schedule Container'.StartDatePicker"
               }
             }
           ],
@@ -554,19 +554,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Frequency Dropdown'.AccessibleLabel"
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Schedule Container'.'Employee Dropdown'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Frequency Dropdown'.AccessibleLabel",
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Schedule Container'.'Employee Dropdown'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "One2One Schedule - Manager",
-                "type": "'One2One Schedule - Manager'.'Frequency Dropdown'"
+                "type": "'One2One Schedule - Manager'.'Schedule Container'.'Employee Dropdown'"
               }
             }
           ],
@@ -584,19 +584,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.Container1.Gallery3_3.TabIndex"
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.Container1.Gallery3_3.TabIndex",
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "One2One Schedule - Manager",
-                "type": "'One2One Schedule - Manager'.Container1.Gallery3_3"
+                "type": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3"
               }
             }
           ],
@@ -614,19 +614,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.Container1.Gallery3_3.AccessibleLabel"
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.Container1.Gallery3_3.AccessibleLabel",
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "One2One Schedule - Manager",
-                "type": "'One2One Schedule - Manager'.Container1.Gallery3_3"
+                "type": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3"
               }
             }
           ],
@@ -644,19 +644,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.Container1.Gallery3_3.Subtitle2_52.TabIndex"
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.Subtitle2_52.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.Container1.Gallery3_3.Subtitle2_52.TabIndex",
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.Subtitle2_52.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "One2One Schedule - Manager",
-                "type": "'One2One Schedule - Manager'.Container1.Gallery3_3.Subtitle2_52"
+                "type": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.Subtitle2_52"
               }
             }
           ],
@@ -674,19 +674,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.Container1.Gallery3_3.Subtitle2_52.FocusedBorderThickness"
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.Subtitle2_52.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.Container1.Gallery3_3.Subtitle2_52.FocusedBorderThickness",
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.Subtitle2_52.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "One2One Schedule - Manager",
-                "type": "'One2One Schedule - Manager'.Container1.Gallery3_3.Subtitle2_52"
+                "type": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.Subtitle2_52"
               }
             }
           ],
@@ -704,19 +704,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.Container1.Gallery3_3.Subtitle2_50.TabIndex"
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.Subtitle2_50.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.Container1.Gallery3_3.Subtitle2_50.TabIndex",
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.Subtitle2_50.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "One2One Schedule - Manager",
-                "type": "'One2One Schedule - Manager'.Container1.Gallery3_3.Subtitle2_50"
+                "type": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.Subtitle2_50"
               }
             }
           ],
@@ -734,19 +734,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.Container1.Gallery3_3.Subtitle2_50.FocusedBorderThickness"
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.Subtitle2_50.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.Container1.Gallery3_3.Subtitle2_50.FocusedBorderThickness",
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.Subtitle2_50.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "One2One Schedule - Manager",
-                "type": "'One2One Schedule - Manager'.Container1.Gallery3_3.Subtitle2_50"
+                "type": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.Subtitle2_50"
               }
             }
           ],
@@ -1497,6 +1497,186 @@
                 "member": "TabIndex",
                 "module": "One2One View My Survey",
                 "type": "'One2One View My Survey'.Gallery2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Icon4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Icon4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "One2One Schedule - Manager",
+                "type": "'One2One Schedule - Manager'.'Display Table Container'.Icon4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Icon4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Icon4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "One2One Schedule - Manager",
+                "type": "'One2One Schedule - Manager'.'Display Table Container'.Icon4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Schedule Container'.Icon5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Schedule Container'.Icon5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "One2One Schedule - Manager",
+                "type": "'One2One Schedule - Manager'.'Schedule Container'.Icon5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Schedule Container'.Icon5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Schedule Container'.Icon5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "One2One Schedule - Manager",
+                "type": "'One2One Schedule - Manager'.'Schedule Container'.Icon5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.Icon3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.Icon3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "One2One Schedule - Manager",
+                "type": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.Icon3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.Icon3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.Icon3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "One2One Schedule - Manager",
+                "type": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.Icon3"
               }
             }
           ],

@@ -43,12 +43,12 @@
         Y: =100
         ZIndex: =2
 
-    Container1 As groupContainer:
+    "'Display Table Container' As groupContainer":
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =477
-        Width: =736
-        X: =315
-        Y: =182
+        Height: =615
+        Width: =757
+        X: =282
+        Y: =115
         ZIndex: =18
 
         "Gallery3_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
@@ -155,12 +155,15 @@
                 ZIndex: =4
 
             Icon3 As icon.Edit:
+                Color: =RGBA(0, 18, 107, 0.7)
                 FocusedBorderThickness: =1
                 Height: =15
+                HoverBorderColor: =RGBA(255, 0, 0, 1)
+                HoverColor: =RGBA(255, 0, 0, 1)
                 Icon: =Icon.Edit
-                OnSelect: =Select(Parent)
+                OnSelect: =Set(popup,true)
                 Width: =21
-                X: =654
+                X: =695
                 Y: =10
                 ZIndex: =5
 
@@ -260,138 +263,13 @@
             Color: =RGBA(255, 255, 255, 1)
             Height: =24
             HoverBorderColor: =ColorFade(Self.BorderColor, 5%)
+            HoverColor: =RGBA(255, 0, 0, 1)
             Icon: =Icon.AddUser
+            OnSelect: =Set(popup, true)
             Width: =35
             X: =695
             Y: =11
             ZIndex: =4
-
-    "'Schedule Functionality' As group":
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =18
-
-        "'Employee Dropdown' As dropdown":
-            ChevronBackground: =RGBA(57, 55, 104, 1)
-            ChevronHoverBackground: =
-            Font: =gblAppFont
-            Height: =25
-            HoverBorderColor: =
-            HoverColor: =
-            Items: |-
-                =Filter(
-                    Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,EmployeeName.DisplayName)), 
-                    Value <>Blank()
-                    )
-            SelectionFill: =RGBA(57, 55, 104, 1)
-            Size: =10
-            Width: =197
-            X: =1104
-            Y: =597
-            ZIndex: =8
-
-        "'EmployeeName Label' As label":
-            Font: =gblAppFont
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =10
-            Text: |-
-                ="Employee Name :"
-            Width: =165
-            X: =917
-            Y: =597
-            ZIndex: =9
-
-        "'One2One StartDate Label' As label":
-            Font: =gblAppFont
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =10
-            Text: |-
-                ="One2One Start Date :"
-            Width: =165
-            X: =917
-            Y: =646
-            ZIndex: =10
-
-        "'Frequency Label' As label":
-            Font: =gblAppFont
-            FontWeight: =FontWeight.Semibold
-            Height: =25
-            Size: =10
-            Text: |-
-                ="Frequency :"
-            Width: =165
-            X: =917
-            Y: =690
-            ZIndex: =11
-
-        StartDatePicker As datepicker:
-            Font: =Font.Lato
-            Height: =25
-            IconBackground: =RGBA(57, 55, 104, 1)
-            Size: =10
-            Width: =197
-            X: =1104
-            Y: =646
-            ZIndex: =12
-
-        "'Frequency Dropdown' As dropdown":
-            ChevronBackground: =RGBA(57, 55, 104, 1)
-            ChevronHoverBackground: =
-            Font: =gblAppFont
-            Height: =25
-            HoverBorderColor: =
-            HoverColor: =
-            Items: =Choices('Schedule One2One'.Frequency)
-            SelectionFill: =RGBA(57, 55, 104, 1)
-            Size: =10
-            Width: =197
-            X: =1104
-            Y: =690
-            ZIndex: =13
-
-        "'Submit Button' As button":
-            Color: =RGBA(241, 244, 249, 1)
-            Fill: =RGBA(209, 27, 30, 1)
-            Font: =gblAppFont
-            Height: =26
-            HoverFill: =RGBA(99, 139, 44, 1)
-            OnSelect: |-
-                =UpdateContext({currRecord : LookUp('Schedule One2One',EmployeeName.DisplayName = 'Employee Dropdown'.Selected.Value)});
-                
-                Patch(
-                    'Schedule One2One', 
-                     If(IsBlank(currRecord),Defaults('Schedule One2One'),currRecord),
-                    {
-                        EmployeeName: LookUp(UserSecurity,Title = 'Employee Dropdown'.Selected.Value).EmployeeName,
-                        StartDate: StartDatePicker.SelectedDate,
-                        Frequency: 'Frequency Dropdown'.Selected
-                       /* 'NextOne2One Date': 
-                                Switch ( Dropdown2_3.Selected.Value,
-                                "Weekly",  
-                                If(
-                                     DatePicker1.SelectedDate >= Tempdate,
-                                     DatePicker1.SelectedDate, // True condition
-                                     DatePicker1.SelectedDate + RoundUp((Tempdate - DatePicker1.SelectedDate) / 7, 0) * 7 // False condition
-                                ),
-                                "Fortnightly",
-                                If(
-                                    DatePicker1.SelectedDate >= Tempdate,
-                                    DatePicker1.SelectedDate, // True condition
-                                    DatePicker1.SelectedDate + RoundUp((Tempdate - DatePicker1.SelectedDate) / 14, 0) * 14 // False condition
-                                  )
-                                )*/
-                    }
-                )
-            Size: =11
-            Text: ="SUBMIT"
-            Width: =89
-            X: =1104
-            Y: =742
-            ZIndex: =16
 
     "'Screen Header' As group":
         Height: =5
@@ -451,4 +329,143 @@
             Image: ='Stretch-365-IA-Logo-Light-Transparent (1)'
             Width: =146
             ZIndex: =7
+
+    "'Schedule Container' As groupContainer":
+        ContentLanguage: =
+        DropShadow: =DropShadow.ExtraBold
+        Fill: =RGBA(237, 237, 237, 1)
+        Height: =265
+        Visible: =popup
+        Width: =499
+        X: =411
+        Y: =266
+        ZIndex: =19
+
+        "'Employee Dropdown' As dropdown":
+            ChevronBackground: =RGBA(57, 55, 104, 1)
+            ChevronHoverBackground: =
+            Font: =gblAppFont
+            Height: =25
+            HoverBorderColor: =
+            HoverColor: =
+            Items: |-
+                =Filter(
+                    Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,EmployeeName.DisplayName)), 
+                    Value <>Blank()
+                    )
+            SelectionFill: =RGBA(57, 55, 104, 1)
+            Size: =10
+            Width: =197
+            X: =187
+            Y: =40
+            ZIndex: =1
+
+        "'EmployeeName Label' As label":
+            Font: =gblAppFont
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =10
+            Text: |-
+                ="Employee Name :"
+            Width: =165
+            Y: =40
+            ZIndex: =2
+
+        "'One2One StartDate Label' As label":
+            Font: =gblAppFont
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =10
+            Text: |-
+                ="One2One Start Date :"
+            Width: =165
+            Y: =86
+            ZIndex: =3
+
+        "'Frequency Label' As label":
+            Font: =gblAppFont
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =10
+            Text: |-
+                ="Frequency :"
+            Width: =165
+            Y: =133
+            ZIndex: =4
+
+        StartDatePicker As datepicker:
+            Font: =Font.Lato
+            Height: =25
+            IconBackground: =RGBA(57, 55, 104, 1)
+            Size: =10
+            Width: =197
+            X: =187
+            Y: =89
+            ZIndex: =5
+
+        "'Frequency Dropdown' As dropdown":
+            ChevronBackground: =RGBA(57, 55, 104, 1)
+            ChevronHoverBackground: =
+            Font: =gblAppFont
+            Height: =25
+            HoverBorderColor: =
+            HoverColor: =
+            Items: =Choices('Schedule One2One'.Frequency)
+            SelectionFill: =RGBA(57, 55, 104, 1)
+            Size: =10
+            Width: =197
+            X: =187
+            Y: =133
+            ZIndex: =6
+
+        "'Submit Button' As button":
+            Color: =RGBA(241, 244, 249, 1)
+            Fill: =RGBA(209, 27, 30, 1)
+            Font: =gblAppFont
+            Height: =26
+            HoverFill: =RGBA(99, 139, 44, 1)
+            OnSelect: |-
+                =UpdateContext({currRecord : LookUp('Schedule One2One',EmployeeName.DisplayName = 'Employee Dropdown'.Selected.Value)});
+                
+                Patch(
+                    'Schedule One2One', 
+                     If(IsBlank(currRecord),Defaults('Schedule One2One'),currRecord),
+                    {
+                        EmployeeName: LookUp(UserSecurity,Title = 'Employee Dropdown'.Selected.Value).EmployeeName,
+                        StartDate: StartDatePicker.SelectedDate,
+                        Frequency: 'Frequency Dropdown'.Selected
+                       /* 'NextOne2One Date': 
+                                Switch ( Dropdown2_3.Selected.Value,
+                                "Weekly",  
+                                If(
+                                     DatePicker1.SelectedDate >= Tempdate,
+                                     DatePicker1.SelectedDate, // True condition
+                                     DatePicker1.SelectedDate + RoundUp((Tempdate - DatePicker1.SelectedDate) / 7, 0) * 7 // False condition
+                                ),
+                                "Fortnightly",
+                                If(
+                                    DatePicker1.SelectedDate >= Tempdate,
+                                    DatePicker1.SelectedDate, // True condition
+                                    DatePicker1.SelectedDate + RoundUp((Tempdate - DatePicker1.SelectedDate) / 14, 0) * 14 // False condition
+                                  )
+                                )*/
+                    }
+                )
+            Size: =11
+            Text: ="SUBMIT"
+            Width: =89
+            X: =187
+            Y: =185
+            ZIndex: =7
+
+        Icon5 As icon.CancelBadge:
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =39
+            HoverColor: =RGBA(255, 0, 0, 1)
+            Icon: =Icon.CancelBadge
+            OnSelect: =Set(popup,false)
+            Width: =29
+            X: =466
+            Y: =1
+            ZIndex: =8
 
