@@ -35,7 +35,7 @@
             "Name": "galleryTemplate1_33",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 257,
+            "PublishOrderIndex": 260,
             "Rules": [
               {
                 "Category": "Data",
@@ -207,7 +207,7 @@
             "Name": "shp_CMTRequestLeftNav_1",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 258,
+            "PublishOrderIndex": 261,
             "Rules": [
               {
                 "Category": "Data",
@@ -455,7 +455,7 @@
             "Name": "ico_CMTRequestLeftNav_1",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 259,
+            "PublishOrderIndex": 262,
             "Rules": [
               {
                 "Category": "Data",
@@ -847,7 +847,7 @@
             "Name": "lbl_CMTRequestLeftNavText_1",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 260,
+            "PublishOrderIndex": 263,
             "Rules": [
               {
                 "Category": "Data",
@@ -1244,7 +1244,7 @@
             "Name": "shp_CMTRequestLeftNavseperator_1",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 261,
+            "PublishOrderIndex": 264,
             "Rules": [
               {
                 "Category": "Data",
@@ -1548,7 +1548,7 @@
         "Name": "gal_CMTLeftNavReq_1",
         "Parent": "comp_LeftNav",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 256,
+        "PublishOrderIndex": 259,
         "Rules": [
           {
             "Category": "Data",

@@ -42,349 +42,369 @@
         Width: =98
         Y: =100
 
-    Label3_4 As label:
-        Align: =Align.Center
-        Font: =gblAppFont
-        FontWeight: =FontWeight.Semibold
-        Height: =50
-        Size: =18
-        Text: ="One 2 One"
-        Width: =1366
-        ZIndex: =2
+    "'Schedule Functionality' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =18
 
-    Label3_5 As label:
-        Align: =Align.Center
-        Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(57, 55, 104, 1)
-        Font: =gblAppFont
-        FontWeight: =FontWeight.Semibold
-        Height: =50
-        Text: ="Schedule One2One"
-        Width: =1366
-        Y: =50
-        ZIndex: =3
-
-    "'User Image_3' As image":
-        Height: =50
-        Image: =User().Image
-        RadiusBottomLeft: =50
-        RadiusBottomRight: =50
-        RadiusTopLeft: =50
-        RadiusTopRight: =50
-        Width: =50
-        X: =1301
-        ZIndex: =5
-
-    "'User name_3' As label":
-        Align: =Align.Right
-        Font: =gblAppFont
-        FontWeight: =FontWeight.Semibold
-        Height: =30
-        Size: =11
-        Text: |
-            =User().FullName
-        Width: =126
-        X: =1175
-        Y: =10
-        ZIndex: =6
-
-    Image3_2 As image:
-        Height: =50
-        Image: ='Stretch-365-IA-Logo-Light-Transparent (1)'
-        Width: =146
-        ZIndex: =7
-
-    Dropdown2_2 As dropdown:
-        ChevronBackground: =RGBA(57, 55, 104, 1)
-        ChevronHoverBackground: =
-        Font: =gblAppFont
-        Height: =25
-        HoverBorderColor: =
-        HoverColor: =
-        Items: |-
-            =Filter(
-                Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,EmployeeName.DisplayName)), 
-                Value <>Blank()
-                )
-        SelectionFill: =RGBA(57, 55, 104, 1)
-        Size: =10
-        Width: =180
-        X: =316
-        Y: =130
-        ZIndex: =8
-
-    Label7_2 As label:
-        Font: =gblAppFont
-        FontWeight: =FontWeight.Semibold
-        Height: =25
-        Size: =10
-        Text: |-
-            ="Employee Name :"
-        X: =146
-        Y: =130
-        ZIndex: =9
-
-    Label7_3 As label:
-        Font: =gblAppFont
-        FontWeight: =FontWeight.Semibold
-        Height: =25
-        Size: =10
-        Text: |-
-            ="One2One Start Date :"
-        X: =146
-        Y: =179
-        ZIndex: =11
-
-    Label7_4 As label:
-        Font: =gblAppFont
-        FontWeight: =FontWeight.Semibold
-        Height: =25
-        Size: =10
-        Text: |-
-            ="Frequency :"
-        X: =146
-        Y: =223
-        ZIndex: =12
-
-    DatePicker1 As datepicker:
-        Color: =RGBA(0, 18, 107, 1)
-        Font: =Font.Lato
-        Height: |
-            =25
-        IconBackground: =RGBA(57, 55, 104, 1)
-        Size: =10
-        Width: =180
-        X: =316
-        Y: =179
-        ZIndex: =13
-
-    Dropdown2_3 As dropdown:
-        ChevronBackground: =RGBA(57, 55, 104, 1)
-        ChevronHoverBackground: =
-        Font: =gblAppFont
-        Height: =25
-        HoverBorderColor: =
-        HoverColor: =
-        Items: =Choices('Schedule One2One'.Frequency)
-        SelectionFill: =RGBA(57, 55, 104, 1)
-        Size: =10
-        Width: =180
-        X: =316
-        Y: =223
-        ZIndex: =14
-
-    "Gallery3_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-        DelayItemLoading: =true
-        Height: =344
-        Items: |-
-            =Filter(
-                Distinct('Schedule One2One', If(Lower('Created By'.Email) = gblCurrentUserEmail,EmployeeName.DisplayName)), 
-                Value <>Blank()
-                )
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplatePadding: =0
-        TemplateSize: =44
-        Width: =606
-        X: =100
-        Y: =358
-        ZIndex: =15
-
-        Separator6_3 As rectangle:
-            Fill: =RGBA(204, 231, 246, 0.28)
-            Height: =8
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - Self.Height
-            ZIndex: =1
-
-        Subtitle2_52 As label:
+        "'Employee Dropdown' As dropdown":
+            ChevronBackground: =RGBA(57, 55, 104, 1)
+            ChevronHoverBackground: =
             Font: =gblAppFont
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =25
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
+            HoverBorderColor: =
+            HoverColor: =
+            Items: |-
+                =Filter(
+                    Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,EmployeeName.DisplayName)), 
+                    Value <>Blank()
+                    )
+            SelectionFill: =RGBA(57, 55, 104, 1)
             Size: =10
-            Text: |+
-                =
-                //LookUp('Schedule One2One',EmployeeName.DisplayName = ThisItem.Value).'NextOne2One Date'
-                With(
-                     { EmpSched: LookUp('Schedule One2One', EmployeeName.DisplayName = ThisItem.Value) , Tempdate : Date(2023,12,06)},
+            Width: =180
+            X: =348
+            Y: =134
+            ZIndex: =8
+
+        "'EmployeeName Label' As label":
+            Font: =gblAppFont
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =10
+            Text: |-
+                ="Employee Name :"
+            X: =178
+            Y: =134
+            ZIndex: =9
+
+        "'One2One StartDate Label' As label":
+            Font: =gblAppFont
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =10
+            Text: |-
+                ="One2One Start Date :"
+            X: =178
+            Y: =183
+            ZIndex: =11
+
+        "'Frequency Label' As label":
+            Font: =gblAppFont
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =10
+            Text: |-
+                ="Frequency :"
+            X: =178
+            Y: =227
+            ZIndex: =12
+
+        StartDatePicker As datepicker:
+            Font: =Font.Lato
+            Height: |
+                =25
+            IconBackground: =RGBA(57, 55, 104, 1)
+            Size: =10
+            Width: =180
+            X: =348
+            Y: =183
+            ZIndex: =13
+
+        "'Frequency Dropdown' As dropdown":
+            ChevronBackground: =RGBA(57, 55, 104, 1)
+            ChevronHoverBackground: =
+            Font: =gblAppFont
+            Height: =25
+            HoverBorderColor: =
+            HoverColor: =
+            Items: =Choices('Schedule One2One'.Frequency)
+            SelectionFill: =RGBA(57, 55, 104, 1)
+            Size: =10
+            Width: =180
+            X: =348
+            Y: =227
+            ZIndex: =14
+
+        "'Submit Button' As button":
+            Color: =RGBA(241, 244, 249, 1)
+            Fill: =RGBA(209, 27, 30, 1)
+            Font: =gblAppFont
+            Height: =26
+            HoverFill: =RGBA(99, 139, 44, 1)
+            OnSelect: |-
+                =UpdateContext({currRecord : LookUp('Schedule One2One',EmployeeName.DisplayName = 'Employee Dropdown'.Selected.Value)});
                 
-                Switch ( EmpSched.Frequency.Value,
-                        "Weekly",  
+                Patch(
+                    'Schedule One2One', 
+                     If(IsBlank(currRecord),Defaults('Schedule One2One'),currRecord),
+                    {
+                        EmployeeName: LookUp(UserSecurity,Title = 'Employee Dropdown'.Selected.Value).EmployeeName,
+                        StartDate: StartDatePicker.SelectedDate,
+                        Frequency: 'Frequency Dropdown'.Selected
+                       /* 'NextOne2One Date': 
+                                Switch ( Dropdown2_3.Selected.Value,
+                                "Weekly",  
+                                If(
+                                     DatePicker1.SelectedDate >= Tempdate,
+                                     DatePicker1.SelectedDate, // True condition
+                                     DatePicker1.SelectedDate + RoundUp((Tempdate - DatePicker1.SelectedDate) / 7, 0) * 7 // False condition
+                                ),
+                                "Fortnightly",
+                                If(
+                                    DatePicker1.SelectedDate >= Tempdate,
+                                    DatePicker1.SelectedDate, // True condition
+                                    DatePicker1.SelectedDate + RoundUp((Tempdate - DatePicker1.SelectedDate) / 14, 0) * 14 // False condition
+                                  )
+                                )*/
+                    }
+                )
+            Size: =11
+            Text: ="SUBMIT"
+            Width: =81
+            X: =348
+            Y: =279
+            ZIndex: =17
+
+    "'Screen Header' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =18
+
+        "'Main Header Label' As label":
+            Align: =Align.Center
+            Font: =gblAppFont
+            FontWeight: =FontWeight.Semibold
+            Height: =50
+            Size: =18
+            Text: ="One 2 One"
+            Width: =1366
+            ZIndex: =2
+
+        "'Sub-Header Label' As label":
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(57, 55, 104, 1)
+            Font: =gblAppFont
+            FontWeight: =FontWeight.Semibold
+            Height: =50
+            Text: ="Schedule One2One"
+            Width: =1366
+            Y: =50
+            ZIndex: =3
+
+        "'User Image_3' As image":
+            Height: =50
+            Image: =User().Image
+            RadiusBottomLeft: =50
+            RadiusBottomRight: =50
+            RadiusTopLeft: =50
+            RadiusTopRight: =50
+            Width: =50
+            X: =1301
+            ZIndex: =5
+
+        "'UserName Label' As label":
+            Align: =Align.Right
+            Font: =gblAppFont
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            Size: =11
+            Text: |
+                =User().FullName
+            Width: =126
+            X: =1175
+            Y: =10
+            ZIndex: =6
+
+        "'Stretch Logo' As image":
+            Height: =50
+            Image: ='Stretch-365-IA-Logo-Light-Transparent (1)'
+            Width: =146
+            ZIndex: =7
+
+    "'Display Table' As group":
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =18
+
+        "Gallery3_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            DelayItemLoading: =true
+            Height: =587
+            Items: |-
+                =Filter(
+                    Distinct('Schedule One2One', If(Lower('Created By'.Email) = gblCurrentUserEmail,EmployeeName.DisplayName)), 
+                    Value <>Blank()
+                    )
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            TemplatePadding: =0
+            TemplateSize: =44
+            Width: =560
+            X: =791
+            Y: =161
+            ZIndex: =15
+
+            Separator6_3 As rectangle:
+                Fill: =RGBA(204, 231, 246, 0.28)
+                Height: =8
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =Parent.TemplateHeight - Self.Height
+                ZIndex: =1
+
+            Subtitle2_52 As label:
+                Font: =gblAppFont
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =25
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =10
+                Text: |+
+                    =
+                    //LookUp('Schedule One2One',EmployeeName.DisplayName = ThisItem.Value).'NextOne2One Date'
+                    With(
+                         { EmpSched: LookUp('Schedule One2One', EmployeeName.DisplayName = ThisItem.Value) , Tempdate : Today()},
+                    
+                    Switch ( EmpSched.Frequency.Value,
+                            "Weekly",  
+                                If(
+                                    EmpSched.StartDate >= Tempdate,
+                                    EmpSched.StartDate, // True condition
+                                    EmpSched.StartDate + RoundUp((Tempdate - EmpSched.StartDate) / 7, 0) * 7 // False condition
+                                    ),
+                            "Fortnightly",
                             If(
                                 EmpSched.StartDate >= Tempdate,
                                 EmpSched.StartDate, // True condition
-                                EmpSched.StartDate + RoundUp((Tempdate - EmpSched.StartDate) / 7, 0) * 7 // False condition
+                                EmpSched.StartDate + RoundUp((Tempdate - EmpSched.StartDate) / 14, 0) * 14 // False condition
                                 ),
-                        "Fortnightly",
-                        If(
-                            EmpSched.StartDate >= Tempdate,
-                            EmpSched.StartDate, // True condition
-                            EmpSched.StartDate + RoundUp((Tempdate - EmpSched.StartDate) / 14, 0) * 14 // False condition
-                            ),
-                        
-                        "Monthly",
-                        If(
-                            EmpSched.StartDate >= Tempdate,
-                            EmpSched.StartDate, // True condition
-                            EmpSched.StartDate + RoundUp((Tempdate - EmpSched.StartDate) / 28, 0) * 28 // False condition
+                            
+                            "Monthly",
+                            If(
+                                EmpSched.StartDate >= Tempdate,
+                                EmpSched.StartDate, // True condition
+                                EmpSched.StartDate + RoundUp((Tempdate - EmpSched.StartDate) / 28, 0) * 28 // False condition
+                                )
                             )
-                        )
-                )
-                
-            VerticalAlign: =VerticalAlign.Top
-            Width: =284
-            X: =322
-            Y: =10
-            ZIndex: =2
+                    )
+                    
+                VerticalAlign: =VerticalAlign.Top
+                Width: =284
+                X: =322
+                Y: =10
+                ZIndex: =2
 
-        Subtitle2_51 As label:
-            Font: =gblAppFont
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =25
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =10
-            Text: =LookUp('Schedule One2One',EmployeeName.DisplayName = ThisItem.Value).Frequency.Value
-            VerticalAlign: =VerticalAlign.Top
-            Width: =lbl1_3.Width
-            X: =172
-            Y: =10
-            ZIndex: =3
+            Subtitle2_51 As label:
+                Font: =gblAppFont
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =25
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =10
+                Text: =LookUp('Schedule One2One',EmployeeName.DisplayName = ThisItem.Value).Frequency.Value
+                VerticalAlign: =VerticalAlign.Top
+                Width: ='Frq Label'.Width
+                X: =172
+                Y: =10
+                ZIndex: =3
 
-        Subtitle2_50 As label:
-            Font: =gblAppFont
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =25
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =10
-            Text: =ThisItem.Value
-            VerticalAlign: =VerticalAlign.Top
-            Width: =lbl2_3.Width
-            X: |
-                =lbl2_3.X+2
-            Y: =10
-            ZIndex: =4
+            Subtitle2_50 As label:
+                Font: =gblAppFont
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =25
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =10
+                Text: =ThisItem.Value
+                VerticalAlign: =VerticalAlign.Top
+                Width: ='Emp Label'.Width
+                X: |
+                    ='Emp Label'.X+2
+                Y: =10
+                ZIndex: =4
 
-    Headers_3 As groupContainer.manualLayoutContainer:
-        Height: =29
-        Width: =607
-        X: =98
-        Y: =330
-        ZIndex: =16
+        "'Gallery Headers' As groupContainer.manualLayoutContainer":
+            Height: =50
+            Width: =561
+            X: =789
+            Y: =113
+            ZIndex: =16
 
-        lbl2_3 As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =RGBA(204, 231, 246, 0.28)
-            FocusedBorderThickness: =4
-            Font: =gblAppFont
-            FontWeight: =FontWeight.Semibold
-            Height: =29
-            HoverBorderColor: =lbl2_3.BorderColor
-            HoverColor: =lbl2_3.Color
-            HoverFill: =lbl2_3.Fill
-            PressedBorderColor: =lbl2_3.BorderColor
-            PressedColor: =lbl2_3.Color
-            PressedFill: =lbl2_3.Fill
-            Size: =gblAppFontSize
-            Text: ="Employee Name"
-            Width: =170
-            ZIndex: =1
+            "'Emp Label' As label":
+                Align: =Align.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(204, 231, 246, 0.28)
+                FocusedBorderThickness: =4
+                Font: =gblAppFont
+                FontWeight: =FontWeight.Semibold
+                Height: =29
+                HoverBorderColor: ='Emp Label'.BorderColor
+                HoverColor: ='Emp Label'.Color
+                HoverFill: ='Emp Label'.Fill
+                PressedBorderColor: ='Emp Label'.BorderColor
+                PressedColor: ='Emp Label'.Color
+                PressedFill: ='Emp Label'.Fill
+                Size: =gblAppFontSize
+                Text: ="Employee Name"
+                Width: =170
+                ZIndex: =1
 
-        lbl1_3 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =RGBA(204, 231, 246, 0.28)
-            FocusedBorderThickness: =4
-            Font: =gblAppFont
-            FontWeight: =FontWeight.Semibold
-            Height: =29
-            HoverBorderColor: =lbl1_3.BorderColor
-            HoverColor: =lbl1_3.Color
-            HoverFill: =lbl1_3.Fill
-            PressedBorderColor: =lbl1_3.BorderColor
-            PressedColor: =lbl1_3.Color
-            PressedFill: =lbl1_3.Fill
-            Size: =gblAppFontSize
-            Text: ="Frequency"
-            X: =lbl2_3.X+lbl2_3.Width + 2
-            ZIndex: =2
+            "'Frq Label' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(204, 231, 246, 0.28)
+                FocusedBorderThickness: =4
+                Font: =gblAppFont
+                FontWeight: =FontWeight.Semibold
+                Height: =29
+                HoverBorderColor: ='Frq Label'.BorderColor
+                HoverColor: ='Frq Label'.Color
+                HoverFill: ='Frq Label'.Fill
+                PressedBorderColor: ='Frq Label'.BorderColor
+                PressedColor: ='Frq Label'.Color
+                PressedFill: ='Frq Label'.Fill
+                Size: =gblAppFontSize
+                Text: ="Frequency"
+                X: ='Emp Label'.X+'Emp Label'.Width + 2
+                ZIndex: =2
 
-        lbl_3 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            Fill: =RGBA(204, 231, 246, 0.28)
-            FocusedBorderThickness: =4
-            Font: =gblAppFont
-            FontWeight: =FontWeight.Semibold
-            Height: =29
-            HoverBorderColor: =lbl_3.BorderColor
-            HoverColor: =lbl_3.Color
-            HoverFill: =lbl_3.Fill
-            PressedBorderColor: =lbl_3.BorderColor
-            PressedColor: =lbl_3.Color
-            PressedFill: =lbl_3.Fill
-            Size: =gblAppFontSize
-            Text: ="Next One2One"
-            Width: =281
-            X: =326
-            ZIndex: =3
-
-    Button3_5 As button:
-        Color: =RGBA(241, 244, 249, 1)
-        Fill: =RGBA(209, 27, 30, 1)
-        Font: =gblAppFont
-        Height: =26
-        HoverFill: =RGBA(99, 139, 44, 1)
-        OnSelect: |-
-            =UpdateContext({currRecord : LookUp('Schedule One2One',EmployeeName.DisplayName = Dropdown2_2.Selected.Value)});
-            
-            Patch(
-                'Schedule One2One', 
-                 If(IsBlank(currRecord),Defaults('Schedule One2One'),currRecord),
-                {
-                    EmployeeName: LookUp(UserSecurity,Title = Dropdown2_2.Selected.Value).EmployeeName,
-                    StartDate: DatePicker1.SelectedDate,
-                    Frequency: Dropdown2_3.Selected
-                   /* 'NextOne2One Date': 
-                            Switch ( Dropdown2_3.Selected.Value,
-                            "Weekly",  
-                            If(
-                                 DatePicker1.SelectedDate >= Tempdate,
-                                 DatePicker1.SelectedDate, // True condition
-                                 DatePicker1.SelectedDate + RoundUp((Tempdate - DatePicker1.SelectedDate) / 7, 0) * 7 // False condition
-                            ),
-                            "Fortnightly",
-                            If(
-                                DatePicker1.SelectedDate >= Tempdate,
-                                DatePicker1.SelectedDate, // True condition
-                                DatePicker1.SelectedDate + RoundUp((Tempdate - DatePicker1.SelectedDate) / 14, 0) * 14 // False condition
-                              )
-                            )*/
-                }
-            )
-        Size: =11
-        Text: ="SUBMIT"
-        Width: =81
-        X: =316
-        Y: =275
-        ZIndex: =17
+            "'Next 121 Label' As label":
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderStyle: =BorderStyle.None
+                BorderThickness: =2
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                Fill: =RGBA(204, 231, 246, 0.28)
+                FocusedBorderThickness: =4
+                Font: =gblAppFont
+                FontWeight: =FontWeight.Semibold
+                Height: =29
+                HoverBorderColor: ='Next 121 Label'.BorderColor
+                HoverColor: ='Next 121 Label'.Color
+                HoverFill: ='Next 121 Label'.Fill
+                PressedBorderColor: ='Next 121 Label'.BorderColor
+                PressedColor: ='Next 121 Label'.Color
+                PressedFill: ='Next 121 Label'.Fill
+                Size: =gblAppFontSize
+                Text: ="Next One2One Date"
+                Width: =281
+                X: =326
+                ZIndex: =3
 

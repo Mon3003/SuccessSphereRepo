@@ -494,19 +494,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.Dropdown2_2.AccessibleLabel"
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Employee Dropdown'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.Dropdown2_2.AccessibleLabel",
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Employee Dropdown'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "One2One Schedule - Manager",
-                "type": "'One2One Schedule - Manager'.Dropdown2_2"
+                "type": "'One2One Schedule - Manager'.'Employee Dropdown'"
               }
             }
           ],
@@ -524,19 +524,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.DatePicker1.AccessibleLabel"
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.StartDatePicker.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.DatePicker1.AccessibleLabel",
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.StartDatePicker.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "One2One Schedule - Manager",
-                "type": "'One2One Schedule - Manager'.DatePicker1"
+                "type": "'One2One Schedule - Manager'.StartDatePicker"
               }
             }
           ],
@@ -554,19 +554,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.Dropdown2_3.AccessibleLabel"
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Frequency Dropdown'.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'One2One Schedule - Manager'.Dropdown2_3.AccessibleLabel",
+                  "fullyQualifiedName": "'One2One Schedule - Manager'.'Frequency Dropdown'.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "One2One Schedule - Manager",
-                "type": "'One2One Schedule - Manager'.Dropdown2_3"
+                "type": "'One2One Schedule - Manager'.'Frequency Dropdown'"
               }
             }
           ],
