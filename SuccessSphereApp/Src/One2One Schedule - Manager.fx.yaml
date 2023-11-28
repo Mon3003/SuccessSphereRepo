@@ -207,7 +207,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =10
-            Text: |
+            Text: |+
                 =
                 //LookUp('Schedule One2One',EmployeeName.DisplayName = ThisItem.Value).'NextOne2One Date'
                 With(
@@ -225,8 +225,8 @@
                             EmpSched.StartDate >= Tempdate,
                             EmpSched.StartDate, // True condition
                             EmpSched.StartDate + RoundUp((Tempdate - EmpSched.StartDate) / 14, 0) * 14 // False condition
-                            )
-                        ),
+                            ),
+                        
                         "Monthly",
                         If(
                             EmpSched.StartDate >= Tempdate,
@@ -235,6 +235,7 @@
                             )
                         )
                 )
+                
             VerticalAlign: =VerticalAlign.Top
             Width: =284
             X: =322
@@ -354,7 +355,7 @@
         Height: =26
         HoverFill: =RGBA(99, 139, 44, 1)
         OnSelect: |-
-            =UpdateContext({currRecord : LookUp('Schedule One2One',EmployeeName.DisplayName = Dropdown2_2.Selected.Value) , Tempdate : Date(2023,12,13)});
+            =UpdateContext({currRecord : LookUp('Schedule One2One',EmployeeName.DisplayName = Dropdown2_2.Selected.Value)});
             
             Patch(
                 'Schedule One2One', 
