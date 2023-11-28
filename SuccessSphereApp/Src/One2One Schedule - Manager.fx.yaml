@@ -207,10 +207,10 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =10
-            Text: |-
+            Text: |
                 =
-                LookUp('Schedule One2One',EmployeeName.DisplayName = ThisItem.Value).'NextOne2One Date'
-                /*With(
+                //LookUp('Schedule One2One',EmployeeName.DisplayName = ThisItem.Value).'NextOne2One Date'
+                With(
                      { EmpSched: LookUp('Schedule One2One', EmployeeName.DisplayName = ThisItem.Value) , Tempdate : Date(2023,12,06)},
                 
                 Switch ( EmpSched.Frequency.Value,
@@ -226,9 +226,15 @@
                             EmpSched.StartDate, // True condition
                             EmpSched.StartDate + RoundUp((Tempdate - EmpSched.StartDate) / 14, 0) * 14 // False condition
                             )
+                        ),
+                        "Monthly",
+                        If(
+                            EmpSched.StartDate >= Tempdate,
+                            EmpSched.StartDate, // True condition
+                            EmpSched.StartDate + RoundUp((Tempdate - EmpSched.StartDate) / 28, 0) * 28 // False condition
+                            )
                         )
                 )
-                */
             VerticalAlign: =VerticalAlign.Top
             Width: =284
             X: =322
@@ -356,8 +362,8 @@
                 {
                     EmployeeName: LookUp(UserSecurity,Title = Dropdown2_2.Selected.Value).EmployeeName,
                     StartDate: DatePicker1.SelectedDate,
-                    Frequency: Dropdown2_3.Selected,
-                    'NextOne2One Date': 
+                    Frequency: Dropdown2_3.Selected
+                   /* 'NextOne2One Date': 
                             Switch ( Dropdown2_3.Selected.Value,
                             "Weekly",  
                             If(
@@ -371,7 +377,7 @@
                                 DatePicker1.SelectedDate, // True condition
                                 DatePicker1.SelectedDate + RoundUp((Tempdate - DatePicker1.SelectedDate) / 14, 0) * 14 // False condition
                               )
-                            )
+                            )*/
                 }
             )
         Size: =11
