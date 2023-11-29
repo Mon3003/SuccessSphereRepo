@@ -6,12 +6,12 @@
             SortByColumns(
                 Filter(
                     'One2One Survey',
-                    gblCurrentUserEmail = ManagerEmail.Value && IsBlank(ManagerFeedback)
+                    gblCurrentUserEmail = ManagerEmail.Value && IsBlank(ManagerFeedback) && Dropdown2_1.SelectedText.Value = 'Created By'.DisplayName
                 ),
                 "SurveyDate",
                 SortOrder.Descending
             )
-        )
+        );
 
     comp_LeftNavMyUploads_2 As comp_LeftNav:
         Height: =668
@@ -504,6 +504,18 @@
         Items: |-
             =Distinct('One2One Survey', If(ManagerEmail.Value= gblCurrentUserEmail,'Created By'.DisplayName))
             //Distinct('One2One Survey', If(ManagerName.Value= gblCurrentUserFullName,'Created By'.DisplayName))
+        OnChange: |-
+            =ClearCollect(
+                LatestSurveys,
+                SortByColumns(
+                    Filter(
+                        'One2One Survey',
+                        gblCurrentUserEmail = ManagerEmail.Value && IsBlank(ManagerFeedback) && Dropdown2_1.SelectedText.Value = 'Created By'.DisplayName
+                    ),
+                    "SurveyDate",
+                    SortOrder.Descending
+                )
+            );
         SelectionFill: =RGBA(57, 55, 104, 1)
         Size: =10
         Width: =180
