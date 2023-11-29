@@ -55,10 +55,15 @@
             DelayItemLoading: =true
             Height: =375
             Items: |-
-                =Filter(
-                    Distinct('Schedule One2One', If(Lower('Created By'.Email) = gblCurrentUserEmail,EmployeeName.DisplayName)), 
+                =//UpdateContext({temp : Distinct('Schedule One2One', If(Lower('Created By'.Email) = gblCurrentUserEmail ,EmployeeName.DisplayName))} ),
+                Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,EmployeeName.DisplayName))
+                
+                
+                    /*
+                    Filter(
+                    Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,EmployeeName.DisplayName)), 
                     Value <>Blank()
-                    )
+                    )*/
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
@@ -154,19 +159,6 @@
                 Y: =10
                 ZIndex: =4
 
-            Icon3 As icon.Edit:
-                Color: =RGBA(0, 18, 107, 0.7)
-                FocusedBorderThickness: =1
-                Height: =15
-                HoverBorderColor: =RGBA(255, 0, 0, 1)
-                HoverColor: =RGBA(255, 0, 0, 1)
-                Icon: =Icon.Edit
-                OnSelect: =Set(popup,true)
-                Width: =21
-                X: =695
-                Y: =10
-                ZIndex: =5
-
         "'Gallery Headers' As groupContainer.manualLayoutContainer":
             Fill: =RGBA(255, 255, 255, 1)
             Height: =33
@@ -258,18 +250,19 @@
             Y: =7
             ZIndex: =3
 
-        Icon4 As icon.Add:
-            AutoDisableOnSelect: =false
-            Color: =RGBA(255, 255, 255, 1)
-            Height: =24
-            HoverBorderColor: =ColorFade(Self.BorderColor, 5%)
-            HoverColor: =RGBA(255, 0, 0, 1)
-            Icon: =Icon.AddUser
+        Button3_4 As button:
+            Color: =RGBA(99, 139, 44, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =gblAppFont
+            Height: =25
+            HoverFill: =RGBA(99, 139, 44, 1)
             OnSelect: =Set(popup, true)
-            Width: =35
-            X: =695
+            Size: =10
+            Text: ="Add / Edit"
+            Width: =70
+            X: =655
             Y: =11
-            ZIndex: =4
+            ZIndex: =5
 
     "'Screen Header' As group":
         Height: =5
@@ -458,7 +451,7 @@
             Y: =185
             ZIndex: =7
 
-        Icon5 As icon.CancelBadge:
+        "'Cancel Icon' As icon.CancelBadge":
             Color: =RGBA(0, 0, 0, 1)
             Height: =39
             HoverColor: =RGBA(255, 0, 0, 1)
