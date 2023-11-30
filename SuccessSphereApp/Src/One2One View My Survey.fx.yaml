@@ -10,7 +10,7 @@
         ZIndex: =1
 
     Rectangle4 As rectangle:
-        Fill: =RGBA(204, 231, 246, 0.28)
+        Fill: =RGBA(192, 192, 192, 0.3)
         Height: =668
         Width: =391
         X: =975
@@ -112,7 +112,7 @@
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
-        Fill: =RGBA(204, 231, 246, 0.28)
+        Fill: =RGBA(192, 192, 192, 0.3)
         Height: =668
         Items: =SortByColumns(Filter('One2One Survey', If(Lower('Created By'.Email) = gblCurrentUserEmail, true, false)),"SurveyDate",SortOrder.Descending)
         Layout: =Layout.Vertical

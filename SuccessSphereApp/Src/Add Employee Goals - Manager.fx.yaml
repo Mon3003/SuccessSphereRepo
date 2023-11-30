@@ -1,6 +1,14 @@
 "'Add Employee Goals - Manager' As screen":
     Fill: =RGBA(0, 0, 0, 0)
 
+    Rectangle1 As rectangle:
+        Fill: =RGBA(216, 235, 255, 0.25)
+        Height: =668
+        Width: =1266
+        X: =100
+        Y: =100
+        ZIndex: =1
+
     comp_LeftNavMyUploads_6 As comp_LeftNav:
         Height: =668
         LeftNavCollection: |-
@@ -28,6 +36,7 @@
                 ),"NavVisible",SortOrder.Ascending)
         Width: =98
         Y: =100
+        ZIndex: =2
 
     Label3_12 As label:
         Align: =Align.Center
@@ -37,7 +46,7 @@
         Size: =18
         Text: ="Goals"
         Width: =1366
-        ZIndex: =2
+        ZIndex: =3
 
     Label3_13 As label:
         Align: =Align.Center
@@ -49,7 +58,7 @@
         Text: ="Add Employee Goals"
         Width: =1366
         Y: =50
-        ZIndex: =3
+        ZIndex: =4
 
     "'User Image_7' As image":
         Height: =50
@@ -111,7 +120,7 @@
         Width: =126
         X: =100
         Y: =148
-        ZIndex: =10
+        ZIndex: =9
 
     "'One2One StartDate Label_1' As label":
         Font: =gblAppFont
@@ -123,7 +132,7 @@
         Width: =73
         X: =523
         Y: =153
-        ZIndex: =11
+        ZIndex: =10
 
     DateDue As datepicker:
         BorderThickness: =1
@@ -134,7 +143,7 @@
         Width: =197
         X: =610
         Y: =158
-        ZIndex: =12
+        ZIndex: =11
 
     "'EmployeeName Label_2' As label":
         Font: =gblAppFont
@@ -146,7 +155,7 @@
         Width: =56
         X: =100
         Y: =200
-        ZIndex: =13
+        ZIndex: =12
 
     "'EmployeeName Label_3' As label":
         Font: =gblAppFont
@@ -158,7 +167,7 @@
         Width: =146
         X: =100
         Y: =240
-        ZIndex: =14
+        ZIndex: =13
 
     TextInput1 As text:
         BorderThickness: =1
@@ -170,7 +179,7 @@
         Width: =724
         X: =203
         Y: =259
-        ZIndex: =15
+        ZIndex: =14
 
     Button3_5 As button:
         Color: =RGBA(99, 139, 44, 1)
@@ -184,7 +193,7 @@
         Width: =70
         X: =1281
         Y: =62
-        ZIndex: =16
+        ZIndex: =15
 
     Button3_6 As button:
         Color: =RGBA(246, 88, 16, 1)
@@ -192,23 +201,20 @@
         Font: =gblAppFont
         Height: =25
         HoverFill: =RGBA(246, 88, 16, 1)
-        OnSelect: |-
-            =UpdateContext({currRecord : LookUp('Schedule One2One',EmployeeName.DisplayName = 'Employee Dropdown_1'.Selected.Value)});
-            
-            Patch(
+        OnSelect: |
+            =Patch(
                 Goals, 
                 {
-                    EmployeeName: LookUp(UserSecurity,Title = 'Employee Dropdown_1'.Selected.Value).EmployeeName,
-                    DateDue: DateDue.SelectedDate,
-                   
+                    EmployeeName: LookUp(UserSecurity, Title = 'Employee Dropdown_1'.SelectedText.Value).EmployeeName,
+                    DateDue: DateDue.SelectedDate
                 }
-            )
+            );
         Size: =11
         Text: ="Save"
         Width: =70
         X: =1203
         Y: =62
-        ZIndex: =17
+        ZIndex: =16
 
     TextInput2 As text:
         Align: =Align.Center
@@ -221,5 +227,5 @@
         Width: =75
         X: =150
         Y: =205
-        ZIndex: =18
+        ZIndex: =17
 

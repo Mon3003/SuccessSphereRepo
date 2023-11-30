@@ -68,7 +68,7 @@
             ZIndex: =1
 
             Separator6_3 As rectangle:
-                Fill: =RGBA(204, 231, 246, 0.28)
+                Fill: =RGBA(192, 192, 192, 0.3)
                 Height: =8
                 OnSelect: =Select(Parent)
                 Width: =Parent.TemplateWidth
@@ -166,7 +166,7 @@
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                Fill: =RGBA(204, 231, 246, 0.28)
+                Fill: =RGBA(192, 192, 192, 0.3)
                 FocusedBorderThickness: =4
                 Font: =gblAppFont
                 FontWeight: =FontWeight.Semibold
@@ -188,7 +188,7 @@
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                Fill: =RGBA(204, 231, 246, 0.28)
+                Fill: =RGBA(192, 192, 192, 0.3)
                 FocusedBorderThickness: =4
                 Font: =gblAppFont
                 FontWeight: =FontWeight.Semibold
@@ -214,7 +214,7 @@
                 BorderStyle: =BorderStyle.None
                 BorderThickness: =2
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                Fill: =RGBA(204, 231, 246, 0.28)
+                Fill: =RGBA(192, 192, 192, 0.3)
                 FocusedBorderThickness: =4
                 Font: =gblAppFont
                 FontWeight: =FontWeight.Semibold
