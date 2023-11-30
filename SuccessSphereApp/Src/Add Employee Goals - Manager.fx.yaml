@@ -201,14 +201,7 @@
         Font: =gblAppFont
         Height: =25
         HoverFill: =RGBA(246, 88, 16, 1)
-        OnSelect: |
-            =Patch(
-                Goals, 
-                {
-                    EmployeeName: LookUp(UserSecurity, Title = 'Employee Dropdown_1'.SelectedText.Value).EmployeeName,
-                    DateDue: DateDue.SelectedDate
-                }
-            );
+        OnSelect: =
         Size: =11
         Text: ="Save"
         Width: =70
