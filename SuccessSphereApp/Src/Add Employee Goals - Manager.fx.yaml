@@ -229,6 +229,7 @@
                     DateDue: DateDue.SelectedDate,
                     Year: TextInput2.Text,
                     Goals: TextInput2.Text,
+                    Saved: 1,
                     ManagerID: {
                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
                         Id: LookUp(
