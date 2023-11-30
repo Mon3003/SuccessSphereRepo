@@ -11,7 +11,7 @@
   },
   "Properties": {
     "AppCreationSource": "AppFromScratch",
-    "AppDescription": "",
+    "AppDescription": "The Success Sphere app empowers business users to efficiently manage and track their surveys, schedules, and feedback. With intuitive navigation and comprehensive data cards, users can easily complete surveys, view and analyze survey results, schedule one-on-one meetings, provide manager feedback, and access important documents. This app streamlines the entire survey process, enabling users to make data-driven decisions and drive success in their organizations.",
     "AppPreviewFlagsMap": {
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,
