@@ -2,7 +2,7 @@
     Fill: =RGBA(0, 0, 0, 0)
 
     Rectangle1 As rectangle:
-        Fill: =RGBA(216, 235, 255, 0.25)
+        Fill: =RGBA(216, 235, 255, 0.3)
         Height: =668
         Width: =1266
         X: =100
@@ -171,9 +171,11 @@
 
     TextInput1 As text:
         BorderThickness: =1
-        Default: =""
+        Default: =vartext
         Font: =gblAppFont
         Height: =467
+        HoverBorderColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
         Mode: =TextMode.MultiLine
         Size: =10
         Width: =724
@@ -195,30 +197,54 @@
         Y: =62
         ZIndex: =15
 
+    TextInput2 As text:
+        Align: =Align.Center
+        BorderThickness: =1
+        Default: =vartext
+        Font: =gblAppFont
+        Format: =TextFormat.Number
+        Height: =20
+        HoverBorderColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Size: =10
+        Width: =75
+        X: =150
+        Y: =205
+        ZIndex: =17
+
     Button3_6 As button:
         Color: =RGBA(246, 88, 16, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Font: =gblAppFont
         Height: =25
         HoverFill: =RGBA(246, 88, 16, 1)
-        OnSelect: =
+        OnSelect: |-
+            =Patch(
+                Goals,
+                {
+                    EmployeeName: LookUp(
+                        UserSecurity,
+                        Title = 'Employee Dropdown_1'.SelectedText.Value
+                    ).EmployeeName,
+                    DateDue: DateDue.SelectedDate,
+                    Year: TextInput2.Text,
+                    Goals: TextInput2.Text,
+                    ManagerID: {
+                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                        Id: LookUp(
+                            UserSecurity,
+                            gblCurrentUserEmail = EmployeeEmail,
+                            ManagerID.Id
+                        ),
+                        Value: ""
+                    }
+                }
+            );
+            Set(vartext,"")
         Size: =11
         Text: ="Save"
         Width: =70
         X: =1203
         Y: =62
-        ZIndex: =16
-
-    TextInput2 As text:
-        Align: =Align.Center
-        BorderThickness: =1
-        Default: =
-        Font: =gblAppFont
-        Format: =TextFormat.Number
-        Height: =20
-        Size: =10
-        Width: =75
-        X: =150
-        Y: =205
-        ZIndex: =17
+        ZIndex: =18
 
