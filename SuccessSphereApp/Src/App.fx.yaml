@@ -82,8 +82,8 @@ App As appinfo:
                 NavSecuirty:true},
         	{
                 Title: "Admin",
-                NavLink:  'Add / Remove Employee - Manager',
-                NavIco: Icon.Support,
+                NavLink:  Admin,
+                NavIco: Icon.Settings,
                 NavColor: ColorValue("#281E20"),
                 NavVisible: 5,
                 NavSecuirty: If(gblCurrentUserRole.Role="Manager", true,false)

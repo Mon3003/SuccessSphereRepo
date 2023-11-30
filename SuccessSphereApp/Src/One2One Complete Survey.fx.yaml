@@ -100,7 +100,7 @@
     Form2 As form:
         DataSource: ='One2One Survey'
         DefaultMode: =FormMode.New
-        Fill: =RGBA(192, 192, 192, 0.3)
+        Fill: =RGBA(216, 235, 255, 0.25)
         Height: =668
         NumberOfColumns: =1
         OnSuccess: |-

@@ -1,7 +1,7 @@
-"'Add / Remove Employee - Manager' As screen":
+Admin As screen:
     Fill: =RGBA(0, 0, 0, 0)
 
-    comp_LeftNavMyUploads_3 As comp_LeftNav:
+    comp_LeftNavMyUploads_5 As comp_LeftNav:
         Height: =668
         LeftNavCollection: |-
             =SortByColumns(Table({
@@ -12,24 +12,16 @@
                     NavSecuirty : true
                 },  
                 {
-                    Title: "Add / Remove Employee",
-                    NavLink: 'Add / Remove Employee - Manager',
-                    NavIco: Icon.AddUser,
+                    Title: "Admin",
+                    NavLink: Admin,
+                    NavIco: Icon.Settings,
                     NavVisible: 5,
-                    NavSecuirty : true
-                },
-                {
-                    Title: "Delegate Manager",
-                    NavLink: 'Delegate Manager - Manager',
-                    NavIco: Icon.People
-                    ,
-                    NavVisible: 6,
                     NavSecuirty : true
                 }),"NavVisible",SortOrder.Ascending)
         Width: =98
         Y: =100
 
-    Label3_8 As label:
+    Label3_10 As label:
         Align: =Align.Center
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
@@ -39,19 +31,20 @@
         Width: =1366
         ZIndex: =2
 
-    Label3_9 As label:
+    Label3_11 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(57, 55, 104, 1)
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
         Height: =50
-        Text: ="Add / Remove Employee"
-        Width: =1366
+        Text: ="Delegate Manager"
+        Width: =634
+        X: =732
         Y: =50
         ZIndex: =3
 
-    "'User Image_5' As image":
+    "'User Image_6' As image":
         Height: =50
         Image: =User().Image
         RadiusBottomLeft: =50
@@ -60,9 +53,9 @@
         RadiusTopRight: =50
         Width: =50
         X: =1301
-        ZIndex: =5
+        ZIndex: =4
 
-    "'User name_5' As label":
+    "'User name_6' As label":
         Align: =Align.Right
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
@@ -73,11 +66,35 @@
         Width: =126
         X: =1175
         Y: =10
-        ZIndex: =6
+        ZIndex: =5
 
-    Image3_4 As image:
+    Image3_5 As image:
         Height: =50
         Image: ='Stretch-365-IA-Logo-Light-Transparent (1)'
         Width: =146
+        ZIndex: =6
+
+    Label3_25 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(57, 55, 104, 1)
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =50
+        Text: =""
+        Width: =732
+        Y: =50
         ZIndex: =7
+
+    Label3_24 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =50
+        Text: ="Add / Remove Employee"
+        Width: =634
+        X: =98
+        Y: =50
+        ZIndex: =8
 

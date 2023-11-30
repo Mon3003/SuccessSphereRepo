@@ -2,7 +2,7 @@
     Fill: =RGBA(0, 0, 0, 0)
 
     Rectangle1 As rectangle:
-        Fill: =RGBA(216, 235, 255, 0.3)
+        Fill: =RGBA(216, 235, 255, 0.25)
         Height: =668
         Width: =1266
         X: =100

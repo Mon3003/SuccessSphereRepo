@@ -83,7 +83,7 @@
 
     "Gallery2_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         DelayItemLoading: =true
-        Fill: =RGBA(216, 235, 255, 0.3)
+        Fill: =RGBA(216, 235, 255, 0.25)
         Height: =668
         Items: =SortByColumns(Filter(Goals, If(Lower('Created By'.Email) = gblCurrentUserEmail, true, false)),"DateDue",SortOrder.Descending)
         Layout: =Layout.Vertical
