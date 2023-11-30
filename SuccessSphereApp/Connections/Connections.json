@@ -8,6 +8,9 @@
     "datasets": {
       "https://stretch365.sharepoint.com/sites/SuccessSphereApp": {
         "dataSources": {
+          "Goals": {
+            "tableName": "c1e7c3db-83b1-4aee-819e-625af93af3ec"
+          },
           "Manager Group": {
             "tableName": "7c19a804-28a8-41ad-bf64-f8f9d2381243"
           },
@@ -27,7 +30,8 @@
       "Manager Group",
       "One2One Survey",
       "UserSecurity",
-      "Schedule One2One"
+      "Schedule One2One",
+      "Goals"
     ],
     "dependencies": {},
     "dependents": [],

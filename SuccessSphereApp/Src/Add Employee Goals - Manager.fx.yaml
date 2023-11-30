@@ -81,3 +81,145 @@
         Width: =146
         ZIndex: =7
 
+    "'Employee Dropdown_1' As dropdown":
+        BorderThickness: =1
+        ChevronBackground: =RGBA(57, 55, 104, 1)
+        ChevronHoverBackground: =
+        Font: =gblAppFont
+        Height: =20
+        HoverBorderColor: =
+        HoverColor: =
+        Items: |-
+            =Filter(
+                Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,EmployeeName.DisplayName)), 
+                Value <>Blank()
+                )
+        SelectionFill: =RGBA(57, 55, 104, 1)
+        Size: =10
+        Width: =197
+        X: =226
+        Y: =153
+        ZIndex: =8
+
+    "'EmployeeName Label_1' As label":
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =10
+        Text: |-
+            ="Employee Name :"
+        Width: =126
+        X: =100
+        Y: =148
+        ZIndex: =10
+
+    "'One2One StartDate Label_1' As label":
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =10
+        Text: |-
+            ="Date Due:"
+        Width: =73
+        X: =523
+        Y: =153
+        ZIndex: =11
+
+    DateDue As datepicker:
+        BorderThickness: =1
+        Font: =Font.Lato
+        Height: =20
+        IconBackground: =RGBA(57, 55, 104, 1)
+        Size: =10
+        Width: =197
+        X: =610
+        Y: =158
+        ZIndex: =12
+
+    "'EmployeeName Label_2' As label":
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =10
+        Text: |-
+            ="Year :"
+        Width: =56
+        X: =100
+        Y: =200
+        ZIndex: =13
+
+    "'EmployeeName Label_3' As label":
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =33
+        Size: =10
+        Text: |-
+            ="Enter Goals: "
+        Width: =146
+        X: =100
+        Y: =240
+        ZIndex: =14
+
+    TextInput1 As text:
+        BorderThickness: =1
+        Default: =""
+        Font: =gblAppFont
+        Height: =467
+        Mode: =TextMode.MultiLine
+        Size: =10
+        Width: =724
+        X: =203
+        Y: =259
+        ZIndex: =15
+
+    Button3_5 As button:
+        Color: =RGBA(99, 139, 44, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =gblAppFont
+        Height: =25
+        HoverFill: =RGBA(99, 139, 44, 1)
+        OnSelect: =
+        Size: =11
+        Text: ="Submit"
+        Width: =70
+        X: =1281
+        Y: =62
+        ZIndex: =16
+
+    Button3_6 As button:
+        Color: =RGBA(246, 88, 16, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =gblAppFont
+        Height: =25
+        HoverFill: =RGBA(246, 88, 16, 1)
+        OnSelect: |-
+            =UpdateContext({currRecord : LookUp('Schedule One2One',EmployeeName.DisplayName = 'Employee Dropdown_1'.Selected.Value)});
+            
+            Patch(
+                Goals, 
+                {
+                    EmployeeName: LookUp(UserSecurity,Title = 'Employee Dropdown_1'.Selected.Value).EmployeeName,
+                    DateDue: DateDue.SelectedDate,
+                   
+                }
+            )
+        Size: =11
+        Text: ="Save"
+        Width: =70
+        X: =1203
+        Y: =62
+        ZIndex: =17
+
+    TextInput2 As text:
+        Align: =Align.Center
+        BorderThickness: =1
+        Default: =
+        Font: =gblAppFont
+        Format: =TextFormat.Number
+        Height: =20
+        Size: =10
+        Width: =75
+        X: =150
+        Y: =205
+        ZIndex: =18
+
