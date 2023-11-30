@@ -443,37 +443,6 @@
         Y: =163
         ZIndex: =11
 
-    Subtitle2_17 As label:
-        Font: =gblAppFont
-        FontWeight: =
-        Height: =61
-        OnSelect: =
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        Text: ="Awaiting Managers Feedback"
-        VerticalAlign: =VerticalAlign.Top
-        Width: =266
-        X: =983
-        Y: =226
-        ZIndex: =12
-
-    Label5_1 As label:
-        Font: =gblAppFont
-        FontWeight: =FontWeight.Semibold
-        Text: |
-            =CountRows(
-                Filter(
-                    'One2One Survey', IsBlank(ManagerFeedback) && Lower('Created By'.Email) = gblCurrentUserEmail
-                )
-            )
-            //'Created By'.DisplayName = gblCurrentUserFullName
-        Width: =100
-        X: =1251
-        Y: =218
-        ZIndex: =13
-
     Subtitle2_18 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)

@@ -437,7 +437,8 @@
                                   )
                                 )*/
                     }
-                )
+                );
+                Set(popup,false)
             Size: =11
             Text: ="SUBMIT"
             Width: =89
