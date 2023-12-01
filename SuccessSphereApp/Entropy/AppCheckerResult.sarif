@@ -14,6 +14,86 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'One2One View My Survey'.Gallery2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One View My Survey'.Gallery2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 64,
+                  "charOffset": 39,
+                  "snippet": {
+                    "text": "If(Lower('Created By'.Email) = gblCurrentUserEmail, true, false)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "One2One View My Survey",
+                "type": "'One2One View My Survey'.Gallery2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "If"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'View My Goals'.Gallery2_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'View My Goals'.Gallery2_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 64,
+                  "charOffset": 28,
+                  "snippet": {
+                    "text": "If(Lower('Created By'.Email) = gblCurrentUserEmail, true, false)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "View My Goals",
+                "type": "'View My Goals'.Gallery2_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "If"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.OnVisible"
                 }
               ],
@@ -47,7 +127,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 0
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -87,7 +167,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -127,7 +207,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -167,7 +247,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -207,7 +287,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 0
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -247,7 +327,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -287,7 +367,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -327,7 +407,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -407,7 +487,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -447,7 +527,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -487,7 +567,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -527,87 +607,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'One2One View My Survey'.Gallery2.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'One2One View My Survey'.Gallery2.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 64,
-                  "charOffset": 39,
-                  "snippet": {
-                    "text": "If(Lower('Created By'.Email) = gblCurrentUserEmail, true, false)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "One2One View My Survey",
-                "type": "'One2One View My Survey'.Gallery2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "If"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'View My Goals'.Gallery2_2.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'View My Goals'.Gallery2_2.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 64,
-                  "charOffset": 28,
-                  "snippet": {
-                    "text": "If(Lower('Created By'.Email) = gblCurrentUserEmail, true, false)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "View My Goals",
-                "type": "'View My Goals'.Gallery2_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "If"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 1
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -668,396 +668,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Dropdown2_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Dropdown2_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "One2One Complete Manager Feedback - Manager",
-                "type": "'One2One Complete Manager Feedback - Manager'.Dropdown2_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Dropdown2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Dropdown2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "One2One Complete Manager Feedback - Manager",
-                "type": "'One2One Complete Manager Feedback - Manager'.Dropdown2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.SurveyDate_DataCard6.DataCardValue46.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.SurveyDate_DataCard6.DataCardValue46.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "One2One Complete Manager Feedback - Manager",
-                "type": "'One2One Complete Manager Feedback - Manager'.Form4.SurveyDate_DataCard6.DataCardValue46"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.Growth_DataCard4.DataCardValue50.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.Growth_DataCard4.DataCardValue50.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "One2One Complete Manager Feedback - Manager",
-                "type": "'One2One Complete Manager Feedback - Manager'.Form4.Growth_DataCard4.DataCardValue50"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.Wellbeing_DataCard4.DataCardValue49.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.Wellbeing_DataCard4.DataCardValue49.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "One2One Complete Manager Feedback - Manager",
-                "type": "'One2One Complete Manager Feedback - Manager'.Form4.Wellbeing_DataCard4.DataCardValue49"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.WorkOverall_DataCard4.DataCardValue48.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.WorkOverall_DataCard4.DataCardValue48.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "One2One Complete Manager Feedback - Manager",
-                "type": "'One2One Complete Manager Feedback - Manager'.Form4.WorkOverall_DataCard4.DataCardValue48"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.UseofTimeQuestion_DataCard4.DataCardValue47.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.UseofTimeQuestion_DataCard4.DataCardValue47.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "One2One Complete Manager Feedback - Manager",
-                "type": "'One2One Complete Manager Feedback - Manager'.Form4.UseofTimeQuestion_DataCard4.DataCardValue47"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.LowlightQuestion_DataCard4.DataCardValue51.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.LowlightQuestion_DataCard4.DataCardValue51.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "One2One Complete Manager Feedback - Manager",
-                "type": "'One2One Complete Manager Feedback - Manager'.Form4.LowlightQuestion_DataCard4.DataCardValue51"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.'Highlight Question_DataCard4'.DataCardValue52.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.'Highlight Question_DataCard4'.DataCardValue52.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "One2One Complete Manager Feedback - Manager",
-                "type": "'One2One Complete Manager Feedback - Manager'.Form4.'Highlight Question_DataCard4'.DataCardValue52"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.'Roadblocks Question_DataCard4'.DataCardValue53.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.'Roadblocks Question_DataCard4'.DataCardValue53.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "One2One Complete Manager Feedback - Manager",
-                "type": "'One2One Complete Manager Feedback - Manager'.Form4.'Roadblocks Question_DataCard4'.DataCardValue53"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.ManagerFeedback_DataCard5.DataCardValue54.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.ManagerFeedback_DataCard5.DataCardValue54.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "One2One Complete Manager Feedback - Manager",
-                "type": "'One2One Complete Manager Feedback - Manager'.Form4.ManagerFeedback_DataCard5.DataCardValue54"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Gallery2_1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Gallery2_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "One2One Complete Manager Feedback - Manager",
-                "type": "'One2One Complete Manager Feedback - Manager'.Gallery2_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Gallery2_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Gallery2_1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "One2One Complete Manager Feedback - Manager",
-                "type": "'One2One Complete Manager Feedback - Manager'.Gallery2_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1934,6 +1544,396 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Dropdown2_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Dropdown2_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "One2One Complete Manager Feedback - Manager",
+                "type": "'One2One Complete Manager Feedback - Manager'.Dropdown2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Dropdown2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Dropdown2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "One2One Complete Manager Feedback - Manager",
+                "type": "'One2One Complete Manager Feedback - Manager'.Dropdown2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.SurveyDate_DataCard6.DataCardValue46.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.SurveyDate_DataCard6.DataCardValue46.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "One2One Complete Manager Feedback - Manager",
+                "type": "'One2One Complete Manager Feedback - Manager'.Form4.SurveyDate_DataCard6.DataCardValue46"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.Growth_DataCard4.DataCardValue50.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.Growth_DataCard4.DataCardValue50.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "One2One Complete Manager Feedback - Manager",
+                "type": "'One2One Complete Manager Feedback - Manager'.Form4.Growth_DataCard4.DataCardValue50"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.Wellbeing_DataCard4.DataCardValue49.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.Wellbeing_DataCard4.DataCardValue49.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "One2One Complete Manager Feedback - Manager",
+                "type": "'One2One Complete Manager Feedback - Manager'.Form4.Wellbeing_DataCard4.DataCardValue49"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.WorkOverall_DataCard4.DataCardValue48.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.WorkOverall_DataCard4.DataCardValue48.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "One2One Complete Manager Feedback - Manager",
+                "type": "'One2One Complete Manager Feedback - Manager'.Form4.WorkOverall_DataCard4.DataCardValue48"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.UseofTimeQuestion_DataCard4.DataCardValue47.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.UseofTimeQuestion_DataCard4.DataCardValue47.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "One2One Complete Manager Feedback - Manager",
+                "type": "'One2One Complete Manager Feedback - Manager'.Form4.UseofTimeQuestion_DataCard4.DataCardValue47"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.LowlightQuestion_DataCard4.DataCardValue51.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.LowlightQuestion_DataCard4.DataCardValue51.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "One2One Complete Manager Feedback - Manager",
+                "type": "'One2One Complete Manager Feedback - Manager'.Form4.LowlightQuestion_DataCard4.DataCardValue51"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.'Highlight Question_DataCard4'.DataCardValue52.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.'Highlight Question_DataCard4'.DataCardValue52.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "One2One Complete Manager Feedback - Manager",
+                "type": "'One2One Complete Manager Feedback - Manager'.Form4.'Highlight Question_DataCard4'.DataCardValue52"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.'Roadblocks Question_DataCard4'.DataCardValue53.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.'Roadblocks Question_DataCard4'.DataCardValue53.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "One2One Complete Manager Feedback - Manager",
+                "type": "'One2One Complete Manager Feedback - Manager'.Form4.'Roadblocks Question_DataCard4'.DataCardValue53"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.ManagerFeedback_DataCard5.DataCardValue54.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Form4.ManagerFeedback_DataCard5.DataCardValue54.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "One2One Complete Manager Feedback - Manager",
+                "type": "'One2One Complete Manager Feedback - Manager'.Form4.ManagerFeedback_DataCard5.DataCardValue54"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Gallery2_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Gallery2_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "One2One Complete Manager Feedback - Manager",
+                "type": "'One2One Complete Manager Feedback - Manager'.Gallery2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Gallery2_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One Complete Manager Feedback - Manager'.Gallery2_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "One2One Complete Manager Feedback - Manager",
+                "type": "'One2One Complete Manager Feedback - Manager'.Gallery2_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.gblCurrentUserFullName"
                 }
               ],
@@ -2056,10 +2056,10 @@
           "name": "PowerApps app checker",
           "rules": [
             {
-              "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+              "id": "app-SuggestRemoteExecutionHint",
               "messageStrings": {
                 "issue": {
-                  "text": "Delegation warning. The highlighted part of this formula might not work correctly with column \"{0}\" on large data sets."
+                  "text": "Delegation warning. The \"{0}\" part of this formula might not work correctly on large data sets."
                 }
               },
               "properties": {
@@ -2075,10 +2075,10 @@
               }
             },
             {
-              "id": "app-SuggestRemoteExecutionHint",
+              "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
               "messageStrings": {
                 "issue": {
-                  "text": "Delegation warning. The \"{0}\" part of this formula might not work correctly on large data sets."
+                  "text": "Delegation warning. The highlighted part of this formula might not work correctly with column \"{0}\" on large data sets."
                 }
               },
               "properties": {
