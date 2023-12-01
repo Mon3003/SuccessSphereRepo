@@ -92,7 +92,8 @@ App As appinfo:
         Set(CurrentDate,Today());
         Set(One2OneStartDate, LookUp('Schedule One2One',EmployeeName.Email = gblCurrentUserEmail,StartDate));
         Set(One2OneFrequency, LookUp('Schedule One2One',EmployeeName.Email = gblCurrentUserEmail,Frequency.Value));
-        Set(NextOne2One,With(
+        Set(NextOne2One,
+        With(
              { EmpSched: LookUp('Schedule One2One', EmployeeName.Email = gblCurrentUserEmail) , Tempdate : Today()},
         
         Switch ( EmpSched.Frequency.Value,

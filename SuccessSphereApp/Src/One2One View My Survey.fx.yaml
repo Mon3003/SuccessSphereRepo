@@ -552,31 +552,7 @@
         FontWeight: =FontWeight.Semibold
         Size: =10
         Text: |+
-            =With(
-                 { EmpSched: LookUp('Schedule One2One', EmployeeName.Email = gblCurrentUserEmail) , Tempdate : Today()},
-            
-            Switch ( EmpSched.Frequency.Value,
-                    "Weekly",  
-                        If(
-                            EmpSched.StartDate >= Tempdate,
-                            EmpSched.StartDate, // True condition
-                            EmpSched.StartDate + RoundUp((Tempdate - EmpSched.StartDate) / 7, 0) * 7 // False condition
-                            ),
-                    "Fortnightly",
-                    If(
-                        EmpSched.StartDate >= Tempdate,
-                        EmpSched.StartDate, // True condition
-                        EmpSched.StartDate + RoundUp((Tempdate - EmpSched.StartDate) / 14, 0) * 14 // False condition
-                        ),
-                    
-                    "Monthly",
-                    If(
-                        EmpSched.StartDate >= Tempdate,
-                        EmpSched.StartDate, // True condition
-                        EmpSched.StartDate + RoundUp((Tempdate - EmpSched.StartDate) / 28, 0) * 28 // False condition
-                        )
-                    )
-            )
+            =NextOne2One
             
         Width: =112
         X: =1220
