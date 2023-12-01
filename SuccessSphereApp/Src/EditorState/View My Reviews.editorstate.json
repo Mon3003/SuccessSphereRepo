@@ -62,6 +62,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "comp_LeftNavMyUploads_11",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -152,6 +153,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image3_11",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -413,6 +415,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_22",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -717,6 +720,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_23",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1026,6 +1030,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "User Image_12",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1279,6 +1284,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "User name_12",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1514,6 +1520,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "View My Reviews",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [

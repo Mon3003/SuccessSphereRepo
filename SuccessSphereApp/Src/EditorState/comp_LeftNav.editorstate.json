@@ -35,6 +35,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "comp_LeftNav",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -240,6 +241,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "gal_CMTLeftNavReq_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -461,6 +463,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galleryTemplate1_33",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -594,6 +597,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ico_CMTRequestLeftNav_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -943,6 +947,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbl_CMTRequestLeftNavText_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1311,6 +1316,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "shp_CMTRequestLeftNav_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1511,6 +1517,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "shp_CMTRequestLeftNavseperator_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [

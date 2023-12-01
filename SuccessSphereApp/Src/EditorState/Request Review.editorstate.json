@@ -62,6 +62,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "comp_LeftNavMyUploads_9",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -152,6 +153,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image3_9",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -413,6 +415,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_18",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -717,6 +720,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_19",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -947,6 +951,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Request Review",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1101,6 +1106,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "User Image_10",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1354,6 +1360,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "User name_10",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [

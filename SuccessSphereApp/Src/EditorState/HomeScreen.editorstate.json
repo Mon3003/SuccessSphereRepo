@@ -194,6 +194,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button2_9",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -534,6 +535,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Circle1_6",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -753,6 +755,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery1_15",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -920,6 +923,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galleryTemplate5_9",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -968,6 +972,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "HomeScreen",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1153,6 +1158,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon15_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1393,6 +1399,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "User Image",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1646,6 +1653,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "User name",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1949,6 +1957,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Welcome",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [

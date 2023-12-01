@@ -134,6 +134,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button3_4",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -380,6 +381,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Cancel Icon",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -569,6 +571,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "comp_LeftNavMyUploads_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -672,6 +675,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Display Table Container",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -932,6 +936,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Emp Label",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1279,6 +1284,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Employee Dropdown",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1580,6 +1586,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EmployeeName Label",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1907,6 +1914,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Frequency Dropdown",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2208,6 +2216,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Frequency Label",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2558,6 +2567,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Frq Label",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2845,6 +2855,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery Headers",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3030,6 +3041,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery3_3",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3188,6 +3200,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "galleryTemplate3_3",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3329,6 +3342,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3645,6 +3659,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Main Header Label",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3995,6 +4010,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Next 121 Label",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4245,6 +4261,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "One2One Schedule - Manager",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4380,6 +4397,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "One2One StartDate Label",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4646,6 +4664,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Schedule Container",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4782,6 +4801,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Screen Header",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4851,6 +4871,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%TemplateBrowseGallerySeparator1.ID%",
       "Name": "Separator6_3",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5039,6 +5060,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "StartDatePicker",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5314,6 +5336,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Stretch Logo",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5568,6 +5591,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Sub-Header Label",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -5897,6 +5921,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Submit Button",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6189,6 +6214,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Subtitle2_50",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6469,6 +6495,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Subtitle2_51",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -6756,6 +6783,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Subtitle2_52",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -7045,6 +7073,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "User Image_3",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -7298,6 +7327,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "UserName Label",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [

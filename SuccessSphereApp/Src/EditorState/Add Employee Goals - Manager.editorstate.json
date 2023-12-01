@@ -28,6 +28,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Add Employee Goals - Manager",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -202,6 +203,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button3_5",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -516,6 +518,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button3_6",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -765,6 +768,7 @@
       },
       "MetaDataIDKey": "",
       "Name": "comp_LeftNavMyUploads_6",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -927,6 +931,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DateDue",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1291,6 +1296,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Employee Dropdown_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1592,6 +1598,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EmployeeName Label_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1882,6 +1889,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EmployeeName Label_2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2172,6 +2180,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "EmployeeName Label_3",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2417,6 +2426,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image3_6",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2678,6 +2688,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_12",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2982,6 +2993,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label3_13",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3272,6 +3284,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "One2One StartDate Label_1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3510,6 +3523,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3700,6 +3714,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput1",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4019,6 +4034,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput2",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4323,6 +4339,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "User Image_7",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -4576,6 +4593,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "User name_7",
+      "OptimizeForDevices": "Off",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
