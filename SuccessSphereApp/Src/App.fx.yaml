@@ -1,9 +1,14 @@
 App As appinfo:
     BackEnabled: =true
-    OnStart: |
-        =
-        Set(gblAppFont, Font.Lato);
-        Set(gblAppFontSize,10);
+    OnStart: |-
+        =Set(
+            gblAppFont,
+            Font.Lato
+        );
+        Set(
+            gblAppFontSize,
+            10
+        );
         Set(
             gblCurrentUserEmail,
             Lower(User().Email)
@@ -15,36 +20,37 @@ App As appinfo:
         Clear(ColUserSecurity);
         ForAll(
             Filter(
-                'Manager Group', ManagerEmail = gblCurrentUserEmail
+                'Manager Group',
+                ManagerEmail = gblCurrentUserEmail
             ),
             (Collect(
                 ColUserSecurity,
                 {
                     Role: "Manager",
                     Email: ManagerEmail
-                }    
-            ))
-        );
-        
-        If(IsEmpty(ColUserSecurity)=true,
-        (ForAll(
-            Filter(
-                UserSecurity,
-                EmployeeEmail = gblCurrentUserEmail
-            ),
-            (Collect(
-                ColUserSecurity,
-                {
-                    Role: "Staff",
-                    Email: EmployeeEmail
                 }
             ))
-        )));
+        );
+        If(
+            IsEmpty(ColUserSecurity) = true,
+            (ForAll(
+                Filter(
+                    UserSecurity,
+                    EmployeeEmail = gblCurrentUserEmail
+                ),
+                (Collect(
+                    ColUserSecurity,
+                    {
+                        Role: "Staff",
+                        Email: EmployeeEmail
+                    }
+                ))
+            ))
+        );
         If(
             IsEmpty(ColUserSecurity),
             Clear(ColUserSecurity)
         );
-        
         Set(
             gblCurrentUserRole,
             First(ColUserSecurity.Role)
@@ -53,71 +59,127 @@ App As appinfo:
             colHomeScrNavigation,
             {
                 Title: "One 2 One",
-                NavLink:  'One2One Complete Survey',
+                NavLink: 'One2One Complete Survey',
                 NavIco: Icon.Message,
                 NavColor: ColorValue("#281E20"),
                 NavVisible: 1,
-                NavSecuirty:true
-                },
-        	{
+                NavSecuirty: true
+            },
+            {
                 Title: "Peer Reviews",
-                NavLink:  'Request Review',
+                NavLink: 'Request Review',
                 NavIco: Icon.People,
                 NavColor: ColorValue("#281E20"),
                 NavVisible: 2,
-                NavSecuirty:true},      
-        	{
+                NavSecuirty: true
+            },
+            {
                 Title: "Performance Reviews",
-                NavLink:  HomeScreen,
+                NavLink: HomeScreen,
                 NavIco: Icon.Trending,
                 NavColor: ColorValue("#281E20"),
                 NavVisible: 3,
-                NavSecuirty:true},
-        	{
+                NavSecuirty: true
+            },
+            {
                 Title: "Goals",
-                NavLink:  'View My Goals',
+                NavLink: 'View My Goals',
                 NavIco: Icon.ColorPicker,
                 NavColor: ColorValue("#281E20"),
                 NavVisible: 4,
-                NavSecuirty:true},
-        	{
+                NavSecuirty: true
+            },
+            {
                 Title: "Admin",
-                NavLink:  Admin,
+                NavLink: Admin,
                 NavIco: Icon.Settings,
                 NavColor: ColorValue("#281E20"),
                 NavVisible: 5,
-                NavSecuirty: If(gblCurrentUserRole.Role="Manager", true,false)
-        }
+                NavSecuirty: If(
+                    gblCurrentUserRole.Role = "Manager",
+                    true,
+                    false
+                )
+            }
         );
-        Set(CurrentDate,Today());
-        Set(One2OneStartDate, LookUp('Schedule One2One',EmployeeName.Email = gblCurrentUserEmail,StartDate));
-        Set(One2OneFrequency, LookUp('Schedule One2One',EmployeeName.Email = gblCurrentUserEmail,Frequency.Value));
-        Set(NextOne2One,
-        With(
-             { EmpSched: LookUp('Schedule One2One', EmployeeName.Email = gblCurrentUserEmail) , Tempdate : Today()},
-        
-        Switch ( EmpSched.Frequency.Value,
-                "Weekly",  
+        Set(
+            CurrentDate,
+            Today()
+        );
+        Set(
+            One2OneStartDate,
+            LookUp(
+                'Schedule One2One',
+                EmployeeName.Email = gblCurrentUserEmail,
+                StartDate
+            )
+        );
+        Set(
+            One2OneFrequency,
+            LookUp(
+                'Schedule One2One',
+                EmployeeName.Email = gblCurrentUserEmail,
+                Frequency.Value
+            )
+        );
+        Set(
+            NextOne2One,
+            With(
+                {
+                    EmpSched: LookUp(
+                        'Schedule One2One',
+                        EmployeeName.Email = gblCurrentUserEmail
+                    ),
+                    Tempdate: Today()
+                },
+                Switch (
+                    EmpSched.Frequency.Value,
+                    "Weekly",
                     If(
                         EmpSched.StartDate >= Tempdate,
-                        EmpSched.StartDate, // True condition
-                        EmpSched.StartDate + RoundUp((Tempdate - EmpSched.StartDate) / 7, 0) * 7 // False condition
-                        ),
-                "Fortnightly",
-                If(
-                    EmpSched.StartDate >= Tempdate,
-                    EmpSched.StartDate, // True condition
-                    EmpSched.StartDate + RoundUp((Tempdate - EmpSched.StartDate) / 14, 0) * 14 // False condition
+                        EmpSched.StartDate,// True condition
+                        EmpSched.StartDate + RoundUp(
+                            (Tempdate - EmpSched.StartDate) / 7,
+                            0
+                        ) * 7// False condition
                     ),
-                
-                "Monthly",
-                If(
-                    EmpSched.StartDate >= Tempdate,
-                    EmpSched.StartDate, // True condition
-                    EmpSched.StartDate + RoundUp((Tempdate - EmpSched.StartDate) / 28, 0) * 28 // False condition
+                    "Fortnightly",
+                    If(
+                        EmpSched.StartDate >= Tempdate,
+                        EmpSched.StartDate,// True condition
+                        EmpSched.StartDate + RoundUp(
+                            (Tempdate - EmpSched.StartDate) / 14,
+                            0
+                        ) * 14// False condition
+                    ),
+                    "Monthly",
+                    If(
+                        EmpSched.StartDate >= Tempdate,
+                        EmpSched.StartDate,// True condition
+                        EmpSched.StartDate + RoundUp(
+                            (Tempdate - EmpSched.StartDate) / 28,
+                            0
+                        ) * 28// False condition
                     )
                 )
-        )
+            )
+        );
+        Set(
+            NextSurveyduedate,
+            Text(
+                DateAdd(
+                    NextOne2One,
+                    -2
+                ),
+                "dd/mm/yyyy"
+            )
+        );
+        Set(
+            CurrYear,
+            Text(
+                Today(),
+                "yyyy"
+            )
         )
     StartScreen: =
     Theme: =PowerAppsTheme

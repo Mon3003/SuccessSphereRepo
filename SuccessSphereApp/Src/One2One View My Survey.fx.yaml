@@ -559,3 +559,14 @@
         Y: =520
         ZIndex: =21
 
+    Label5_5 As label:
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Size: =10
+        Text: |
+            =NextSurveyduedate
+        Width: =112
+        X: =1220
+        Y: =580
+        ZIndex: =22
+
