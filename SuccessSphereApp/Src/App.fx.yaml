@@ -13,10 +13,7 @@ App As appinfo:
             gblCurrentUserEmail,
             Lower(User().Email)
         );
-        Set(
-            gblCurrentUserFullName,
-            User().FullName
-        );
+        
         Clear(ColUserSecurity);
         ForAll(
             Filter(
