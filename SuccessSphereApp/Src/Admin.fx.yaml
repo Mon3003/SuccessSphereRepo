@@ -321,7 +321,7 @@ Admin As screen:
                 ChevronHoverFill: =RGBA(0, 0, 0, 1)
                 Color: =RGBA(9, 33, 98, 1)
                 DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Claims"]
+                DisplayFields: =["displayName"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =gblAppFont
                 FontWeight: =FontWeight.Semibold
@@ -331,7 +331,7 @@ Admin As screen:
                     =//Choices([@UserSecurity].EmployeeName)
                     Office365Groups.ListGroupMembers("d4184555-4169-480f-ae38-b954b92d50f6").value
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Claims"]
+                SearchFields: =["displayName"]
                 SearchItems: =[]
                 SelectionColor: =RGBA(237, 237, 237, 1)
                 SelectMultiple: =false
@@ -470,7 +470,8 @@ Admin As screen:
                     EmployeeEmail: DataCardValue3.Text,
                     UserType: DataCardValue4.Selected
                 }
-            )
+            );
+            Reset(Form1);
         Size: =11
         Text: ="Add"
         Width: =70
