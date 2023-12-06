@@ -54,10 +54,23 @@
         "Gallery3_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             DelayItemLoading: =true
             Height: =375
-            Items: |
-                =Filter(Distinct('Schedule One2One', If(Lower('Created By'.Email) = gblCurrentUserEmail ,EmployeeName.DisplayName)),
-                       Value in Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,EmployeeName.DisplayName))
-                      )
+            Items: |-
+                =Filter(
+                    Distinct(
+                        'Schedule One2One',
+                        If(
+                           Lower('Created By'.Email) = gblCurrentUserEmail,
+                            EmployeeName.DisplayName
+                        )
+                    ),
+                    Value in Distinct(
+                        UserSecurity,
+                        If(
+                            ManagerEmail.Value = gblCurrentUserEmail,
+                            EmployeeName.DisplayName, ""
+                        )
+                    )
+                )
             Layout: =Layout.Vertical
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
