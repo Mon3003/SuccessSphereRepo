@@ -240,6 +240,7 @@
         ZIndex: =21
 
     TextInput1 As text:
+        BorderThickness: =0
         Default: |
             =Text(
                 If(
@@ -258,7 +259,16 @@
                     ""
                 )
             )
+        Font: =gblAppFont
         Height: =460
+        HoverBorderColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Mode: =TextMode.MultiLine
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =10
         Width: =623
         X: =198
         Y: =273
