@@ -36,7 +36,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 308,
+            "PublishOrderIndex": 3,
             "Rules": [
               {
                 "Category": "Data",
@@ -209,7 +209,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 309,
+            "PublishOrderIndex": 4,
             "Rules": [
               {
                 "Category": "Data",
@@ -458,7 +458,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 310,
+            "PublishOrderIndex": 5,
             "Rules": [
               {
                 "Category": "Data",
@@ -851,7 +851,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 311,
+            "PublishOrderIndex": 6,
             "Rules": [
               {
                 "Category": "Data",
@@ -1249,7 +1249,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 312,
+            "PublishOrderIndex": 7,
             "Rules": [
               {
                 "Category": "Data",
@@ -1555,7 +1555,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "comp_LeftNav",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 307,
+        "PublishOrderIndex": 2,
         "Rules": [
           {
             "Category": "Data",
@@ -1833,7 +1833,7 @@
       },
       "OnReset"
     ],
-    "LastModifiedTimestamp": "638374386309807000",
+    "LastModifiedTimestamp": "638374394148847134",
     "Name": "comp_LeftNav",
     "Rules": [
       {
@@ -1914,7 +1914,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638374386309807000",
+  "LastModifiedTimestamp": "638374394148847134",
   "Name": "d357ac3d832e48849a027fb5b475fc43",
   "OverridableProperties": {},
   "TemplateOriginalName": "738736d59eb248cfbbeac8708f84b65f",
