@@ -128,7 +128,7 @@
       "MetaDataIDKey": "",
       "Name": "Button3_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -443,7 +443,7 @@
       "MetaDataIDKey": "",
       "Name": "Button3_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -701,7 +701,7 @@
       "MetaDataIDKey": "",
       "Name": "comp_LeftNavMyUploads",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6622,7 +6622,7 @@
       "MetaDataIDKey": "",
       "Name": "Form2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13178,7 +13178,7 @@
       "MetaDataIDKey": "",
       "Name": "Label5_6",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14701,7 +14701,7 @@
       "MetaDataIDKey": "",
       "Name": "Subtitle2_42",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
