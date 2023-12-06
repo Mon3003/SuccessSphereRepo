@@ -471,7 +471,7 @@ Admin As screen:
                     UserType: DataCardValue4.Selected
                 }
             );
-            Reset(Form1);
+            ResetForm(Form1);
         Size: =11
         Text: ="Add"
         Width: =70
