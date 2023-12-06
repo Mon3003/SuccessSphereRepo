@@ -742,8 +742,7 @@
           "InvariantPropertyName": "ShowNavigation",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        },
-        "MaxTemplateSize"
+        }
       ],
       "GalleryTemplateChildName": "galleryTemplate5_9",
       "HasDynamicProperties": false,
@@ -903,11 +902,6 @@
         {
           "Category": "Design",
           "PropertyName": "ShowNavigation",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "MaxTemplateSize",
           "RuleProviderType": "Unknown"
         }
       ],

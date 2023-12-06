@@ -36,7 +36,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 3,
+            "PublishOrderIndex": 288,
             "Rules": [
               {
                 "Category": "Data",
@@ -209,7 +209,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 4,
+            "PublishOrderIndex": 289,
             "Rules": [
               {
                 "Category": "Data",
@@ -458,7 +458,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 5,
+            "PublishOrderIndex": 290,
             "Rules": [
               {
                 "Category": "Data",
@@ -851,7 +851,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 6,
+            "PublishOrderIndex": 291,
             "Rules": [
               {
                 "Category": "Data",
@@ -1249,7 +1249,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 7,
+            "PublishOrderIndex": 292,
             "Rules": [
               {
                 "Category": "Data",
@@ -1538,8 +1538,7 @@
             "InvariantPropertyName": "BorderThickness",
             "IsLockable": false,
             "NameMapSourceSchema": "?"
-          },
-          "MaxTemplateSize"
+          }
         ],
         "ControlUniqueId": "5",
         "HasDynamicProperties": false,
@@ -1555,7 +1554,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "comp_LeftNav",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 2,
+        "PublishOrderIndex": 287,
         "Rules": [
           {
             "Category": "Data",
@@ -1784,12 +1783,6 @@
             "InvariantScript": "1",
             "Property": "BorderThickness",
             "RuleProviderType": "Unknown"
-          },
-          {
-            "Category": "Design",
-            "InvariantScript": "5000",
-            "Property": "MaxTemplateSize",
-            "RuleProviderType": "Unknown"
           }
         ],
         "StyleName": "defaultGalleryStyle",
@@ -1803,7 +1796,7 @@
           "LastModifiedTimestamp": "0",
           "Name": "gallery",
           "OverridableProperties": {},
-          "Version": "2.14.0"
+          "Version": "2.13.2"
         },
         "Type": "ControlInfo",
         "VariantName": "galleryVertical"
@@ -1833,7 +1826,7 @@
       },
       "OnReset"
     ],
-    "LastModifiedTimestamp": "638374312091223631",
+    "LastModifiedTimestamp": "638372579193137567",
     "Name": "comp_LeftNav",
     "Rules": [
       {
@@ -1914,7 +1907,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638374312091223631",
+  "LastModifiedTimestamp": "638372579193137567",
   "Name": "d357ac3d832e48849a027fb5b475fc43",
   "OverridableProperties": {},
   "TemplateOriginalName": "738736d59eb248cfbbeac8708f84b65f",
