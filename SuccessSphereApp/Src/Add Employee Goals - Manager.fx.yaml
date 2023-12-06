@@ -180,7 +180,7 @@
                         EmployeeName.DisplayName = 'Employee Dropdown_1'.SelectedText.Value && Year = Label1_1.Text
                     ),
                     {
-                        Goals: HtmlText2.HtmlText
+                        Goals: TextInput1.Text
                     }
                 ),
                 // If no record exists, create a new record
@@ -193,7 +193,7 @@
                         ).EmployeeName,
                         DateDue: Label1.Text,
                         Year: Label1_1.Text,
-                        Goals: HtmlText2.HtmlText,
+                        Goals: TextInput1.Text,
                         ManagerID: {
                             '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
                             Id: LookUp(
@@ -239,10 +239,9 @@
         Y: =203
         ZIndex: =21
 
-    HtmlText2 As htmlViewer:
-        Font: =gblAppFont
-        Height: =467
-        HtmlText: |
+    TextInput1 As text:
+        BorderThickness: =0
+        Default: |
             =Text(
                 If(
                     !IsBlank(
@@ -260,9 +259,18 @@
                     ""
                 )
             )
+        Font: =gblAppFont
+        Height: =460
+        HoverBorderColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Mode: =TextMode.MultiLine
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
         Size: =10
-        Width: =752
-        X: =201
+        Width: =623
+        X: =198
         Y: =273
-        ZIndex: =22
+        ZIndex: =23
 

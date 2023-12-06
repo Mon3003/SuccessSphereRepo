@@ -85,7 +85,7 @@
         DelayItemLoading: =true
         Fill: =RGBA(216, 235, 255, 0.25)
         Height: =668
-        Items: =SortByColumns(Filter(Goals, If(Lower('Created By'.Email) = gblCurrentUserEmail, true, false)),"DateDue",SortOrder.Descending)
+        Items: =SortByColumns(Filter(Goals, If(Lower('Created By'.Email) = gblCurrentUserEmail, true, false)),"Year",SortOrder.Descending)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
