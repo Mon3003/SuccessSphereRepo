@@ -9985,8 +9985,7 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "ZIndex",
-        "MaxTemplateSize"
+        "ZIndex"
       ],
       "GalleryTemplateChildName": "galleryTemplate2_1",
       "HasDynamicProperties": false,
@@ -10126,11 +10125,6 @@
         {
           "Category": "Design",
           "PropertyName": "ZIndex",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Design",
-          "PropertyName": "MaxTemplateSize",
           "RuleProviderType": "Unknown"
         }
       ],
