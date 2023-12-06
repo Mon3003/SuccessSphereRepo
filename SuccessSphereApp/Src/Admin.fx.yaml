@@ -198,9 +198,3 @@ Admin As screen:
         Y: =100
         ZIndex: =15
 
-    Label10 As label:
-        Text: ="Text"
-        X: =851
-        Y: =414
-        ZIndex: =16
-
