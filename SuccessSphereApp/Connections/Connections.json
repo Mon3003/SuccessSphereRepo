@@ -31,6 +31,9 @@
           "One2One Survey": {
             "tableName": "7d39ae37-f3bc-4682-b889-14a1e284a5a5"
           },
+          "Peer Reviews": {
+            "tableName": "f0a90d06-f3da-405a-b52b-b519bc3750f2"
+          },
           "Schedule One2One": {
             "tableName": "e752bbfc-dd4b-435c-b01f-206e4152c70a"
           },
@@ -45,7 +48,8 @@
       "One2One Survey",
       "UserSecurity",
       "Schedule One2One",
-      "Goals"
+      "Goals",
+      "Peer Reviews"
     ],
     "dependencies": {},
     "dependents": [],
