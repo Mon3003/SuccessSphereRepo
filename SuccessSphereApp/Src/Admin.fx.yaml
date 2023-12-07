@@ -648,7 +648,9 @@ Admin As screen:
         HoverFill: =RGBA(99, 139, 44, 1)
         OnSelect: |-
             =
-            Remove(UserSecurity,LookUp(UserSecurity,EmployeeEmail=DataCardValue3.Text))
+            Remove(UserSecurity,LookUp(UserSecurity,EmployeeEmail=DataCardValue3.Text));
+            ResetForm(Form1);
+            
             //RemoveIf(UserSecurity, Form1.selected)
         Size: =11
         Text: ="Remove"
