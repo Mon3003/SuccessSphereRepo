@@ -36,7 +36,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 321,
+            "PublishOrderIndex": 318,
             "Rules": [
               {
                 "Category": "Data",
@@ -209,7 +209,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 322,
+            "PublishOrderIndex": 319,
             "Rules": [
               {
                 "Category": "Data",
@@ -458,7 +458,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 323,
+            "PublishOrderIndex": 320,
             "Rules": [
               {
                 "Category": "Data",
@@ -851,7 +851,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 324,
+            "PublishOrderIndex": 321,
             "Rules": [
               {
                 "Category": "Data",
@@ -1249,7 +1249,7 @@
             "OptimizeForDevices": "Off",
             "Parent": "gal_CMTLeftNavReq_1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 325,
+            "PublishOrderIndex": 322,
             "Rules": [
               {
                 "Category": "Data",
@@ -1555,7 +1555,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "comp_LeftNav",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 320,
+        "PublishOrderIndex": 317,
         "Rules": [
           {
             "Category": "Data",

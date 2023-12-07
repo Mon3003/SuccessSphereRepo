@@ -202,7 +202,7 @@ Admin As screen:
         DataSource: =UserSecurity
         DefaultMode: =FormMode.New
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =303
+        Height: =239
         NumberOfColumns: =1
         Width: =587
         X: =115
@@ -293,6 +293,7 @@ Admin As screen:
             Height: =50
             Required: =false
             Update: =ThisItem.ManagerID
+            Visible: =false
             Width: =587
             X: =0
             Y: =4
@@ -342,42 +343,6 @@ Admin As screen:
                 X: =240
                 Y: =10
                 ZIndex: =5
-
-        ID_DataCard1 As typedDataCard.textualViewCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ID"
-            Default: =ThisItem.ID
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@UserSecurity],DataSourceInfo.DisplayName,"ID")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =40
-            Required: =false
-            Width: =587
-            X: =0
-            Y: =5
-            ZIndex: =1
-
-            DataCardKey9 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =(Parent.Width - 60) * 0.4
-                Wrap: =false
-                X: =30
-                Y: =10 + (DataCardValue9.Height / 2) - (Self.Height / 2)
-                ZIndex: =1
-
-            DataCardValue9 As label:
-                DisplayMode: =Parent.DisplayMode
-                Height: =32
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Default
-                Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey9.X + DataCardKey9.Width
-                Y: =10
-                ZIndex: =2
 
         UserType_DataCard1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -671,7 +636,7 @@ Admin As screen:
         Text: ="Add"
         Width: =70
         X: =115
-        Y: =547
+        Y: =417
         ZIndex: =19
 
     Button3_9 As button:
@@ -687,7 +652,7 @@ Admin As screen:
         Size: =11
         Text: ="Remove"
         Width: =70
-        X: =227
-        Y: =547
+        X: =229
+        Y: =417
         ZIndex: =20
 
