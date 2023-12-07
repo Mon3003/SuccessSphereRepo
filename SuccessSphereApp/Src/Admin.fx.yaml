@@ -643,12 +643,13 @@ Admin As screen:
         Color: =RGBA(57, 55, 104, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Font: =gblAppFont
+        FontWeight: =FontWeight.Bold
         Height: =25
         HoverFill: =RGBA(99, 139, 44, 1)
         OnSelect: |-
             =
-            //Remove(UserSecurity,LookUp(UserSecurity,EmployeeEmail=DataCardValue3.Text))
-            Remove( UserSecurity,LookUp( UserSecurity, EmployeeEmail=DataCardValue3.Text ))
+            Remove(UserSecurity,LookUp(UserSecurity,EmployeeEmail=DataCardValue3.Text))
+            //RemoveIf(UserSecurity, Form1.selected)
         Size: =11
         Text: ="Remove"
         Width: =70
