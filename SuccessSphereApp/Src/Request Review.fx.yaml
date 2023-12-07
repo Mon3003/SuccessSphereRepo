@@ -177,52 +177,32 @@
                 Y: =DataCardKey25.Y
                 ZIndex: =4
 
-        "'Review Period_DataCard3' As typedDataCard.comboBoxEditCard":
+        "'Review Period_DataCard4' As typedDataCard.comboBoxEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ReviewPeriod"
             Default: =ThisItem.'Review Period'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Peer Reviews'],DataSourceInfo.DisplayName,"ReviewPeriod")
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =138
+            Height: =134
             Required: =false
-            Update: =DataCardValue23.Selected
+            Update: =Radio4.Selected
             Width: =1166
             X: =0
             Y: =1
             ZIndex: =1
 
-            DataCardKey24 As label:
+            DataCardKey26 As label:
                 AutoHeight: =true
-                FontWeight: =FontWeight.Semibold
                 Height: =34
-                Text: |-
-                    =Parent.DisplayName & " :"
+                Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10 + (DataCardValue23.Height / 2) - (Self.Height / 2)
+                Y: =10 + (Radio4.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
-            DataCardValue23 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                InputTextPlaceholder: =
-                Items: =Choices([@'Peer Reviews'].ReviewPeriod)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Peer Reviews'.ReviewPeriod,DataCardValue23.SearchText)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: |
-                    =(Parent.Width - 60) * 0.4
-                X: =DataCardKey24.X + DataCardKey24.Width
-                Y: =10
-                ZIndex: =2
-
-            ErrorMessage24 As label:
+            ErrorMessage26 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -234,18 +214,25 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue23.Y + DataCardValue23.Height
+                Y: =Radio4.Y + Radio4.Height
                 ZIndex: =3
 
-            StarVisible24 As label:
+            StarVisible26 As label:
                 Align: =Align.Center
-                Height: =DataCardKey24.Height
+                Height: =DataCardKey26.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey24.Y
+                Y: =DataCardKey26.Y
                 ZIndex: =4
+
+            Radio4 As radio:
+                Items: =["Q1","Q4","Full Year","Q2","Q3"]
+                Layout: =Layout.Horizontal
+                Width: =356
+                X: =472
+                ZIndex: =5
 
         "'Request Message_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
