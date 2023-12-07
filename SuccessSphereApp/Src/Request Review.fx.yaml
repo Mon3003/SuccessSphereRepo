@@ -123,8 +123,10 @@
 
             DataCardKey25 As label:
                 AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
                 Height: =34
-                Text: ="Name of Reviewer"
+                Text: |-
+                    ="Name of Reviewer :"
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
@@ -192,8 +194,10 @@
 
             DataCardKey24 As label:
                 AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: |-
+                    =Parent.DisplayName & " :"
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
@@ -261,8 +265,10 @@
 
             DataCardKey19 As label:
                 AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
                 Height: =34
-                Text: =Parent.DisplayName & " (If Required)"
+                Text: |-
+                    =Parent.DisplayName & " (If Required) : "
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
