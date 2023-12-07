@@ -130,7 +130,6 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =10
             Text: ="Date"
             VerticalAlign: =VerticalAlign.Top
             Width: =80
@@ -147,7 +146,6 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =10
             Text: |-
                 ="Goals: "
             VerticalAlign: =VerticalAlign.Top
@@ -164,7 +162,6 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =10
             Text: ="Year"
             VerticalAlign: =VerticalAlign.Top
             Width: =80

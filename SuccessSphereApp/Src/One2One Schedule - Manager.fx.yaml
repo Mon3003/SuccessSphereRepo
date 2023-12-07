@@ -434,21 +434,6 @@
                         EmployeeName: LookUp(UserSecurity,Title = 'Employee Dropdown'.Selected.Value).EmployeeName,
                         StartDate: StartDatePicker.SelectedDate,
                         Frequency: 'Frequency Dropdown'.Selected
-                       /* 'NextOne2One Date': 
-                                Switch ( Dropdown2_3.Selected.Value,
-                                "Weekly",  
-                                If(
-                                     DatePicker1.SelectedDate >= Tempdate,
-                                     DatePicker1.SelectedDate, // True condition
-                                     DatePicker1.SelectedDate + RoundUp((Tempdate - DatePicker1.SelectedDate) / 7, 0) * 7 // False condition
-                                ),
-                                "Fortnightly",
-                                If(
-                                    DatePicker1.SelectedDate >= Tempdate,
-                                    DatePicker1.SelectedDate, // True condition
-                                    DatePicker1.SelectedDate + RoundUp((Tempdate - DatePicker1.SelectedDate) / 14, 0) * 14 // False condition
-                                  )
-                                )*/
                     }
                 );
                 Set(popup,false)

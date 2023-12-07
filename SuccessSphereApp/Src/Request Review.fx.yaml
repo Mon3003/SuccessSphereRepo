@@ -1,6 +1,14 @@
 "'Request Review' As screen":
     Fill: =RGBA(0, 0, 0, 0)
 
+    Rectangle4_1 As rectangle:
+        Fill: =RGBA(216, 235, 255, 0.25)
+        Height: =668
+        Width: =1268
+        X: =98
+        Y: =100
+        ZIndex: =1
+
     comp_LeftNavMyUploads_9 As comp_LeftNav:
         Height: =668
         LeftNavCollection: |-
@@ -43,6 +51,7 @@
                 
         Width: =98
         Y: =100
+        ZIndex: =2
 
     Label3_18 As label:
         Align: =Align.Center
@@ -52,7 +61,7 @@
         Size: =18
         Text: ="Peer Reviews"
         Width: =1366
-        ZIndex: =2
+        ZIndex: =3
 
     Label3_19 As label:
         Align: =Align.Center
@@ -64,7 +73,7 @@
         Text: ="Request Review"
         Width: =1366
         Y: =50
-        ZIndex: =3
+        ZIndex: =4
 
     "'User Image_10' As image":
         Height: =50
@@ -123,6 +132,7 @@
 
             DataCardKey25 As label:
                 AutoHeight: =true
+                Font: =gblAppFont
                 FontWeight: =FontWeight.Semibold
                 Height: =34
                 Text: |-
@@ -138,17 +148,18 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
+                Height: =20
                 InputTextPlaceholder: =
                 Items: =Choices([@'Peer Reviews'].Reviewer)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["DisplayName"]
                 SearchItems: =Choices('Peer Reviews'.Reviewer,DataCardValue24.SearchText)
                 SelectMultiple: =false
+                Size: =gblAppFontSize
                 Template: =ListItemTemplate.Person
                 Tooltip: =Parent.DisplayName
-                Width: |
-                    =(Parent.Width - 60) * 0.4
-                X: =388
+                Width: =197
+                X: =340
                 Y: =15
                 ZIndex: =2
 
@@ -194,6 +205,7 @@
 
             DataCardKey26 As label:
                 AutoHeight: =true
+                Font: =gblAppFont
                 FontWeight: =FontWeight.Semibold
                 Height: =34
                 Text: |-
@@ -230,12 +242,16 @@
                 ZIndex: =4
 
             Radio4 As radio:
+                Font: =gblAppFont
                 FontWeight: =FontWeight.Semibold
                 Height: =104
                 Items: =["Q1","Q3","Full Year","Q2","Q4"]
                 Layout: =Layout.Horizontal
-                Width: =376
-                X: =234
+                LineHeight: =2
+                RadioSize: =30
+                Size: =10
+                Width: =314
+                X: =346
                 Y: =14
                 ZIndex: =5
 
@@ -269,9 +285,11 @@
 
             DataCardValue18 As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderThickness: =0
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
+                Font: =gblAppFont
                 Height: =188
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
@@ -279,6 +297,7 @@
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
                 X: =342

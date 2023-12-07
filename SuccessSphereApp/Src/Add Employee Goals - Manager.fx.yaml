@@ -106,39 +106,39 @@
         SelectionFill: =RGBA(57, 55, 104, 1)
         Size: =10
         Width: =197
-        X: =226
-        Y: =153
+        X: =246
+        Y: =146
         ZIndex: =8
 
     "'EmployeeName Label_1' As label":
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
-        Height: =25
-        Size: =10
+        Height: =32
+        Size: =12
         Text: |-
             ="Employee Name :"
-        Width: =126
+        Width: =162
         X: =100
-        Y: =148
+        Y: =140
         ZIndex: =9
 
     "'One2One StartDate Label_1' As label":
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
         Height: =25
-        Size: =10
+        Size: =12
         Text: |-
             ="Date Due:"
-        Width: =73
-        X: =523
-        Y: =153
+        Width: =112
+        X: =484
+        Y: =146
         ZIndex: =10
 
     "'EmployeeName Label_2' As label":
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
         Height: =25
-        Size: =10
+        Size: =12
         Text: |-
             ="Year :"
         Width: =56
@@ -150,7 +150,7 @@
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
         Height: =33
-        Size: =10
+        Size: =12
         Text: |-
             ="Enter Goals: "
         Width: =146
@@ -223,7 +223,7 @@
         Text: ="31/12/" & CurrYear
         Width: =88
         X: =596
-        Y: =153
+        Y: =146
         ZIndex: =20
 
     Label1_1 As label:
@@ -235,8 +235,8 @@
         Size: =10
         Text: =CurrYear
         Width: =70
-        X: =146
-        Y: =203
+        X: =156
+        Y: =200
         ZIndex: =21
 
     TextInput1 As text:

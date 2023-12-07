@@ -130,13 +130,12 @@ Admin As screen:
     "'EmployeeName Label_4' As label":
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
-        Height: =25
-        Size: =10
+        Size: =12
         Text: |-
             ="Employee Name :"
-        Width: =126
+        Width: =172
         X: =792
-        Y: =141
+        Y: =136
         ZIndex: =11
 
     "'Employee Dropdown_3' As dropdown":

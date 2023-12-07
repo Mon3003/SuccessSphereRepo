@@ -106,7 +106,7 @@
         OnSuccess: |-
             =Set(LatestSubmission , Form2.LastSubmit);
             
-            /*Patch('One2One Survey',
+            Patch('One2One Survey',
                    LookUp('One2One Survey', ID = LatestSubmission.ID),
                    {   
                        ManagerID:
@@ -116,7 +116,7 @@
                         Value:""
                         }
                    }
-            )*/
+            )
         Width: =1268
         X: =98
         Y: =100
