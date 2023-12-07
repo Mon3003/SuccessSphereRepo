@@ -106,7 +106,7 @@
         Y: =132
         ZIndex: =8
 
-        "'Review Period_DataCard1' As typedDataCard.comboBoxEditCard":
+        "'Review Period_DataCard2' As typedDataCard.comboBoxEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ReviewPeriod"
             Default: =ThisItem.'Review Period'
@@ -115,41 +115,40 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =134
             Required: =false
-            Update: =DataCardValue14.Selected
+            Update: =DataCardValue20.Selected
             Width: =1166
             X: =0
             Y: =1
-            ZIndex: =9
+            ZIndex: =1
 
-            DataCardKey15 As label:
+            DataCardKey21 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10 + (DataCardValue14.Height / 2) - (Self.Height / 2)
+                Y: =10 + (DataCardValue20.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
-            DataCardValue14 As combobox:
+            DataCardValue20 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                InputTextPlaceholder: =
                 Items: =Choices([@'Peer Reviews'].ReviewPeriod)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Peer Reviews'.ReviewPeriod,DataCardValue14.SearchText)
+                SearchItems: =Choices('Peer Reviews'.ReviewPeriod,DataCardValue20.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: |
                     =(Parent.Width - 60) * 0.4
-                X: =DataCardKey15.X + DataCardKey15.Width
+                X: =DataCardKey21.X + DataCardKey21.Width
                 Y: =10
                 ZIndex: =2
 
-            ErrorMessage15 As label:
+            ErrorMessage21 As label:
                 AutoHeight: =true
                 Height: =10
                 Live: =Live.Assertive
@@ -161,17 +160,17 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue14.Y + DataCardValue14.Height
+                Y: =DataCardValue20.Y + DataCardValue20.Height
                 ZIndex: =3
 
-            StarVisible15 As label:
+            StarVisible21 As label:
                 Align: =Align.Center
-                Height: =DataCardKey15.Height
+                Height: =DataCardKey21.Height
                 Text: ="*"
                 Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
                 Width: =30
                 Wrap: =false
-                Y: =DataCardKey15.Y
+                Y: =DataCardKey21.Y
                 ZIndex: =4
 
         Reviewer_DataCard1 As typedDataCard.comboBoxEditCard:
