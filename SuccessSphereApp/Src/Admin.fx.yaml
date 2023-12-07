@@ -311,11 +311,12 @@ Admin As screen:
 
             DataCardValue5 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(57, 55, 104, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Font: =gblAppFont
-                Height: =32
+                Height: =25
                 IsSearchable: =false
                 Items: |
                     =Choices([@UserSecurity].ManagerID)
@@ -600,7 +601,7 @@ Admin As screen:
         Font: =gblAppFont
         Height: =25
         HoverFill: =RGBA(99, 139, 44, 1)
-        OnSelect: |-
+        OnSelect: |
             =
             //Set managerRecord = LookUp('Manager Group', ManagerEmail = User().Email);
             Patch(
@@ -617,13 +618,14 @@ Admin As screen:
                     },
                     EmployeeEmail: DataCardValue3.Text,
                     UserType: DataCardValue4.Selected,
-                    Title:DataCardValue1.Text
+                    Title:DataCardValue1.Text,
+                    ManagerID:{'@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedReference",
+                    //LookUp('Manager Group', ManagerEmail=User().Email).ManagerID
                    
                   
                 }
             );
             ResetForm(Form1);
-            //ManagerID:LookUp('Manager Group', ManagerEmail=User().Email).ManagerID
         Size: =11
         Text: ="Add"
         Width: =70
