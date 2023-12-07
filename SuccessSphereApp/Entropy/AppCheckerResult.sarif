@@ -2024,19 +2024,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Request Review'.Form3.'Review Period_DataCard2'.DataCardValue22.AccessibleLabel"
+                  "fullyQualifiedName": "'Request Review'.Form3.Reviewer_DataCard2.DataCardValue24.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Request Review'.Form3.'Review Period_DataCard2'.DataCardValue22.AccessibleLabel",
+                  "fullyQualifiedName": "'Request Review'.Form3.Reviewer_DataCard2.DataCardValue24.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Request Review",
-                "type": "'Request Review'.Form3.'Review Period_DataCard2'.DataCardValue22"
+                "type": "'Request Review'.Form3.Reviewer_DataCard2.DataCardValue24"
               }
             }
           ],
@@ -2054,19 +2054,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Request Review'.Form3.Reviewer_DataCard1.DataCardValue17.AccessibleLabel"
+                  "fullyQualifiedName": "'Request Review'.Form3.'Review Period_DataCard3'.DataCardValue23.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Request Review'.Form3.Reviewer_DataCard1.DataCardValue17.AccessibleLabel",
+                  "fullyQualifiedName": "'Request Review'.Form3.'Review Period_DataCard3'.DataCardValue23.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Request Review",
-                "type": "'Request Review'.Form3.Reviewer_DataCard1.DataCardValue17"
+                "type": "'Request Review'.Form3.'Review Period_DataCard3'.DataCardValue23"
               }
             }
           ],
