@@ -148,8 +148,8 @@
                 Tooltip: =Parent.DisplayName
                 Width: |
                     =(Parent.Width - 60) * 0.4
-                X: =DataCardKey25.X + DataCardKey25.Width
-                Y: =10
+                X: =388
+                Y: =15
                 ZIndex: =2
 
             ErrorMessage25 As label:
@@ -194,12 +194,14 @@
 
             DataCardKey26 As label:
                 AutoHeight: =true
+                FontWeight: =FontWeight.Semibold
                 Height: =34
-                Text: =Parent.DisplayName
+                Text: |-
+                    =Parent.DisplayName & (" :")
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10 + (Radio4.Height / 2) - (Self.Height / 2)
+                Y: =26
                 ZIndex: =1
 
             ErrorMessage26 As label:
@@ -228,10 +230,13 @@
                 ZIndex: =4
 
             Radio4 As radio:
-                Items: =["Q1","Q4","Full Year","Q2","Q3"]
+                FontWeight: =FontWeight.Semibold
+                Height: =104
+                Items: =["Q1","Q3","Full Year","Q2","Q4"]
                 Layout: =Layout.Horizontal
-                Width: =356
-                X: =472
+                Width: =376
+                X: =234
+                Y: =14
                 ZIndex: =5
 
         "'Request Message_DataCard1' As typedDataCard.textualEditCard":
@@ -276,7 +281,7 @@
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
-                X: =DataCardKey19.X + DataCardKey19.Width
+                X: =342
                 Y: =10
                 ZIndex: =2
 
