@@ -251,7 +251,7 @@
                 RadioSize: =30
                 Size: =10
                 Width: =314
-                X: =346
+                X: =340
                 Y: =14
                 ZIndex: =5
 
@@ -329,7 +329,7 @@
                 ZIndex: =4
 
     Button1 As button:
-        OnSelect: =SubmitForm(Form3);
+        OnSelect: =SubmitForm(Form3);NewForm(Form3)
         Text: ="Submit"
         X: =390
         Y: =696
