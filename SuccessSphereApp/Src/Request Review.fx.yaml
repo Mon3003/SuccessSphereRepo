@@ -146,14 +146,17 @@
             DataCardValue24 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["DisplayName","Email","Picture"]
+                DisplayFields: =["displayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =20
                 InputTextPlaceholder: =
-                Items: =Choices([@'Peer Reviews'].Reviewer)
+                IsSearchable: =false
+                Items: |-
+                    =
+                    Office365Groups.ListGroupMembers("d4184555-4169-480f-ae38-b954b92d50f6").value
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["DisplayName"]
-                SearchItems: =Choices('Peer Reviews'.Reviewer,DataCardValue24.SearchText)
+                SearchFields: =["displayName"]
+                SearchItems: =[]
                 SelectMultiple: =false
                 Size: =gblAppFontSize
                 Template: =ListItemTemplate.Person
