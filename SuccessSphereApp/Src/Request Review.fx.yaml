@@ -133,7 +133,6 @@
             DataCardKey25 As label:
                 AutoHeight: =true
                 Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Text: |-
                     ="Name of Reviewer :"
@@ -207,7 +206,6 @@
             DataCardKey26 As label:
                 AutoHeight: =true
                 Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Text: |-
                     =Parent.DisplayName & (" :")
@@ -274,7 +272,6 @@
 
             DataCardKey19 As label:
                 AutoHeight: =true
-                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Text: |-
                     =Parent.DisplayName & " (If Required) : "
