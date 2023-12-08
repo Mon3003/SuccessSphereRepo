@@ -106,8 +106,8 @@
         SelectionFill: =RGBA(57, 55, 104, 1)
         Size: =10
         Width: =197
-        X: =244
-        Y: =148
+        X: =461
+        Y: =145
         ZIndex: =8
 
     "'EmployeeName Label_1' As label":
@@ -118,8 +118,8 @@
         Text: |-
             ="Employee Name :"
         Width: =162
-        X: =98
-        Y: =142
+        X: =219
+        Y: =141
         ZIndex: =9
 
     "'One2One StartDate Label_1' As label":
@@ -130,7 +130,7 @@
         Text: |-
             ="Date Due:"
         Width: =112
-        X: =100
+        X: =219
         Y: =214
         ZIndex: =10
 
@@ -142,7 +142,7 @@
         Text: |-
             ="Year :"
         Width: =56
-        X: =683
+        X: =464
         Y: =214
         ZIndex: =12
 
@@ -154,8 +154,8 @@
         Text: |-
             ="Enter Goals: "
         Width: =146
-        X: =100
-        Y: =265
+        X: =219
+        Y: =282
         ZIndex: =13
 
     Button3_6 As button:
@@ -222,7 +222,7 @@
         Size: =10
         Text: ="31/12/" & CurrYear
         Width: =88
-        X: =212
+        X: =331
         Y: =214
         ZIndex: =20
 
@@ -235,7 +235,7 @@
         Size: =10
         Text: =CurrYear
         Width: =70
-        X: =739
+        X: =571
         Y: =214
         ZIndex: =21
 
@@ -271,7 +271,7 @@
         RadiusTopRight: =0
         Size: =10
         Width: =557
-        X: =255
-        Y: =298
+        X: =464
+        Y: =326
         ZIndex: =23
 

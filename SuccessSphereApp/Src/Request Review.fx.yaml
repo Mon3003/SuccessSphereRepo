@@ -367,7 +367,7 @@
         Size: =gblAppFontHeaderSize
         Text: ="Request"
         Width: =90
-        X: =1105
-        Y: =583
+        X: =1248
+        Y: =60
         ZIndex: =9
 
