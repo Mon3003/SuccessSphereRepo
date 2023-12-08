@@ -328,7 +328,7 @@
                 Y: =DataCardKey19.Y
                 ZIndex: =4
 
-    Button1 As button:
+    Btn_SubmitReviewRequest As button:
         OnSelect: |-
             =Patch(
                 'Peer Reviews',
@@ -345,7 +345,7 @@
                      'Review Period':{Value:Radio4.Selected.Value},
                     'Request Message': DataCardValue18.Text
                 }
-            );NewForm(Form3)
+            )
         Text: ="Submit"
         X: =390
         Y: =696
