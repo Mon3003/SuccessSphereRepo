@@ -329,22 +329,7 @@
                 ZIndex: =4
 
     Button1 As button:
-        OnSelect: |-
-            =Patch(
-                'Peer Reviews',
-                {Reviewer: {
-                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
-                        Department: "",
-                        Claims: "",
-                        DisplayName: DataCardValue24.Selected.displayName,
-                        Email: "",
-                        JobTitle: "",
-                        Picture: ""
-                    },
-                    'Review Period': Radio4.Selected,
-                    'Request Message': DataCardValue18.Text
-                }
-            )  
+        OnSelect: =SubmitForm(Form3);
         Text: ="Submit"
         X: =390
         Y: =696
