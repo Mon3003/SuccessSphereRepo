@@ -110,6 +110,7 @@
         DefaultMode: =FormMode.New
         Height: =438
         NumberOfColumns: =1
+        OnSuccess: =
         Width: =1166
         X: =172
         Y: =132
@@ -328,6 +329,14 @@
                 ZIndex: =4
 
     Button1 As button:
+        OnSelect: |-
+            =Patch(
+                'Peer Reviews',
+                {Reviewer: DataCardValue24.Selected.displayName,
+                    'Review Period': Radio4.Selected.Value,
+                    'Request Message': DataCardValue18.Text
+                }
+            )  
         Text: ="Submit"
         X: =390
         Y: =696
