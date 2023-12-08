@@ -333,16 +333,16 @@
             =Patch(
                 'Peer Reviews',
                 Defaults('Peer Reviews'),
-                {
+                {Reviewer:{
                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
                         Department: "",
-                        Claims: "",
+                        Claims: "i:0#.f|membership|" & DataCardValue24.Selected.mail,
                         DisplayName: DataCardValue24.Selected.displayName,
-                        Email: "",
+                        Email: DataCardValue24.Selected.mail,
                         JobTitle: "",
                         Picture: ""
                     },
-                {'Review Period':{Value:Radio4.Selected.Value},
+                     'Review Period':{Value:Radio4.Selected.Value},
                     'Request Message': DataCardValue18.Text
                 }
             )
