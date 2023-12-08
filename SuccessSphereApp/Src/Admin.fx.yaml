@@ -363,7 +363,7 @@ Admin As screen:
                 Color: =RGBA(0, 0, 0, 1)
                 FontWeight: =FontWeight.Semibold
                 Height: =34
-                Size: =gblAppFontSize
+                Size: =gblAppFontHeaderSize
                 Text: |-
                     ="User Type :"
                 Width: =(Parent.Width - 60) * 0.4
@@ -440,7 +440,7 @@ Admin As screen:
                 Font: =gblAppFont
                 FontWeight: =FontWeight.Semibold
                 Height: =34
-                Size: =gblAppFontSize
+                Size: =gblAppFontHeaderSize
                 Text: |-
                     ="Employee Name : "
                 Width: =(Parent.Width - 60) * 0.4
@@ -523,7 +523,7 @@ Admin As screen:
                 Font: =gblAppFont
                 FontWeight: =FontWeight.Semibold
                 Height: =34
-                Size: =gblAppFontSize
+                Size: =gblAppFontHeaderSize
                 Text: |-
                     ="Employee Email :"
                 Width: =(Parent.Width - 60) * 0.4

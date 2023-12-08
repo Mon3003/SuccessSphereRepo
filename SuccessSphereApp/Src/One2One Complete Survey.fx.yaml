@@ -779,12 +779,6 @@
         Y: =62
         ZIndex: =9
 
-    Label11 As label:
-        Text: = LookUp('One2One Survey', ID = LatestSubmission.ID).UseofTimeQuestion
-        Width: =316
-        X: =269
-        ZIndex: =10
-
     Label5_6 As label:
         Color: =RGBA(255, 255, 255, 1)
         Font: =gblAppFont
