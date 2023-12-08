@@ -334,7 +334,6 @@
                 'Peer Reviews',
                 Defaults('Peer Reviews'),
                 {
-                    Reviewer: {
                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
                         Department: "",
                         Claims: "",
@@ -343,6 +342,7 @@
                         JobTitle: "",
                         Picture: ""
                     },
+                {'Review Period':{Value:Radio4.Selected.Value},
                     'Request Message': DataCardValue18.Text
                 }
             )
