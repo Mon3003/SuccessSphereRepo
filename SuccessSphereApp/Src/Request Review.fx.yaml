@@ -140,7 +140,7 @@
                 Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10 + (DataCardValue24.Height / 2) - (Self.Height / 2)
+                Y: =9
                 ZIndex: =1
 
             DataCardValue24 As combobox:
