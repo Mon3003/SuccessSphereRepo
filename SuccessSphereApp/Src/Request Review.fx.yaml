@@ -289,8 +289,9 @@
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Font: =gblAppFont
-                Height: =188
+                Height: =166
                 MaxLength: =Parent.MaxLength
+                Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -300,7 +301,7 @@
                 Tooltip: =Parent.DisplayName
                 Width: =(Parent.Width - 60) * 0.6
                 X: =342
-                Y: =10
+                Y: =32
                 ZIndex: =2
 
             ErrorMessage19 As label:
