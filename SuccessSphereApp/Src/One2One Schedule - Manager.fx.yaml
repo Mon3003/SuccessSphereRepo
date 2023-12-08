@@ -190,8 +190,7 @@
                 PressedBorderColor: ='Emp Label'.BorderColor
                 PressedColor: ='Emp Label'.Color
                 PressedFill: ='Emp Label'.Fill
-                Size: |
-                    =12
+                Size: =gblAppFontSize
                 Text: ="Employee Name"
                 Underline: =true
                 Width: =268
@@ -213,8 +212,7 @@
                 PressedBorderColor: ='Frq Label'.BorderColor
                 PressedColor: ='Frq Label'.Color
                 PressedFill: ='Frq Label'.Fill
-                Size: |
-                    =12
+                Size: =gblAppFontSize
                 Text: ="Frequency"
                 Underline: =true
                 Width: |+
@@ -240,8 +238,7 @@
                 PressedBorderColor: ='Next 121 Label'.BorderColor
                 PressedColor: ='Next 121 Label'.Color
                 PressedFill: ='Next 121 Label'.Fill
-                Size: |
-                    =12
+                Size: =gblAppFontSize
                 Text: ="Next One2One Date"
                 Underline: =true
                 Width: =258

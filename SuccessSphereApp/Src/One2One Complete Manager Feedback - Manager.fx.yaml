@@ -1320,7 +1320,7 @@
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
         Height: =35
-        Size: =12
+        Size: =gblAppFontHeaderSize
         Text: ="Please provide Manager's feedback."
         Width: =607
         X: =98

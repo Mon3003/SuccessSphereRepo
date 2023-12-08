@@ -188,14 +188,6 @@ Admin As screen:
         Y: =290
         ZIndex: =14
 
-    Rectangle2_1 As rectangle:
-        Fill: =RGBA(241, 244, 249, 1)
-        Height: =668
-        Width: =632
-        X: =92
-        Y: =100
-        ZIndex: =15
-
     Form1 As form:
         DataSource: =UserSecurity
         DefaultMode: =FormMode.New
@@ -583,7 +575,7 @@ Admin As screen:
                 ZIndex: =4
 
     Button3_8 As button:
-        Color: =RGBA(57, 55, 104, 1)
+        Color: =RGBA(99, 139, 44, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Font: =gblAppFont
         Height: =25
@@ -639,12 +631,12 @@ Admin As screen:
         ZIndex: =19
 
     Button3_9 As button:
-        Color: =RGBA(57, 55, 104, 1)
+        Color: =RGBA(246, 88, 16, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Font: =gblAppFont
         FontWeight: =FontWeight.Bold
         Height: =25
-        HoverFill: =RGBA(99, 139, 44, 1)
+        HoverFill: =RGBA(246, 88, 16, 1)
         OnSelect: |-
             =
             Remove(UserSecurity,LookUp(UserSecurity,EmployeeEmail=DataCardValue3.Text));
