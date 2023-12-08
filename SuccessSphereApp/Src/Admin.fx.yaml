@@ -123,14 +123,14 @@ Admin As screen:
         SelectionFill: =RGBA(57, 55, 104, 1)
         Size: =10
         Width: =197
-        X: =978
+        X: =1016
         Y: =146
         ZIndex: =10
 
     "'EmployeeName Label_4' As label":
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
-        Size: =12
+        Size: =gblAppFontHeaderSize
         Text: |-
             ="Employee Name :"
         Width: =172
@@ -150,18 +150,17 @@ Admin As screen:
         SelectionFill: =RGBA(57, 55, 104, 1)
         Size: =10
         Width: =197
-        X: =978
-        Y: =195
+        X: =1016
+        Y: =205
         ZIndex: =12
 
     "'EmployeeName Label_5' As label":
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
-        Height: =20
-        Size: =10
+        Size: =gblAppFontHeaderSize
         Text: |-
             ="Delegate - New Manager :"
-        Width: =186
+        Width: =212
         X: =792
         Y: =195
         ZIndex: =13
@@ -361,6 +360,7 @@ Admin As screen:
             DataCardKey4 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =gblAppFont
                 FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =gblAppFontHeaderSize
