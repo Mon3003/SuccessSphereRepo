@@ -14,46 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'One2One View My Survey'.Gallery2.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'One2One View My Survey'.Gallery2.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 64,
-                  "charOffset": 39,
-                  "snippet": {
-                    "text": "If(Lower('Created By'.Email) = gblCurrentUserEmail, true, false)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "One2One View My Survey",
-                "type": "'One2One View My Survey'.Gallery2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "If"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'View My Goals'.Gallery2_2.Items"
                 }
               ],
@@ -614,210 +574,40 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Add Employee Goals - Manager'.'Employee Dropdown_1'.AccessibleLabel"
+                  "fullyQualifiedName": "'One2One View My Survey'.Gallery2.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Add Employee Goals - Manager'.'Employee Dropdown_1'.AccessibleLabel",
+                  "fullyQualifiedName": "'One2One View My Survey'.Gallery2.Items",
                   "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 64,
+                  "charOffset": 39,
+                  "snippet": {
+                    "text": "If(Lower('Created By'.Email) = gblCurrentUserEmail, true, false)"
+                  }
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
-                "module": "Add Employee Goals - Manager",
-                "type": "'Add Employee Goals - Manager'.'Employee Dropdown_1'"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Add Employee Goals - Manager'.TextInput1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Add Employee Goals - Manager'.TextInput1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Add Employee Goals - Manager",
-                "type": "'Add Employee Goals - Manager'.TextInput1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'One2One View My Survey'.Gallery2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'One2One View My Survey'.Gallery2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
+                "member": "Items",
                 "module": "One2One View My Survey",
                 "type": "'One2One View My Survey'.Gallery2"
               }
             }
           ],
           "message": {
+            "arguments": [
+              "If"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'One2One View My Survey'.Gallery2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'One2One View My Survey'.Gallery2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "One2One View My Survey",
-                "type": "'One2One View My Survey'.Gallery2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Request Review'.Form3.Reviewer_DataCard2.DataCardValue24.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Request Review'.Form3.Reviewer_DataCard2.DataCardValue24.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Request Review",
-                "type": "'Request Review'.Form3.Reviewer_DataCard2.DataCardValue24"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Request Review'.Form3.'Review Period_DataCard4'.Radio4.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Request Review'.Form3.'Review Period_DataCard4'.Radio4.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Request Review",
-                "type": "'Request Review'.Form3.'Review Period_DataCard4'.Radio4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Request Review'.Form3.'Request Message_DataCard1'.DataCardValue18.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Request Review'.Form3.'Request Message_DataCard1'.DataCardValue18.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Request Review",
-                "type": "'Request Review'.Form3.'Request Message_DataCard1'.DataCardValue18"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -878,6 +668,66 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Add Employee Goals - Manager'.'Employee Dropdown_1'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Add Employee Goals - Manager'.'Employee Dropdown_1'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Add Employee Goals - Manager",
+                "type": "'Add Employee Goals - Manager'.'Employee Dropdown_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Add Employee Goals - Manager'.TextInput1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Add Employee Goals - Manager'.TextInput1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Add Employee Goals - Manager",
+                "type": "'Add Employee Goals - Manager'.TextInput1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -1047,6 +897,36 @@
                 "member": "AccessibleLabel",
                 "module": "Admin",
                 "type": "Admin.'Employee Dropdown_2'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Admin.DataCardValue3_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Admin.DataCardValue3_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Admin",
+                "type": "Admin.DataCardValue3_1"
               }
             }
           ],
@@ -1784,6 +1664,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'One2One View My Survey'.Gallery2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One View My Survey'.Gallery2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "One2One View My Survey",
+                "type": "'One2One View My Survey'.Gallery2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'One2One View My Survey'.Gallery2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'One2One View My Survey'.Gallery2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "One2One View My Survey",
+                "type": "'One2One View My Survey'.Gallery2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "'One2One Schedule - Manager'.'Display Table Container'.Gallery3_3.AccessibleLabel"
                 }
               ],
@@ -2114,19 +2054,79 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Admin.DataCardValue3_1.AccessibleLabel"
+                  "fullyQualifiedName": "'Request Review'.Form3.Reviewer_DataCard2.DataCardValue24.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Admin.DataCardValue3_1.AccessibleLabel",
+                  "fullyQualifiedName": "'Request Review'.Form3.Reviewer_DataCard2.DataCardValue24.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "Admin",
-                "type": "Admin.DataCardValue3_1"
+                "module": "Request Review",
+                "type": "'Request Review'.Form3.Reviewer_DataCard2.DataCardValue24"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Request Review'.Form3.'Review Period_DataCard4'.Radio4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Request Review'.Form3.'Review Period_DataCard4'.Radio4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Request Review",
+                "type": "'Request Review'.Form3.'Review Period_DataCard4'.Radio4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Request Review'.Form3.'Request Message_DataCard1'.DataCardValue18.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Request Review'.Form3.'Request Message_DataCard1'.DataCardValue18.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Request Review",
+                "type": "'Request Review'.Form3.'Request Message_DataCard1'.DataCardValue18"
               }
             }
           ],
