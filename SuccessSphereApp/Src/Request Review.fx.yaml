@@ -338,7 +338,7 @@
                         Email: "",
                         JobTitle: "",
                         Picture: ""
-                    },'Review Period':{Value: Radio4.Selected.Value},'Request Message':DataCardValue18.Text})
+                    },'Review Period':{Value:Radio4.Selected.Value},'Request Message':DataCardValue18.Text})
         Text: ="Submit"
         X: =390
         Y: =696
