@@ -261,7 +261,7 @@
                 )
             )
         Font: =gblAppFont
-        Height: =399
+        Height: =451
         HoverBorderColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
         Mode: =TextMode.MultiLine
@@ -270,8 +270,8 @@
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Size: =10
-        Width: =557
-        X: =464
-        Y: =326
+        Width: =863
+        X: =461
+        Y: =282
         ZIndex: =23
 

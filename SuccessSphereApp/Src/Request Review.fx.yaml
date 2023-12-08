@@ -136,6 +136,7 @@
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
                 Font: =gblAppFont
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =gblAppFontHeaderSize
                 Text: |-
@@ -214,6 +215,7 @@
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
                 Font: =gblAppFont
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =gblAppFontHeaderSize
                 Text: |-
@@ -284,6 +286,7 @@
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
                 Font: =gblAppFont
+                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Size: =gblAppFontHeaderSize
                 Text: |-
@@ -302,6 +305,8 @@
                 DisplayMode: =Parent.DisplayMode
                 Font: =gblAppFont
                 Height: =166
+                HoverBorderColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
                 MaxLength: =Parent.MaxLength
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -345,13 +350,14 @@
         Color: =RGBA(99, 139, 44, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Font: =gblAppFont
-        Height: =30
+        Height: =25
         HoverFill: =RGBA(99, 139, 44, 1)
         OnSelect: |-
             =Patch(
                 'Peer Reviews',
                 Defaults('Peer Reviews'),
-                {Reviewer:{
+                {
+                    Reviewer: {
                         '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
                         Department: "",
                         Claims: "i:0#.f|membership|" & DataCardValue24.Selected.mail,
@@ -360,14 +366,15 @@
                         JobTitle: "",
                         Picture: ""
                     },
-                     'Review Period':{Value:Radio4.Selected.Value},
+                    'Review Period': {Value: Radio4.Selected.Value},
                     'Request Message': DataCardValue18.Text
                 }
-            );NewForm(Form3)
-        Size: =gblAppFontHeaderSize
+            );
+            ResetForm(Form3)
+        Size: =gblAppFontSize
         Text: ="Request"
-        Width: =90
-        X: =1248
-        Y: =60
+        Width: =70
+        X: =1268
+        Y: =62
         ZIndex: =9
 
