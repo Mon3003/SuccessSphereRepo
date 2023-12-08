@@ -332,8 +332,16 @@
         OnSelect: |-
             =Patch(
                 'Peer Reviews',
-                {Reviewer: DataCardValue24.Selected.displayName,
-                    'Review Period': Radio4.Selected.Value,
+                {Reviewer: {
+                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
+                        Department: "",
+                        Claims: "",
+                        DisplayName: DataCardValue24.Selected.displayName,
+                        Email: "",
+                        JobTitle: "",
+                        Picture: ""
+                    },
+                    'Review Period': Radio4.Selected,
                     'Request Message': DataCardValue18.Text
                 }
             )  
