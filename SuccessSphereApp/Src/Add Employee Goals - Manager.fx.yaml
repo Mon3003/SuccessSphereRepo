@@ -106,8 +106,8 @@
         SelectionFill: =RGBA(57, 55, 104, 1)
         Size: =10
         Width: =197
-        X: =246
-        Y: =146
+        X: =244
+        Y: =148
         ZIndex: =8
 
     "'EmployeeName Label_1' As label":
@@ -118,8 +118,8 @@
         Text: |-
             ="Employee Name :"
         Width: =162
-        X: =100
-        Y: =140
+        X: =98
+        Y: =142
         ZIndex: =9
 
     "'One2One StartDate Label_1' As label":
@@ -130,8 +130,8 @@
         Text: |-
             ="Date Due:"
         Width: =112
-        X: =484
-        Y: =146
+        X: =100
+        Y: =214
         ZIndex: =10
 
     "'EmployeeName Label_2' As label":
@@ -142,8 +142,8 @@
         Text: |-
             ="Year :"
         Width: =56
-        X: =100
-        Y: =200
+        X: =683
+        Y: =214
         ZIndex: =12
 
     "'EmployeeName Label_3' As label":
@@ -155,7 +155,7 @@
             ="Enter Goals: "
         Width: =146
         X: =100
-        Y: =240
+        Y: =265
         ZIndex: =13
 
     Button3_6 As button:
@@ -222,8 +222,8 @@
         Size: =10
         Text: ="31/12/" & CurrYear
         Width: =88
-        X: =596
-        Y: =146
+        X: =212
+        Y: =214
         ZIndex: =20
 
     Label1_1 As label:
@@ -235,12 +235,13 @@
         Size: =10
         Text: =CurrYear
         Width: =70
-        X: =156
-        Y: =200
+        X: =739
+        Y: =214
         ZIndex: =21
 
     TextInput1 As text:
-        BorderThickness: =0
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
         Default: |
             =Text(
                 If(
@@ -260,7 +261,7 @@
                 )
             )
         Font: =gblAppFont
-        Height: =460
+        Height: =399
         HoverBorderColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(255, 255, 255, 1)
         Mode: =TextMode.MultiLine
@@ -269,8 +270,8 @@
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Size: =10
-        Width: =623
-        X: =198
-        Y: =273
+        Width: =557
+        X: =255
+        Y: =298
         ZIndex: =23
 

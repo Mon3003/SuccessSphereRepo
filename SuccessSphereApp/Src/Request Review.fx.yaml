@@ -117,6 +117,7 @@
         ZIndex: =8
 
         Reviewer_DataCard2 As typedDataCard.comboBoxEditCard:
+            BorderColor: =RGBA(57, 55, 104, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Reviewer"
             Default: =ThisItem.Reviewer
@@ -136,6 +137,7 @@
                 Color: =RGBA(0, 0, 0, 1)
                 Font: =gblAppFont
                 Height: =34
+                Size: =gblAppFontHeaderSize
                 Text: |-
                     ="Name of Reviewer :"
                 Width: =(Parent.Width - 60) * 0.4
@@ -146,6 +148,7 @@
 
             DataCardValue24 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(57, 55, 104, 1)
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["displayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
@@ -156,6 +159,7 @@
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["displayName"]
                 SearchItems: =[]
+                SelectionFill: =RGBA(57, 55, 104, 1)
                 SelectMultiple: =false
                 Size: =gblAppFontSize
                 Template: =ListItemTemplate.Person
@@ -191,6 +195,7 @@
                 ZIndex: =4
 
         "'Review Period_DataCard4' As typedDataCard.comboBoxEditCard":
+            BorderColor: =RGBA(57, 55, 104, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="ReviewPeriod"
             Default: =ThisItem.'Review Period'
@@ -210,6 +215,7 @@
                 Color: =RGBA(0, 0, 0, 1)
                 Font: =gblAppFont
                 Height: =34
+                Size: =gblAppFontHeaderSize
                 Text: |-
                     =Parent.DisplayName & (" :")
                 Width: =(Parent.Width - 60) * 0.4
@@ -250,6 +256,7 @@
                 Items: =["Q1","Q3","Full Year","Q2","Q4"]
                 Layout: =Layout.Horizontal
                 LineHeight: =2
+                RadioBorderColor: =RGBA(57, 55, 104, 1)
                 RadioSize: =30
                 Size: =10
                 Width: =314
@@ -276,7 +283,9 @@
             DataCardKey19 As label:
                 AutoHeight: =true
                 Color: =RGBA(0, 0, 0, 1)
+                Font: =gblAppFont
                 Height: =34
+                Size: =gblAppFontHeaderSize
                 Text: |-
                     =Parent.DisplayName & " (If Required) : "
                 Width: =(Parent.Width - 60) * 0.4
@@ -286,8 +295,8 @@
                 ZIndex: =1
 
             DataCardValue18 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                BorderThickness: =0
+                BorderColor: =If(IsBlank(Parent.Error), Color.Black, Color.Red)
+                BorderThickness: =1
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
@@ -333,6 +342,11 @@
                 ZIndex: =4
 
     Btn_SubmitReviewRequest As button:
+        Color: =RGBA(99, 139, 44, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =gblAppFont
+        Height: =30
+        HoverFill: =RGBA(99, 139, 44, 1)
         OnSelect: |-
             =Patch(
                 'Peer Reviews',
@@ -350,8 +364,10 @@
                     'Request Message': DataCardValue18.Text
                 }
             );NewForm(Form3)
-        Text: ="Submit"
-        X: =390
-        Y: =696
+        Size: =gblAppFontHeaderSize
+        Text: ="Request"
+        Width: =90
+        X: =1105
+        Y: =583
         ZIndex: =9
 
