@@ -151,9 +151,7 @@
                 Height: =20
                 InputTextPlaceholder: =
                 IsSearchable: =false
-                Items: |-
-                    =
-                    Office365Groups.ListGroupMembers("d4184555-4169-480f-ae38-b954b92d50f6").value
+                Items: =Office365Groups.ListGroupMembers("d4184555-4169-480f-ae38-b954b92d50f6").value
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["displayName"]
                 SearchItems: =[]
