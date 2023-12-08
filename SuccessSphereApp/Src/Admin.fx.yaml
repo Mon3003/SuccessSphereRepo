@@ -626,8 +626,8 @@ Admin As screen:
         Size: =11
         Text: ="Add"
         Width: =70
-        X: =115
-        Y: =417
+        X: =535
+        Y: =335
         ZIndex: =19
 
     Button3_9 As button:
@@ -646,7 +646,7 @@ Admin As screen:
         Size: =11
         Text: ="Remove"
         Width: =70
-        X: =229
-        Y: =417
+        X: =618
+        Y: =335
         ZIndex: =20
 
