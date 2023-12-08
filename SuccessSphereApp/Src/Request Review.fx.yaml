@@ -343,7 +343,6 @@
                         JobTitle: "",
                         Picture: ""
                     },
-                    'Review Period': {Value: Radio4.Selected.Value},
                     'Request Message': DataCardValue18.Text
                 }
             )
