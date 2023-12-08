@@ -110,6 +110,7 @@
         DefaultMode: =FormMode.New
         Height: =438
         NumberOfColumns: =1
+        OnSuccess: =
         Width: =1166
         X: =172
         Y: =132
@@ -133,7 +134,6 @@
             DataCardKey25 As label:
                 AutoHeight: =true
                 Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Text: |-
                     ="Name of Reviewer :"
@@ -146,14 +146,15 @@
             DataCardValue24 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["DisplayName","Email","Picture"]
+                DisplayFields: =["displayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =20
                 InputTextPlaceholder: =
-                Items: =Choices([@'Peer Reviews'].Reviewer)
+                IsSearchable: =false
+                Items: =Office365Groups.ListGroupMembers("d4184555-4169-480f-ae38-b954b92d50f6").value
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["DisplayName"]
-                SearchItems: =Choices('Peer Reviews'.Reviewer,DataCardValue24.SearchText)
+                SearchFields: =["displayName"]
+                SearchItems: =[]
                 SelectMultiple: =false
                 Size: =gblAppFontSize
                 Template: =ListItemTemplate.Person
@@ -206,7 +207,6 @@
             DataCardKey26 As label:
                 AutoHeight: =true
                 Font: =gblAppFont
-                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Text: |-
                     =Parent.DisplayName & (" :")
@@ -273,7 +273,6 @@
 
             DataCardKey19 As label:
                 AutoHeight: =true
-                FontWeight: =FontWeight.Semibold
                 Height: =34
                 Text: |-
                     =Parent.DisplayName & " (If Required) : "
@@ -330,6 +329,22 @@
                 ZIndex: =4
 
     Button1 As button:
+        OnSelect: |-
+            =Patch(
+                'Peer Reviews',
+                {Reviewer: {
+                        '@odata.type': "#Microsoft.Azure.Connectors.SharePoint.SPListExpandedUser",
+                        Department: "",
+                        Claims: "",
+                        DisplayName: DataCardValue24.Selected.displayName,
+                        Email: "",
+                        JobTitle: "",
+                        Picture: ""
+                    },
+                    'Review Period': Radio4.Selected,
+                    'Request Message': DataCardValue18.Text
+                }
+            )  
         Text: ="Submit"
         X: =390
         Y: =696
