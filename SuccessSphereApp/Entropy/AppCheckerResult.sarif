@@ -1244,66 +1244,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Complete Review'.Form5.'Created By_DataCard1'.DataCardValue21.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Complete Review'.Form5.'Created By_DataCard1'.DataCardValue21.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Complete Review",
-                "type": "'Complete Review'.Form5.'Created By_DataCard1'.DataCardValue21"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Complete Review'.Form5.Reviewer_DataCard1.DataCardValue17.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Complete Review'.Form5.Reviewer_DataCard1.DataCardValue17.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Complete Review",
-                "type": "'Complete Review'.Form5.Reviewer_DataCard1.DataCardValue17"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'Complete Review'.Form5.Date_DataCard1.DataCardValue15.AccessibleLabel"
                 }
               ],
@@ -1317,156 +1257,6 @@
                 "member": "AccessibleLabel",
                 "module": "Complete Review",
                 "type": "'Complete Review'.Form5.Date_DataCard1.DataCardValue15"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Complete Review'.Form5.'Takes Responsibility_DataCard1'.DataCardValue6.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Complete Review'.Form5.'Takes Responsibility_DataCard1'.DataCardValue6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Complete Review",
-                "type": "'Complete Review'.Form5.'Takes Responsibility_DataCard1'.DataCardValue6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Complete Review'.Form5.'Has the ability to learn and use new skills_DataCard1'.DataCardValue7.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Complete Review'.Form5.'Has the ability to learn and use new skills_DataCard1'.DataCardValue7.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Complete Review",
-                "type": "'Complete Review'.Form5.'Has the ability to learn and use new skills_DataCard1'.DataCardValue7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Complete Review'.Form5.'Is punctual and respectful of other''s time_DataCard1'.DataCardValue9.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Complete Review'.Form5.'Is punctual and respectful of other''s time_DataCard1'.DataCardValue9.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Complete Review",
-                "type": "'Complete Review'.Form5.'Is punctual and respectful of other''s time_DataCard1'.DataCardValue9"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Complete Review'.Form5.'Sets and meets deadlines_DataCard1'.DataCardValue10.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Complete Review'.Form5.'Sets and meets deadlines_DataCard1'.DataCardValue10.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Complete Review",
-                "type": "'Complete Review'.Form5.'Sets and meets deadlines_DataCard1'.DataCardValue10"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "'Complete Review'.Form5.'Quality of the employee''s work_DataCard1'.DataCardValue12.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'Complete Review'.Form5.'Quality of the employee''s work_DataCard1'.DataCardValue12.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Complete Review",
-                "type": "'Complete Review'.Form5.'Quality of the employee''s work_DataCard1'.DataCardValue12"
               }
             }
           ],
@@ -1514,19 +1304,109 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Complete Review'.Form5.'Review Period_DataCard1'.DataCardValue14.AccessibleLabel"
+                  "fullyQualifiedName": "'Complete Review'.Form5.'Quality of the employee''s work_DataCard1'.DataCardValue12.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Complete Review'.Form5.'Review Period_DataCard1'.DataCardValue14.AccessibleLabel",
+                  "fullyQualifiedName": "'Complete Review'.Form5.'Quality of the employee''s work_DataCard1'.DataCardValue12.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Complete Review",
-                "type": "'Complete Review'.Form5.'Review Period_DataCard1'.DataCardValue14"
+                "type": "'Complete Review'.Form5.'Quality of the employee''s work_DataCard1'.DataCardValue12"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Complete Review'.Form5.'Effectively communicates with others_DataCard1'.DataCardValue11.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Complete Review'.Form5.'Effectively communicates with others_DataCard1'.DataCardValue11.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Complete Review",
+                "type": "'Complete Review'.Form5.'Effectively communicates with others_DataCard1'.DataCardValue11"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Complete Review'.Form5.'Sets and meets deadlines_DataCard1'.DataCardValue10.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Complete Review'.Form5.'Sets and meets deadlines_DataCard1'.DataCardValue10.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Complete Review",
+                "type": "'Complete Review'.Form5.'Sets and meets deadlines_DataCard1'.DataCardValue10"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Complete Review'.Form5.'Is punctual and respectful of other''s time_DataCard1'.DataCardValue9.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Complete Review'.Form5.'Is punctual and respectful of other''s time_DataCard1'.DataCardValue9.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Complete Review",
+                "type": "'Complete Review'.Form5.'Is punctual and respectful of other''s time_DataCard1'.DataCardValue9"
               }
             }
           ],
@@ -1574,19 +1454,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'Complete Review'.Form5.'Effectively communicates with others_DataCard1'.DataCardValue11.AccessibleLabel"
+                  "fullyQualifiedName": "'Complete Review'.Form5.'Has the ability to learn and use new skills_DataCard1'.DataCardValue7.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'Complete Review'.Form5.'Effectively communicates with others_DataCard1'.DataCardValue11.AccessibleLabel",
+                  "fullyQualifiedName": "'Complete Review'.Form5.'Has the ability to learn and use new skills_DataCard1'.DataCardValue7.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Complete Review",
-                "type": "'Complete Review'.Form5.'Effectively communicates with others_DataCard1'.DataCardValue11"
+                "type": "'Complete Review'.Form5.'Has the ability to learn and use new skills_DataCard1'.DataCardValue7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Complete Review'.Form5.'Takes Responsibility_DataCard1'.DataCardValue6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Complete Review'.Form5.'Takes Responsibility_DataCard1'.DataCardValue6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Complete Review",
+                "type": "'Complete Review'.Form5.'Takes Responsibility_DataCard1'.DataCardValue6"
               }
             }
           ],
@@ -2757,6 +2667,96 @@
                 "member": "Item",
                 "module": "Complete Review",
                 "type": "'Complete Review'.Form5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Complete Review'.Form5.Reviewer_DataCard1.Label10_1.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Complete Review'.Form5.Reviewer_DataCard1.Label10_1.Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Complete Review",
+                "type": "'Complete Review'.Form5.Reviewer_DataCard1.Label10_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Complete Review'.Form5.'Review Period_DataCard1'.Label10_2.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Complete Review'.Form5.'Review Period_DataCard1'.Label10_2.Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Complete Review",
+                "type": "'Complete Review'.Form5.'Review Period_DataCard1'.Label10_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'Complete Review'.Form5.'Employee Being Reviewed_DataCard1'.Label10.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'Complete Review'.Form5.'Employee Being Reviewed_DataCard1'.Label10.Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Complete Review",
+                "type": "'Complete Review'.Form5.'Employee Being Reviewed_DataCard1'.Label10"
               }
             }
           ],
