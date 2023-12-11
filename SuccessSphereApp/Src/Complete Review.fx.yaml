@@ -123,76 +123,11 @@
         DataSource: ='Peer Reviews'
         Height: =668
         Item: =Gallery_ReviewRequests.Selected
+        NumberOfColumns: =2
         Width: =1268
         X: =98
         Y: =100
         ZIndex: =9
-
-        "'Created By_DataCard1' As typedDataCard.comboBoxViewCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="Author"
-            Default: =ThisItem.'Created By'
-            DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Peer Reviews'],DataSourceInfo.DisplayName,"Author")
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue21.Selected
-            Width: =422
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-            DataCardKey22 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: ="Name of Employee Being Reviewed"
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue21 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["DisplayName","Email","Picture"]
-                DisplayMode: =Parent.DisplayMode
-                IsSearchable: =false
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["DisplayName"]
-                SearchItems: =[]
-                SelectMultiple: =false
-                Template: =ListItemTemplate.Person
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey22.Y + DataCardKey22.Height + 5
-                ZIndex: =2
-
-            ErrorMessage22 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue21.Y + DataCardValue21.Height
-                ZIndex: =3
-
-            StarVisible22 As label:
-                Align: =Align.Center
-                Height: =DataCardKey22.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey22.Y
-                ZIndex: =4
 
         Reviewer_DataCard1 As typedDataCard.comboBoxEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -203,8 +138,8 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue17.Selected
-            Width: =422
+            Update: =
+            Width: =634
             X: =1
             Y: =0
             ZIndex: =10
@@ -212,29 +147,12 @@
             DataCardKey18 As label:
                 AutoHeight: =true
                 Height: =34
-                Text: ="Your Name"
-                Width: =Parent.Width - 60
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =29
+                Y: =16
                 ZIndex: =1
-
-            DataCardValue17 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["DisplayName","Email","Picture"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Peer Reviews'].Reviewer)
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["DisplayName"]
-                SearchItems: =Choices('Peer Reviews'.Reviewer,DataCardValue17.SearchText)
-                SelectMultiple: =false
-                Template: =ListItemTemplate.Person
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey18.Y + DataCardKey18.Height + 5
-                ZIndex: =2
 
             ErrorMessage18 As label:
                 AutoHeight: =true
@@ -248,7 +166,7 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue17.Y + DataCardValue17.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible18 As label:
@@ -261,6 +179,13 @@
                 Y: =DataCardKey18.Y
                 ZIndex: =4
 
+            Label10_1 As label:
+                Text: =Gallery_ReviewRequests.Selected.Reviewer.DisplayName
+                Width: =345
+                X: =259
+                Y: =13
+                ZIndex: =5
+
         Date_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="Date"
@@ -271,19 +196,19 @@
             Height: =50
             Required: =false
             Update: =DataCardValue15.SelectedDate
-            Width: =422
-            X: =2
-            Y: =0
+            Width: =634
+            X: =0
+            Y: =1
             ZIndex: =10
 
             DataCardKey16 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =10 + (DataCardValue15.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue15 As datepicker:
@@ -296,9 +221,9 @@
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey16.Y + DataCardKey16.Height + 5
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey16.X + DataCardKey16.Width
+                Y: =10
                 ZIndex: =2
 
             ErrorMessage16 As label:
@@ -336,19 +261,19 @@
             Height: =50
             Required: =false
             Update: =DataCardValue6.Selected
-            Width: =422
-            X: =1
-            Y: =1
+            Width: =634
+            X: =0
+            Y: =2
             ZIndex: =10
 
             DataCardKey6 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =10 + (DataCardValue6.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue6 As combobox:
@@ -362,9 +287,9 @@
                 SearchItems: =Choices('Peer Reviews'.'Takes Responsibility',DataCardValue6.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey6.X + DataCardKey6.Width
+                Y: =10
                 ZIndex: =2
 
             ErrorMessage6 As label:
@@ -402,19 +327,19 @@
             Height: =50
             Required: =false
             Update: =DataCardValue7.Selected
-            Width: =422
-            X: =2
-            Y: =1
+            Width: =634
+            X: =1
+            Y: =2
             ZIndex: =10
 
             DataCardKey7 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =10 + (DataCardValue7.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue7 As combobox:
@@ -428,9 +353,9 @@
                 SearchItems: =Choices('Peer Reviews'.'Has the ability to learn and use new skills',DataCardValue7.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey7.Y + DataCardKey7.Height + 5
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey7.X + DataCardKey7.Width
+                Y: =10
                 ZIndex: =2
 
             ErrorMessage7 As label:
@@ -468,19 +393,19 @@
             Height: =50
             Required: =false
             Update: =DataCardValue9.Selected
-            Width: =422
+            Width: =634
             X: =1
-            Y: =2
+            Y: =3
             ZIndex: =10
 
             DataCardKey10 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =10 + (DataCardValue9.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue9 As combobox:
@@ -494,9 +419,9 @@
                 SearchItems: =Choices('Peer Reviews'.'Is punctual and respectful of other''s time',DataCardValue9.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey10.Y + DataCardKey10.Height + 5
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey10.X + DataCardKey10.Width
+                Y: =10
                 ZIndex: =2
 
             ErrorMessage10 As label:
@@ -534,19 +459,19 @@
             Height: =50
             Required: =false
             Update: =DataCardValue10.Selected
-            Width: =422
-            X: =2
-            Y: =2
+            Width: =634
+            X: =0
+            Y: =4
             ZIndex: =10
 
             DataCardKey11 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =10 + (DataCardValue10.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue10 As combobox:
@@ -560,9 +485,9 @@
                 SearchItems: =Choices('Peer Reviews'.'Sets and meets deadlines',DataCardValue10.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey11.Y + DataCardKey11.Height + 5
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey11.X + DataCardKey11.Width
+                Y: =10
                 ZIndex: =2
 
             ErrorMessage11 As label:
@@ -600,19 +525,19 @@
             Height: =50
             Required: =false
             Update: =DataCardValue12.Selected
-            Width: =422
-            X: =1
-            Y: =3
+            Width: =634
+            X: =0
+            Y: =5
             ZIndex: =10
 
             DataCardKey13 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =10 + (DataCardValue12.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue12 As combobox:
@@ -626,9 +551,9 @@
                 SearchItems: =Choices('Peer Reviews'.'Quality of the employee''s work',DataCardValue12.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey13.Y + DataCardKey13.Height + 5
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey13.X + DataCardKey13.Width
+                Y: =10
                 ZIndex: =2
 
             ErrorMessage13 As label:
@@ -667,19 +592,19 @@
             MaxLength: =DataSourceInfo([@'Peer Reviews'], DataSourceInfo.MaxLength, "AdditionalComments")
             Required: =false
             Update: =DataCardValue13.Text
-            Width: =422
-            X: =2
-            Y: =3
+            Width: =634
+            X: =1
+            Y: =5
             ZIndex: =10
 
             DataCardKey14 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =10 + (DataCardValue13.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue13 As text:
@@ -694,9 +619,9 @@
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey14.Y + DataCardKey14.Height + 5
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey14.X + DataCardKey14.Width
+                Y: =10
                 ZIndex: =2
 
             ErrorMessage14 As label:
@@ -733,9 +658,9 @@
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =DataCardValue14.Selected
-            Width: =422
-            X: =0
+            Update: =
+            Width: =634
+            X: =1
             Y: =1
             ZIndex: =10
 
@@ -743,27 +668,11 @@
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
-                X: =30
-                Y: =10
+                X: =29
+                Y: =15
                 ZIndex: =1
-
-            DataCardValue14 As combobox:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Value"]
-                DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Peer Reviews'].'Review Period')
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Value"]
-                SearchItems: =Choices('Peer Reviews'.'Review Period',DataCardValue14.SearchText)
-                SelectMultiple: =false
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey15.Y + DataCardKey15.Height + 5
-                ZIndex: =2
 
             ErrorMessage15 As label:
                 AutoHeight: =true
@@ -777,7 +686,7 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue14.Y + DataCardValue14.Height
+                Y: =
                 ZIndex: =3
 
             StarVisible15 As label:
@@ -790,6 +699,13 @@
                 Y: =DataCardKey15.Y
                 ZIndex: =4
 
+            Label10_2 As label:
+                Text: =Gallery_ReviewRequests.Selected.'Review Period'.Value
+                Width: =345
+                X: =259
+                Y: =10
+                ZIndex: =5
+
         "'Generates creative ideas and solutions_DataCard1' As typedDataCard.comboBoxEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="Generatescreativeideasandsolutio"
@@ -800,19 +716,19 @@
             Height: =50
             Required: =false
             Update: =DataCardValue8.Selected
-            Width: =422
+            Width: =634
             X: =0
-            Y: =2
+            Y: =3
             ZIndex: =10
 
             DataCardKey9 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =10 + (DataCardValue8.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue8 As combobox:
@@ -826,9 +742,9 @@
                 SearchItems: =Choices('Peer Reviews'.'Generates creative ideas and solutions',DataCardValue8.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey9.Y + DataCardKey9.Height + 5
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey9.X + DataCardKey9.Width
+                Y: =10
                 ZIndex: =2
 
             ErrorMessage9 As label:
@@ -866,19 +782,19 @@
             Height: =50
             Required: =false
             Update: =DataCardValue11.Selected
-            Width: =422
-            X: =0
-            Y: =3
+            Width: =634
+            X: =1
+            Y: =4
             ZIndex: =10
 
             DataCardKey12 As label:
                 AutoHeight: =true
                 Height: =34
                 Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
+                Width: =(Parent.Width - 60) * 0.4
                 Wrap: =false
                 X: =30
-                Y: =10
+                Y: =10 + (DataCardValue11.Height / 2) - (Self.Height / 2)
                 ZIndex: =1
 
             DataCardValue11 As combobox:
@@ -892,9 +808,9 @@
                 SearchItems: =Choices('Peer Reviews'.'Effectively communicates with others',DataCardValue11.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey12.Y + DataCardKey12.Height + 5
+                Width: =(Parent.Width - 60) * 0.6
+                X: =DataCardKey12.X + DataCardKey12.Width
+                Y: =10
                 ZIndex: =2
 
             ErrorMessage12 As label:
@@ -921,4 +837,61 @@
                 Wrap: =false
                 Y: =DataCardKey12.Y
                 ZIndex: =4
+
+        "'Employee Being Reviewed_DataCard1' As typedDataCard.comboBoxEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="EmployeeBeingReviewed"
+            Default: =ThisItem.'Employee Being Reviewed'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Peer Reviews'],DataSourceInfo.DisplayName,"EmployeeBeingReviewed")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =
+            Width: =634
+            X: =0
+            Y: =0
+            ZIndex: =10
+
+            DataCardKey17 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =(Parent.Width - 60) * 0.4
+                Wrap: =false
+                X: =29
+                Y: =20
+                ZIndex: =1
+
+            ErrorMessage17 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =
+                ZIndex: =3
+
+            StarVisible17 As label:
+                Align: =Align.Center
+                Height: =DataCardKey17.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey17.Y
+                ZIndex: =4
+
+            Label10 As label:
+                Text: =Gallery_ReviewRequests.Selected.'Created By'.DisplayName
+                Width: =345
+                X: =259
+                Y: =16
+                ZIndex: =5
 
