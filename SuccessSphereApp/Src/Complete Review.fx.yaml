@@ -156,11 +156,11 @@
             DataCardValue21 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 DefaultSelectedItems: =Parent.Default
-                DisplayFields: =["Claims","Email","Picture"]
+                DisplayFields: =["DisplayName","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
                 IsSearchable: =false
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                SearchFields: =["Claims"]
+                SearchFields: =["DisplayName"]
                 SearchItems: =[]
                 SelectMultiple: =false
                 Template: =ListItemTemplate.Person
