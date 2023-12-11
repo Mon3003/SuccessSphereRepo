@@ -97,7 +97,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 0,
+    "BindingErrorCount": 4,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -116,7 +116,7 @@
     "ManualOfflineProfileId": "",
     "Name": "Success Sphere",
     "OriginatingVersion": "1.335",
-    "ParserErrorCount": 0,
+    "ParserErrorCount": 2,
     "ShowStatusBar": false
   },
   "PublishInfo": {
@@ -130,19 +130,5 @@
     "PublishTarget": "player",
     "UserLocale": "en-US"
   },
-  "ScreenOrder": [
-    "HomeScreen",
-    "One2One Complete Survey",
-    "One2One View My Survey",
-    "One2One Schedule - Manager",
-    "One2One Complete Manager Feedback - Manager",
-    "Admin",
-    "Add Employee Goals - Manager",
-    "View My Goals",
-    "Request Review",
-    "Review Requests",
-    "Complete Review",
-    "View My Reviews",
-    "View My Employee Reviews - Manager"
-  ]
+  "ScreenOrder": []
 }
