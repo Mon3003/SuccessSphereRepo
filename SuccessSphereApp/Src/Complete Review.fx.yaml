@@ -159,7 +159,6 @@
                 DisplayFields: =["Claims","Email","Picture"]
                 DisplayMode: =Parent.DisplayMode
                 IsSearchable: =false
-                Items: =ThisItem.'Created By'.DisplayName
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Claims"]
                 SearchItems: =[]
