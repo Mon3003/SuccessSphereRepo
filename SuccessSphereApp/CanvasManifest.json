@@ -130,19 +130,5 @@
     "PublishTarget": "player",
     "UserLocale": "en-US"
   },
-  "ScreenOrder": [
-    "HomeScreen",
-    "One2One Complete Survey",
-    "One2One View My Survey",
-    "One2One Schedule - Manager",
-    "One2One Complete Manager Feedback - Manager",
-    "Admin",
-    "Add Employee Goals - Manager",
-    "View My Goals",
-    "Request Review",
-    "Review Requests",
-    "Complete Review",
-    "View My Reviews",
-    "View My Employee Reviews - Manager"
-  ]
+  "ScreenOrder": []
 }

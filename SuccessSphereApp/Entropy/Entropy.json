@@ -1,14 +1,18 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {},
+  "ControlUniqueIds": {
+    "App": 1
+  },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
+  "HeaderLastSavedDateTimeUTC": "12/11/2023 03:31:59",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
+  "OldLogoFileName": "logo.jpg",
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {},
@@ -16,11 +20,43 @@
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {},
-  "OverridablePropertiesEntry": {},
+  "OverridablePropertiesEntry": {
+    "App": {}
+  },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
-  "PublishOrderIndices": {},
+  "PublishOrderIndices": {
+    "App": 0
+  },
   "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {}
+  "TemplateVersions": {},
+  "VolatileProperties": {
+    "AnalysisLoadTime": 3.9124883,
+    "ControlCount": {
+      "button": 13,
+      "circle": 1,
+      "combobox": 16,
+      "d357ac3d832e48849a027fb5b475fc43": 13,
+      "datepicker": 3,
+      "dropdown": 7,
+      "form": 5,
+      "gallery": 8,
+      "galleryTemplate": 8,
+      "group": 1,
+      "groupContainer": 4,
+      "htmlViewer": 1,
+      "icon": 3,
+      "image": 26,
+      "label": 260,
+      "radio": 1,
+      "rectangle": 15,
+      "screen": 13,
+      "slider": 3,
+      "text": 16,
+      "typedDataCard": 36
+    },
+    "DeserializationLoadTime": 3.4041381
+  },
+  "WasLocalDatabaseReferencesEmpty": true
 }
