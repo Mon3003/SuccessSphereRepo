@@ -5,7 +5,7 @@ Admin As screen:
         Fill: =RGBA(216, 235, 255, 0.25)
         Height: =668
         Width: =633
-        X: =730
+        X: =732
         Y: =100
         ZIndex: =1
 
@@ -653,7 +653,7 @@ Admin As screen:
     DataCardValue3_1 As text:
         BorderColor: =
         BorderStyle: =BorderStyle.None
-        Default: =
+        Default: =LookUp('Manager Group',ManagerEmail = User().Email).Manager
         DelayOutput: =true
         DisplayMode: =DisplayMode.Disabled
         Fill: =RGBA(237, 237, 237, 1)
