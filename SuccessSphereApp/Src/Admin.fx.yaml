@@ -672,3 +672,20 @@ Admin As screen:
         Y: =205
         ZIndex: =21
 
+    ComboBox1 As combobox:
+        DisplayFields: =["Value"]
+        Items: |-
+            =Filter(
+                Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,EmployeeName.DisplayName)), 
+                Value <>Blank()
+                )
+        SearchFields: =["Value"]
+        SearchItems: |-
+            =Search(Filter(
+                Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,EmployeeName.DisplayName)), 
+                Value <>Blank()
+                ),ComboBox1.SearchText,"Value")
+        X: =917
+        Y: =453
+        ZIndex: =22
+
