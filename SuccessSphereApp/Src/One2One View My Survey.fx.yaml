@@ -114,7 +114,7 @@
         DelayItemLoading: =true
         Fill: =RGBA(216, 235, 255, 0.25)
         Height: =668
-        Items: =SortByColumns(Filter('One2One Survey', If(Lower('Created By'.Email) = gblCurrentUserEmail, true, false)),"SurveyDate",SortOrder.Descending)
+        Items: =SortByColumns(Filter('One2One Survey', If(Lower('Created By'.Email) = gblCurrentUserEmail, true, false)),"Created",SortOrder.Descending)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -136,7 +136,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =10
-            Text: =ThisItem.SurveyDate
+            Text: =Text(ThisItem.Created, DateTimeFormat.ShortDate)
             VerticalAlign: =VerticalAlign.Top
             Width: =100
             X: =90

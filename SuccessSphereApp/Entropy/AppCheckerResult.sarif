@@ -503,10 +503,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 16,
+                  "charLength": 38,
                   "charOffset": 91,
                   "snippet": {
-                    "text": "Text(SurveyDate)"
+                    "text": "Text(Created,DateTimeFormat.ShortDate)"
                   }
                 }
               },
@@ -544,7 +544,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 108,
+                  "charOffset": 130,
                   "snippet": {
                     "text": "="
                   }

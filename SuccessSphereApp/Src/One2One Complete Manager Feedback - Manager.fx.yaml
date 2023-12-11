@@ -8,7 +8,7 @@
                     'One2One Survey',
                     gblCurrentUserEmail = ManagerEmail.Value && IsBlank(ManagerFeedback) && Dropdown2_1.SelectedText.Value = 'Created By'.DisplayName
                 ),
-                "SurveyDate",
+                "Created",
                 SortOrder.Descending
             )
         );
@@ -129,7 +129,7 @@
         Items: |
             =Filter(
                 'One2One Survey',
-                'Created By'.DisplayName = Dropdown2_1.Selected.Value && Text(SurveyDate) = Dropdown2.SelectedText.Value
+                'Created By'.DisplayName = Dropdown2_1.Selected.Value && Text(Created,DateTimeFormat.ShortDate) = Dropdown2.SelectedText.Value
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -152,7 +152,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =10
-            Text: =ThisItem.SurveyDate
+            Text: =Text(ThisItem.Created,DateTimeFormat.ShortDate)
             VerticalAlign: =VerticalAlign.Top
             Width: =100
             X: =95
@@ -485,7 +485,7 @@
                     'One2One Survey',
                     'Created By'.DisplayName = Dropdown2_1.Selected.Value && !IsBlank(ManagerFeedback)
                 ),
-                SurveyDate
+                Text(Created,DateTimeFormat.ShortDate)
             )
         SelectionFill: =RGBA(57, 55, 104, 1)
         Size: =10
@@ -512,7 +512,7 @@
                         'One2One Survey',
                         gblCurrentUserEmail = ManagerEmail.Value && IsBlank(ManagerFeedback) && Dropdown2_1.SelectedText.Value = 'Created By'.DisplayName
                     ),
-                    "SurveyDate",
+                    "Created",
                     SortOrder.Descending
                 )
             );
@@ -544,7 +544,7 @@
         SurveyDate_DataCard6 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="SurveyDate"
-            Default: =ThisItem.SurveyDate
+            Default: =Text(ThisItem.Created,DateTimeFormat.ShortDate)
             DisplayMode: =DisplayMode.View
             DisplayName: =DataSourceInfo([@'One2One Survey'],DataSourceInfo.DisplayName,"SurveyDate")
             Fill: =RGBA(253, 222, 207, 0.55)
