@@ -107,26 +107,6 @@ Admin As screen:
         Y: =50
         ZIndex: =9
 
-    "'Employee Dropdown_2' As dropdown":
-        BorderThickness: =1
-        ChevronBackground: =RGBA(57, 55, 104, 1)
-        ChevronHoverBackground: =
-        Font: =gblAppFont
-        Height: =20
-        HoverBorderColor: =
-        HoverColor: =
-        Items: |-
-            =Filter(
-                Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,EmployeeName.DisplayName)), 
-                Value <>Blank()
-                )
-        SelectionFill: =RGBA(57, 55, 104, 1)
-        Size: =10
-        Width: =197
-        X: =1016
-        Y: =146
-        ZIndex: =10
-
     "'EmployeeName Label_4' As label":
         Font: =gblAppFont
         FontWeight: =FontWeight.Semibold
@@ -138,7 +118,7 @@ Admin As screen:
         Y: =136
         ZIndex: =11
 
-    "'Employee Dropdown_3' As dropdown":
+    EmployeeDropdown_3 As dropdown:
         BorderThickness: =1
         ChevronBackground: =RGBA(57, 55, 104, 1)
         ChevronHoverBackground: =
@@ -172,15 +152,23 @@ Admin As screen:
         Height: =25
         HoverFill: =RGBA(99, 139, 44, 1)
         OnSelect: |-
-            =UpdateContext({currRecord : LookUp(UserSecurity,EmployeeName.DisplayName = 'Employee Dropdown_2'.Selected.Value)});
+            =//UpdateContext({currRecord : LookUp(UserSecurity,EmployeeName.DisplayName = ComboBox1'.Selected.)});
+            UpdateContext({
+                currRecord: LookUp(
+                    UserSecurity,
+                    ManagerName.Value = EmployeeDropdown_3.Selected.Value
+                )
+            });
             
-            Patch(
+            /*Patch(
                 UserSecurity, 
                  If(IsBlank(currRecord),Defaults(UserSecurity),currRecord),
                 {
-                    EmployeeName: LookUp(UserSecurity,Title = 'Employee Dropdown_2'.Selected.Value).EmployeeName
+                    EmployeeName: LookUp(UserSecurity,Title = EmployeeDropdown_3'.Selected.Value).EmployeeName
                 }
-            )
+            )*/
+            Patch(
+                UserSecurity,
         Size: =11
         Text: ="Delegate"
         Width: =70
@@ -682,4 +670,24 @@ Admin As screen:
         X: =792
         Y: =253
         ZIndex: =22
+
+    ComboBox1 As combobox:
+        ChevronBackground: =RGBA(57, 55, 104, 1)
+        DisplayFields: =["Value"]
+        Font: =gblAppFont
+        Height: =20
+        InputTextPlaceholder: =
+        IsSearchable: =false
+        Items: |-
+            =Filter(
+                Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,EmployeeName.DisplayName)), 
+                Value <>Blank()
+                )
+        SearchFields: =["Value"]
+        SearchItems: =[]
+        Size: =gblAppFontSize
+        Width: =197
+        X: =1016
+        Y: =146
+        ZIndex: =23
 
