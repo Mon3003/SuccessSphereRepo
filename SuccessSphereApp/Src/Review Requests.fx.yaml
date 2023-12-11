@@ -105,6 +105,7 @@
         ZIndex: =8
 
         "'Emp Label_1' As label":
+            Align: =Align.Center
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -127,6 +128,7 @@
             ZIndex: =1
 
         "'Frq Label_1' As label":
+            Align: =Align.Center
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -153,6 +155,7 @@
             ZIndex: =2
 
         "'Next 121 Label_1' As label":
+            Align: =Align.Center
             BorderColor: =RGBA(0, 0, 0, 0)
             BorderStyle: =BorderStyle.None
             BorderThickness: =2
@@ -201,6 +204,7 @@
             ZIndex: =1
 
         Subtitle2_54 As label:
+            Align: =Align.Center
             Font: =gblAppFont
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =25
@@ -218,6 +222,7 @@
             ZIndex: =3
 
         Subtitle2_53 As label:
+            Align: =Align.Center
             Font: =gblAppFont
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =25
