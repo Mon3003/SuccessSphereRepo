@@ -1,0 +1,256 @@
+"'Review Requests' As screen":
+    Fill: =RGBA(0, 0, 0, 0)
+
+    comp_LeftNavMyUploads_12 As comp_LeftNav:
+        Height: =668
+        LeftNavCollection: |-
+            =SortByColumns(Table({
+                    Title: "Home",
+                    NavLink: HomeScreen,
+                    NavIco: Icon.Home,
+                    NavVisible: 0,
+                    NavSecuirty : true
+                },  
+                {
+                    Title: "Request Review",
+                    NavLink: 'Request Review',
+                    NavIco: Icon.People,
+                    NavVisible: 1,
+                    NavSecuirty : true
+                },
+                {
+                    Title: "Complete Review",
+                    NavLink: 'Review Requests',
+                    NavIco: Icon.AddUser,
+                    NavVisible: 2,
+                    NavSecuirty : true
+                },
+                {
+                    Title: "View My Reviews",
+                    NavLink: 'View My Reviews',
+                    NavIco: Icon.AddUser,
+                    NavVisible: 3,
+                    NavSecuirty : true
+                },
+                {
+                    Title: "View Employee Reviews",
+                    NavLink: 'View My Employee Reviews - Manager',
+                    NavIco: Icon.AddUser,
+                    NavVisible: 4,
+                    NavSecuirty : If(gblCurrentUserRole.Role = "Manager",true,false)
+                }
+                ),"NavVisible",SortOrder.Ascending)
+                
+        Width: =98
+        Y: =100
+
+    Label3_26 As label:
+        Align: =Align.Center
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =50
+        Size: =18
+        Text: ="Peer Reviews"
+        Width: =1366
+        ZIndex: =2
+
+    Label3_27 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(57, 55, 104, 1)
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =50
+        Text: ="Review Requests"
+        Width: =1366
+        Y: =50
+        ZIndex: =3
+
+    "'User Image_13' As image":
+        Height: =50
+        Image: =User().Image
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Width: =50
+        X: =1301
+        ZIndex: =5
+
+    "'User name_13' As label":
+        Align: =Align.Right
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Height: =30
+        Size: =11
+        Text: |
+            =User().FullName
+        Width: =126
+        X: =1175
+        Y: =10
+        ZIndex: =6
+
+    Image3_12 As image:
+        Height: =50
+        Image: ='Stretch-365-IA-Logo-Light-Transparent (1)'
+        Width: =146
+        ZIndex: =7
+
+    "'Gallery Headers_1' As groupContainer.manualLayoutContainer":
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =33
+        Width: =726
+        X: =273
+        Y: =152
+        ZIndex: =8
+
+        "'Emp Label_1' As label":
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(216, 235, 255, 0.25)
+            FocusedBorderThickness: =4
+            Font: =gblAppFont
+            FontWeight: =FontWeight.Semibold
+            Height: =29
+            HoverBorderColor: ='Emp Label_1'.BorderColor
+            HoverColor: ='Emp Label_1'.Color
+            HoverFill: ='Emp Label_1'.Fill
+            PressedBorderColor: ='Emp Label_1'.BorderColor
+            PressedColor: ='Emp Label_1'.Color
+            PressedFill: ='Emp Label_1'.Fill
+            Size: =gblAppFontSize
+            Text: ="Review Requested By"
+            Underline: =true
+            Width: =268
+            ZIndex: =1
+
+        "'Frq Label_1' As label":
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(216, 235, 255, 0.25)
+            FocusedBorderThickness: =4
+            Font: =gblAppFont
+            FontWeight: =FontWeight.Semibold
+            Height: =29
+            HoverBorderColor: ='Frq Label_1'.BorderColor
+            HoverColor: ='Frq Label_1'.Color
+            HoverFill: ='Frq Label_1'.Fill
+            PressedBorderColor: ='Frq Label_1'.BorderColor
+            PressedColor: ='Frq Label_1'.Color
+            PressedFill: ='Frq Label_1'.Fill
+            Size: =gblAppFontSize
+            Text: ="Review Period"
+            Underline: =true
+            Width: |+
+                =193
+                
+                
+            X: ='Emp Label_1'.X+'Emp Label_1'.Width + 2
+            ZIndex: =2
+
+        "'Next 121 Label_1' As label":
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(216, 235, 255, 0.25)
+            FocusedBorderThickness: =4
+            Font: =gblAppFont
+            FontWeight: =FontWeight.Semibold
+            Height: =29
+            HoverBorderColor: ='Next 121 Label_1'.BorderColor
+            HoverColor: ='Next 121 Label_1'.Color
+            HoverFill: ='Next 121 Label_1'.Fill
+            PressedBorderColor: ='Next 121 Label_1'.BorderColor
+            PressedColor: ='Next 121 Label_1'.Color
+            PressedFill: ='Next 121 Label_1'.Fill
+            Size: =gblAppFontSize
+            Text: =""
+            Underline: =true
+            Width: =258
+            X: =466
+            ZIndex: =3
+
+    "Gallery_ReviewRequests As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        DelayItemLoading: =true
+        Height: =375
+        Items: |
+            =Filter(
+                'Peer Reviews',
+                Reviewer.Email = gblCurrentUserEmail
+            )
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =44
+        Width: =727
+        X: =272
+        Y: =185
+        ZIndex: =9
+
+        Separator6_4 As rectangle:
+            Fill: =RGBA(216, 235, 255, 0.25)
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =1
+
+        Subtitle2_54 As label:
+            Align: =Align.Center
+            Font: =gblAppFont
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =10
+            Text: =ThisItem.'Review Period'.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =180
+            X: =268
+            Y: =10
+            ZIndex: =3
+
+        Subtitle2_53 As label:
+            Align: =Align.Center
+            Font: =gblAppFont
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =25
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =gblAppFontSize
+            Text: =ThisItem.'Created By'.DisplayName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =266
+            X: |
+                ='Emp Label'.X+2
+            Y: =10
+            ZIndex: =4
+
+        Btn_SubmitReviewRequest_1 As button:
+            Color: =RGBA(99, 139, 44, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =gblAppFont
+            Height: =25
+            HoverFill: =RGBA(99, 139, 44, 1)
+            OnSelect: =Navigate('Complete Review')
+            Size: =gblAppFontSize
+            Text: ="Review"
+            Visible: =If(IsBlank(Subtitle2_53),false,true)
+            Width: =70
+            X: =546
+            Y: =10
+            ZIndex: =5
+

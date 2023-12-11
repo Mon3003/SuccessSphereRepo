@@ -5,7 +5,7 @@ Admin As screen:
         Fill: =RGBA(216, 235, 255, 0.25)
         Height: =668
         Width: =633
-        X: =730
+        X: =732
         Y: =100
         ZIndex: =1
 
@@ -146,12 +146,12 @@ Admin As screen:
         Height: =20
         HoverBorderColor: =
         HoverColor: =
-        Items: =Distinct(UserSecurity, EmployeeName.DisplayName)
+        Items: =Distinct('Manager Group', ManagerName.DisplayName)
         SelectionFill: =RGBA(57, 55, 104, 1)
         Size: =10
         Width: =197
         X: =1016
-        Y: =360
+        Y: =263
         ZIndex: =12
 
     "'EmployeeName Label_5' As label":
@@ -184,8 +184,8 @@ Admin As screen:
         Size: =11
         Text: ="Delegate"
         Width: =70
-        X: =1175
-        Y: =290
+        X: =1163
+        Y: =380
         ZIndex: =14
 
     Form1 As form:
@@ -653,7 +653,7 @@ Admin As screen:
     DataCardValue3_1 As text:
         BorderColor: =
         BorderStyle: =BorderStyle.None
-        Default: =
+        Default: =LookUp('Manager Group',ManagerEmail = User().Email).Manager
         DelayOutput: =true
         DisplayMode: =DisplayMode.Disabled
         Fill: =RGBA(237, 237, 237, 1)
@@ -672,20 +672,14 @@ Admin As screen:
         Y: =205
         ZIndex: =21
 
-    ComboBox1 As combobox:
-        DisplayFields: =["Value"]
-        Items: |-
-            =Filter(
-                Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,EmployeeName.DisplayName)), 
-                Value <>Blank()
-                )
-        SearchFields: =["Value"]
-        SearchItems: |-
-            =Search(Filter(
-                Distinct(UserSecurity, If(ManagerEmail.Value = gblCurrentUserEmail,EmployeeName.DisplayName)), 
-                Value <>Blank()
-                ),ComboBox1.SearchText,"Value")
-        X: =917
-        Y: =453
+    "'EmployeeName Label_6' As label":
+        Font: =gblAppFont
+        FontWeight: =FontWeight.Semibold
+        Size: =gblAppFontHeaderSize
+        Text: |-
+            ="New Manager Name :"
+        Width: =172
+        X: =792
+        Y: =253
         ZIndex: =22
 
