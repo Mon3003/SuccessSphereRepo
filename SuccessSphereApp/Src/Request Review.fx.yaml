@@ -370,7 +370,8 @@
                     'Request Message': DataCardValue18.Text
                 }
             );
-            ResetForm(Form3)
+            ResetForm(Form3);
+            Navigate('View My Reviews')
         Size: =gblAppFontSize
         Text: ="Request"
         Width: =70

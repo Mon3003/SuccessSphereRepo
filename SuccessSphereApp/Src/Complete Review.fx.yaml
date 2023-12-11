@@ -356,10 +356,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Peer Reviews'].TakesResponsibility)
+                Items: =Choices([@'Peer Reviews'].'Takes Responsibility')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Peer Reviews'.TakesResponsibility,DataCardValue6.SearchText)
+                SearchItems: =Choices('Peer Reviews'.'Takes Responsibility',DataCardValue6.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -422,10 +422,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Peer Reviews'].Hastheabilitytolearnandusenewski)
+                Items: =Choices([@'Peer Reviews'].'Has the ability to learn and use new skills')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Peer Reviews'.Hastheabilitytolearnandusenewski,DataCardValue7.SearchText)
+                SearchItems: =Choices('Peer Reviews'.'Has the ability to learn and use new skills',DataCardValue7.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -488,10 +488,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Peer Reviews'].Ispunctualandrespectfulofotherst)
+                Items: =Choices([@'Peer Reviews'].'Is punctual and respectful of other''s time')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Peer Reviews'.Ispunctualandrespectfulofotherst,DataCardValue9.SearchText)
+                SearchItems: =Choices('Peer Reviews'.'Is punctual and respectful of other''s time',DataCardValue9.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -554,10 +554,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Peer Reviews'].Setsandmeetsdeadlines)
+                Items: =Choices([@'Peer Reviews'].'Sets and meets deadlines')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Peer Reviews'.Setsandmeetsdeadlines,DataCardValue10.SearchText)
+                SearchItems: =Choices('Peer Reviews'.'Sets and meets deadlines',DataCardValue10.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -620,10 +620,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Peer Reviews'].Qualityoftheemployeeswork)
+                Items: =Choices([@'Peer Reviews'].'Quality of the employee''s work')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Peer Reviews'.Qualityoftheemployeeswork,DataCardValue12.SearchText)
+                SearchItems: =Choices('Peer Reviews'.'Quality of the employee''s work',DataCardValue12.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -754,10 +754,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Peer Reviews'].ReviewPeriod)
+                Items: =Choices([@'Peer Reviews'].'Review Period')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Peer Reviews'.ReviewPeriod,DataCardValue14.SearchText)
+                SearchItems: =Choices('Peer Reviews'.'Review Period',DataCardValue14.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -820,10 +820,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Peer Reviews'].Generatescreativeideasandsolutio)
+                Items: =Choices([@'Peer Reviews'].'Generates creative ideas and solutions')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Peer Reviews'.Generatescreativeideasandsolutio,DataCardValue8.SearchText)
+                SearchItems: =Choices('Peer Reviews'.'Generates creative ideas and solutions',DataCardValue8.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
@@ -886,10 +886,10 @@
                 DefaultSelectedItems: =Parent.Default
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
-                Items: =Choices([@'Peer Reviews'].Effectivelycommunicateswithother)
+                Items: =Choices([@'Peer Reviews'].'Effectively communicates with others')
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Peer Reviews'.Effectivelycommunicateswithother,DataCardValue11.SearchText)
+                SearchItems: =Choices('Peer Reviews'.'Effectively communicates with others',DataCardValue11.SearchText)
                 SelectMultiple: =false
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
